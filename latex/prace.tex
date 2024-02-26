@@ -1,0 +1,134 @@
+% ============================================================================ %
+%
+%           Šablona bakalářské/diplomové práce
+%
+% Autor:    Ing. Jozef Říha (4. květen 2006)
+%           (některé komentáře převzaty z dokumentu Ivana Pomykacze)
+%
+% Verze:    2017-01-19, Ing. Pavel Tomášek (tomasek@fai.utb.cz)
+%
+% Kódování: UTF-8 (žluťoučký kůň úpěl ďábelšké ódy)
+%
+% Sazba:    pdflatex prace.tex && pdflatex prace.tex
+%           (nutné dvakrát pro korektní vložení citací a jiných referencí),
+%           v případě umístění literatury do externího bib souboru je třeba volat
+%           pdflatex statement.tex && bibtex statement.tex && pdflatex statement.tex && pdflatex statement.tex
+%
+% Tip:      Ve správně vysázeném českém textu by na konci řádku neměla zůstant
+%           samotná jednopísmenná předložka. Na takové místo se vkládá
+%           nezalomitelná mezera pomocí symbolu ~. Existuje program, který umí
+%           zpracovat celý TeX dokument najednou podle českých konvencí:
+%           http://petr.olsak.net/ftp/olsak/vlna/
+%
+%           Pozor! Vzhledem k požadovanému standardu PDF/A nesmí obrázky obsahovat 
+%           alfa kanál (průhlednost).
+%
+% ============================================================================ %
+
+
+\documentclass[a4paper,12pt]{article}
+
+% Definice vzhledu a nastavení se načítá z následujícího souboru (netřeba editovat)
+\input{tex/UTB.tex}
+
+% Uživatelské definice -- upravte dle požadavků
+\nastavfakultu{FAI}
+	% FAI  -- pro Fakultu aplikované informatiky
+	% FAME -- pro Fakultu managementu a ekonomiky
+	% FHS  -- pro Fakultu humanitních studií
+	% FLKR -- pro Fakultu logistiky a krizového řízení
+	% FMK  -- pro Fakutlu mutimediálních komunikací
+	% FT   -- pro Fakultu technologickou
+	% UNI  -- pro Univerzitní institut
+\nastavtyp{BP}
+	% BP   -- bakalářská práce
+	% DP   -- diplomová práce
+\nastavrok{2024}
+	% zadejte rok místo "xxxx"
+\nastavjazyk{CZ}
+	% CZ   -- práce bude v českém jazyce
+	% EN   -- práce bude v anglickém jazyce
+
+% Lze přidat vertikalni odsazeni nad (prvni parametr) a pod (druhy parametr)
+% obrázky, tabulky i rovnice/soustavy rovnic
+\nastavmezerukolemobrazku{0mm}{0mm}
+\nastavmezerukolemtabulek{0mm}{0mm}
+\nastavmezerukolemrovnic{0mm}{0mm}
+
+\nastavautora{Martin Tvaróg}
+\nastavnazevcz{Technologie Blockchain pro ověřování dokumentů}
+\nastavnazeven{Blockchain technology for document verification} % Jen u anglicky psané práce
+\nastavabstraktcz{Text abstraktu česky}
+\nastavabstrakten{Text of the abstract}
+\nastavklicovaslovacz{Přehled klíčových slov}
+\nastavklicovaslovaen{Some keywords}
+
+% Následující příkaz nastaví standard PDF/A-1b
+\aplikujpdfa
+
+
+% ============================================================================ %
+\begin{document}
+
+\titulnistrana
+
+\zadani
+
+\prohlaseni
+
+\abstraktaklicovaslova
+
+
+% ============================================================================ %
+\clearpage
+\thispagestyle{empty}
+Zde je místo pro případné poděkování, motto, úryvky knih, básní atp.
+
+
+% ============================================================================ %
+\obsah  % Obsah je generován automaticky
+
+
+% ============================================================================ %
+\OdsazovaniOdstavcuStart % Nastaví odsazování odstavců dle zvoleného jazyka
+
+\input{tex/text.tex} % Hlavni text prace
+
+\OdsazovaniOdstavcuStop
+
+
+% ============================================================================ %
+\seznamlit{
+  % Na toto místo vložit veškeré citované bibliografické položky.
+  \bibitem{chmel}\it{Český chmel: atlas odrůd} [online]. [cit. 2004-10-15]. Dostupný z~WWW: \url{http://www.beer.cz/humulus/}.
+}
+
+% Pro generování literatury lze alternativně použít i příkaz "\seznamlitbib", 
+% který se postará o plnohodnotné vkládání referencí pomocí "bibliography". 
+% V takovém případě se využívají bibliografické údaje uložené v souboru 
+% tex-literatura.bib. Ty se automaticky upravuji dle zvolené citační normy 
+% (v šabloně je nastavena korektní česká norma).
+%\seznamlitbib
+
+
+% ============================================================================ %
+\input{tex/zkratky.tex} % Seznam zkratek
+
+
+% ============================================================================ %
+\seznamobr  % Seznam je generován automaticky
+
+
+% ============================================================================ %
+\seznamtab  % Seznam je generován automaticky
+
+
+% ============================================================================ %
+\input{tex/prilohy.tex} % Prilohy
+
+
+% ============================================================================ %
+
+\end{document}
+
+% ============================================================================ %

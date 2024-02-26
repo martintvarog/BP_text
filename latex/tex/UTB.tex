@@ -1,0 +1,847 @@
+% ============================================================================ %
+% Tento dokument není zpravidla třeba editovat,
+% obsahuje nastavení balíčků, vzhledu, stylů.
+%
+% Kódování: UTF-8 (žluťoučký kůň úpěl ďábelšké ódy)
+% ============================================================================ %
+
+
+% ============================================================================ %
+% BALÍČKY
+
+%\usepackage[czech,english]{babel} % volba při kompilaci latexem (vyžaduje texlive-lang), zakomentovano, nastavovanu prikazem \nastavjazyk
+\usepackage[T1]{fontenc}% definice vnitřního kódování
+\usepackage[utf8x]{inputenc} % slouží pro definici kódování (při problémech zkusit zaměnit utf8x za utf8)
+\usepackage{color}      % umožňuje použití barev
+\usepackage{graphicx}	% rozšíření práce s grafikou
+\usepackage{amsmath}	% balíček pro pokročilejší matematiku
+\usepackage{fancyhdr}	% detailnější nastavení záhlaví a zápatí
+\usepackage{tocloft}	% umožňuje pohodlné nastavení vzhledu obsahu, seznamu tabulek či obrázků
+\usepackage{textcase}	% změna VeLiKoStI PíSmA
+\usepackage{ifthen} 	% balíček umožňující skladby if, then -- využijeme při definici nadpisů
+\usepackage{setspace}	% balíček umožňující nastavit řádkování na 1, 1.5, 2
+\usepackage{ccaption}	% vylepšení práce s popisky obrázků či tabulek
+\usepackage{sectsty}	% pro nastavení vzhledu nadpisů
+\usepackage[srcstyle=leftnumhang,linenumbersep={\ }]{examplep} % pokročilejší sazba programového kódu
+\usepackage{url}        % balíček pro vysázení internetové adresy stylem verbatim s vylepšeným řádkovým zlomem
+\usepackage{afterpage}
+%\usepackage{layout}	% zobrazí nastavení tiskového zrcadla (příkaz \layout)
+%\usepackage{times}		% balíček pro použití fontu times
+%\usepackage{verbatim}	% vysází text bez formátování, tak jak je zapsán v souboru
+%\usepackage{indentfirst} % definuje odsazení prvního řádku odstavce
+%\usepackage{makeidx}	% vytvoří rejstřík
+\usepackage[pdftex,pdfa,hidelinks,breaklinks]{hyperref}	% vytváří křížové odkazy
+%\usepackage{multicol}	% vícesloupcová sazba
+%\usepackage{flafter}	% zajistí, aby se plovoucí objekty objevovali až za jejich umístěním v textu
+\usepackage{chngcntr}   % Umožňuje změnu nastavení číslování obrázků, tabulek i rovnic
+\usepackage{etoolbox}   % Tool-box for LaTeX programmers
+\usepackage[labelsep=space,tableposition=bottom,justification=centering]{caption} % Přenastavení popisků u figur a tabulek
+
+% ---------------------------------------------------------------------------- %
+
+\usepackage{xmpincl}
+\usepackage{hyperxmp}
+
+% \convertDate converts D:20080419103507+02'00' to 2008-04-19T10:35:07+02:00
+\def\convertDate{%
+    \getYear
+}
+{\catcode`\D=12
+ \gdef\getYear D:#1#2#3#4{\edef\xYear{#1#2#3#4}\getMonth}
+}
+\def\getMonth#1#2{\edef\xMonth{#1#2}\getDay}
+\def\getDay#1#2{\edef\xDay{#1#2}\getHour}
+\def\getHour#1#2{\edef\xHour{#1#2}\getMin}
+\def\getMin#1#2{\edef\xMin{#1#2}\getSec}
+\def\getSec#1#2{\edef\xSec{#1#2}\getTZh}
+\def\getTZh +#1#2{\edef\xTZh{#1#2}\getTZm}
+\def\getTZm '#1#2'{%
+    \edef\xTZm{#1#2}%
+    \edef\convDate{\xYear-\xMonth-\xDay T\xHour:\xMin:\xSec+\xTZh:\xTZm}%
+}
+\expandafter\convertDate\pdfcreationdate
+
+\pdfminorversion 4
+
+\immediate\pdfobj stream attr{/N 3}  file{graphics/sRGBIEC1966-2.1.icm}
+\pdfcatalog{%
+  /OutputIntents [ <<
+  /Type /OutputIntent
+  /S/GTS_PDFA1
+  /DestOutputProfile \the\pdflastobj\space 0 R
+  /OutputConditionIdentifier (sRGB IEC61966-2.1)
+  /Info(sRGB IEC61966-2.1)
+ >> ]
+}
+
+\providecommand{\xmpOrg}{Tomas Bata University in Zlín, Czech Republic}
+\providecommand{\xmpProducer}{}
+\providecommand{\xmpDoi}{}
+\providecommand{\xmpJournalnumber}{}
+\providecommand{\xmpVolume}{}
+\providecommand{\xmpIssue}{}
+\providecommand{\xmpCoverDisplayDate}{}
+\providecommand{\xmpCoverDate}{}
+\providecommand{\xmpJournaltitle}{}
+\providecommand{\xmpFirstpage}{}
+\providecommand{\xmpLastpage}{}
+\providecommand{\xmpAuthoritativeDomain}{}
+\providecommand{\xmpCreatorTool}{}
+
+
+% ============================================================================ %
+% NASTAVENÍ TISKOVÉHO ZRCADLA
+
+\newcommand{\valueTextHeight}{242mm}	% výška tiskového zrcadla
+\newcommand{\valueTextWidth}{155mm}	% šířka tiskového zrcadla
+\newcommand{\valueVOffset}{-1.61cm}	% vertikální posunutí tiskového zrcadla
+\newcommand{\valueSideMargin}{0.96cm}	% levý okraj
+\newcommand{\valueHeadHeight}{0.6cm}	% záhlaví
+\newcommand{\valueHeadSep}{1cm}	% záhlaví
+
+\textheight=\valueTextHeight
+\textwidth=\valueTextWidth
+\voffset=\valueVOffset
+%\voffset=-1in
+%\topmargin=-2.9cm
+
+\oddsidemargin=\valueSideMargin
+\evensidemargin=\valueSideMargin
+
+\headheight=\valueHeadHeight
+\headsep=\valueHeadSep
+
+% nastavení zápatí
+\footskip=1ex
+\cfoot{}
+% "vypnout" poznámky na okrajích
+\marginparpush=0mm
+\marginparwidth=0mm
+\marginparsep=0mm
+
+\pagestyle{fancy}
+
+% Nastavení obalujících okrajů okolo popisků figur a tabulek
+\captionsetup[figure]{aboveskip=10pt}
+\captionsetup[figure]{belowskip=0pt}
+\captionsetup[table]{aboveskip=0pt}
+\captionsetup[table]{belowskip=-5pt}
+
+
+% ============================================================================ %
+% NASTAVENÍ PÍSMA, ODSTAVCE, ROVNIC, POZNÁMEK
+
+\parindent=0em				% velikost odstavcové zarážky na nulu
+\def\thefootnote{\arabic{footnote})}	% poznámka pod čarou se závorkou
+\onehalfspacing % nastavím řádkování tímto způsobem nebo \renewcommand{\baselinestretch}{1.5} ??
+\setlength{\parskip}{3pt}		% vertikální mezera mezi nadpisy
+%\def\label#1{{\sf ! #1 ! }}		% možnost zobrazení všech \label{}
+
+
+% ============================================================================ %
+% NASTAVENÍ ČÍTAČŮ
+
+\setcounter{tocdepth}{3} % do obsahu se ukládají pouze první dvě úrovně kapitol
+
+
+% ============================================================================ %
+% PDF/A STANDARD
+
+% http://www.mathstat.dal.ca/~selinger/pdfa/
+% https://blog.zhaw.ch/icclab/creating-pdfa-documents-for-long-term-archiving/
+% http://support.river-valley.com/wiki/index.php?title=Generating_PDF/A_compliant_PDFs_from_pdftex
+
+% Prerequisites: pdflatex, hyperref, xmpincl
+% pdfTeX at least in version 1.40.15 (in Linux add repository ppa:jonathonf/texlive, update and upgrade texlive-full)
+%
+% Validator: https://www.pdf-online.com/osa/validate.aspx
+
+\newcommand{\aplikujpdfa}{
+	\ifczech
+		\providecommand{\xmpTitle}{\nazevcz}
+		\providecommand{\xmpAuthor}{\autor}
+		\providecommand{\xmpKeywords}{\klicovaslovacz}
+		\hypersetup{
+			pdftitle={\nazevcz},
+			pdfauthor={\autor},
+			pdfsubject={\abstraktcz},
+			pdfkeywords={\klicovaslovacz},
+			pdflang={en}
+		}
+	\else \ifenglish
+		\providecommand{\xmpTitle}{\nazeven}
+		\providecommand{\xmpAuthor}{\autor}
+		\providecommand{\xmpKeywords}{\klicovaslovaen}
+		\hypersetup{
+			pdftitle={\nazeven},
+			pdfauthor={\autor},
+			pdfsubject={\abstrakten},
+			pdfkeywords={\klicovaslovaen},
+			pdflang={en}
+		}
+	\fi \fi
+	
+	\makeatletter
+	\includexmp{tex/pdfa-1b}
+	\makeatother
+}
+
+
+% ============================================================================ %
+% UŽIVATELSKÉ STYLY
+
+% Styl nn = nečíslovaný nadpis (je vysázený v obsahu)
+\def\nn#1{\clearpage\section*{\MakeTextUppercase{#1}}\addcontentsline{toc}{section}{#1}}
+
+% Styl nm = nečíslovaný nadpis (není vysázený v obsahu)
+\def\nm#1{\clearpage\section*{\MakeTextUppercase{#1}}}
+
+% Styl ns = nečíslovaný nadpis na stejné stránce (není vysázený v obsahu)
+\def\nns#1{\section*{\MakeTextUppercase{#1}}}
+
+% Styl n{ur}{nadp} pro nadpisy, kde ur je číslo úrovně a nadp je text nadpisu
+\def\n#1#2{
+	\ifthenelse{#1=1}{\clearpage\section{#2}}{
+		\ifthenelse{#1=2}{\subsection{#2}}{
+			\ifthenelse{#1=3}{\subsubsection{#2}}{\paragraph{\itshape\bfseries{#2}}
+}}}}
+
+% Styl pro obrázky
+% \obr{popisek}{label}{rozměr (0.0 - 1.0)}{soubor}
+\def\obr#1#2#3#4{
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=#3\linewidth]{#4}
+		%\captionwidth{#3\linewidth}
+		%\changecaptionwidth
+		\captionsetup{width=#3\linewidth}
+		\caption{#1}
+		\label{#2}
+	\end{figure}
+}
+
+% Styl pro tabulky
+% \tab{popisek}{label}{rozměr (0.0 - 1.0)}{definice sloupců}{obsah} 
+\def\tab#1#2#3#4#5{
+	\begin{table}[h]
+		%\captionwidth{#3\linewidth}
+		%\changecaptionwidth
+		\captionsetup{width=#3\linewidth}
+		\caption{#1}
+		\label{#2}
+		\begin{center}
+			\centering
+			\begin{tabular}{#4}
+				#5
+			\end{tabular}
+		\end{center}
+	\end{table}
+}
+
+% Styl pro tabulky v příloze
+% \tabpri{popisek}{definice sloupců}{data tabulky}
+\def\tabpri#1#2#3{
+	\begin{table}[h]
+	\begin{center}
+	#1
+	\end{center}
+	\begin{center}
+	\begin{tabular}{#2}
+	#3
+	\end{tabular}
+	\end{center}
+	\end{table}
+}
+	
+% Styl pro tabulky z MS Excelu exportované do EPS
+% \extab{popisek}{rozměr (0.0 - 1.0)}{soubor}
+\def\extab#1#2#3{
+	\begin{table}
+	%\captionwidth{#2\linewidth}
+	%\changecaptionwidth
+	\captionsetup{width=#2\linewidth}
+	\caption{#1}
+	\begin{center}
+	\includegraphics[width=#2\linewidth]{#3}
+	\end{center}
+	\end{table}
+}
+
+% Styl pro rovnice
+% \rov[klíčové slovo]{rovnice}
+\newcommand{\rov}[2][chybejici rovnice]{
+	\begin{equation}
+	#2
+	\label{#1}
+	\end{equation}
+}
+	
+% Příkaz pro vysázení seznamu obrázků
+\def\seznamobr{
+	\clearpage
+	\ifczech
+		\addcontentsline{toc}{section}{Seznam obrázků}
+	\else \ifenglish
+		\addcontentsline{toc}{section}{List of Figures}
+	\fi \fi
+	\listoffigures
+	\clearpage
+}
+
+% Příkaz pro vysázení seznamu tabulek
+\def\seznamtab{
+	\clearpage
+	\ifczech
+		\addcontentsline{toc}{section}{Seznam tabulek}
+	\else \ifenglish
+		\addcontentsline{toc}{section}{List of Tables}
+	\fi \fi
+	\listoftables
+	\clearpage
+}
+
+\newcommand{\OdsazovaniOdstavcuStart}[0]{
+	\ifenglish
+		\setlength{\parskip}{5mm} % English indentation of paragraphs
+	\else \ifczech
+		\setlength{\parindent}{5mm} % Czech indentation of paragraphs
+	\fi \fi
+}
+
+\newcommand{\OdsazovaniOdstavcuStop}[0]{
+	\ifenglish
+		\setlength{\parskip}{0mm} % English indentation of paragraphs
+	\else \ifczech
+		\setlength{\parindent}{0mm} % Czech indentation of paragraphs
+	\fi \fi
+}
+
+% Příkaz pro vysázení seznamu literatury
+\newcommand{\seznamlit}[1]{
+	\clearpage
+	\ifczech
+		\addcontentsline{toc}{section}{Seznam použité literatury}
+	\else \ifenglish
+		\addcontentsline{toc}{section}{References}
+	\fi \fi
+	\begin{thebibliography}{99}
+	#1
+	\end{thebibliography}
+}
+
+\newcommand{\seznamlitbib}{
+	\bibliographystyle{tex/csplainnat} % Respects the norm of ČSN ISO 690
+	\newpage
+	\clearpage
+	%\cleardoublepage
+	\addcontentsline{toc}{section}{\protect\numberline{}{\ifenglish References \else \ifczech Seznam použité literatury \fi \fi}}
+	\bibliography{tex/literatura}
+}
+
+% Příkaz pro přípravu seznamu použitých zkratek a symbolů
+\newcommand{\seznamzkr}{
+	\ifczech
+		\nn{Seznam použitých symbolů a zkratek}
+	\else \ifenglish
+		\nn{List of Abbreviations}
+	\fi \fi
+}
+
+% Příkaz \cast jako alternativa k \part
+\def\cast#1{
+	\part{#1}
+}
+
+% Příkaz \obsah vysází obsah v daném místě
+\def\obsah{
+	\deaktivujZahlavi
+	\clearpage
+	\thispagestyle{empty}
+	\tableofcontents
+	\clearpage
+	\pagestyle{fancy}
+	\aktivujZahlavi
+}
+
+% Zkrácení stylu \textbf na \b
+\def\b#1{
+	\textbf{#1}
+}
+
+% \bi = tučná kurzíva
+\newcommand{\bi}[1]{\textbf{\textit{#1}}}
+
+% \it = kurzíva
+\renewcommand{\it}[1]{\textit{#1}}
+
+% Nastaveni nezobrazovani zahlavi dokumentu
+\newcommand{\deaktivujZahlavi}{
+	\lhead{}
+	\rhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\newcommand{\zadani}{
+	\clearpage
+	\thispagestyle{empty}
+	\voffset=\valueVOffset\evensidemargin=\valueSideMargin\oddsidemargin=\valueSideMargin\headsep=\valueHeadSep\headheight=\valueHeadHeight\setlength{\parskip}{3pt}\textheight=\valueTextHeight\textwidth=\valueTextWidth
+	*** Nascanované zadání, strana 1 ***
+	
+	\clearpage
+	\thispagestyle{empty}
+	*** Nascanované zadání, strana 2 ***
+}
+
+% Nastaveni zobrazovani zahlavi dokumentu
+\newcommand{\aktivujZahlavi}{
+	\renewcommand{\headrulewidth}{1pt}
+	\rhead{\thepage}
+	
+	\ifczech
+		\lhead{\b{UTB ve Zlíně, \ifthenelse{\equal{\fakulta}{FAI}}{Fakulta aplikované informatiky}{\ifthenelse{\equal{\fakulta}{FAME}}{Fakulta managementu a ekonomiky}{\ifthenelse{\equal{\fakulta}{FHS}}{Fakulta humanitních studií}{\ifthenelse{\equal{\fakulta}{FLKR}}{Fakulta logistiky a krizového řízení}{\ifthenelse{\equal{\fakulta}{FMK}}{Fakulta multimediálních komunikací}{\ifthenelse{\equal{\fakulta}{FT}}{Fakulta technologická}{\ifthenelse{\equal{\fakulta}{UNI}}{Univerzitní institut}{}}}}}}}}}
+	\else \ifenglish
+		\lhead{\b{TBU in Zlín, \ifthenelse{\equal{\fakulta}{FAI}}{Faculty of Applied Informatics}{\ifthenelse{\equal{\fakulta}{FAME}}{Faculty of Management and Economics}{\ifthenelse{\equal{\fakulta}{FHS}}{Faculty of Humanities}{\ifthenelse{\equal{\fakulta}{FLKR}}{Faculty of Logistics and Crisis Management}{\ifthenelse{\equal{\fakulta}{FMK}}{Faculty of Multimedia Communications}{\ifthenelse{\equal{\fakulta}{FT}}{Faculty of Technology}{\ifthenelse{\equal{\fakulta}{UNI}}{University Institute}{}}}}}}}}}
+	\fi \fi
+}
+
+% Příkaz \logopracerok vloží na dané místo logo fakulty, typ práce a rok
+\newcommand{\logopracerok}{
+	\ifczech
+		\iffai  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fai_logo_cz.png}}} \fi
+		\iffame \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fame_logo_cz.png}}} \fi
+		\iffhs  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fhs_logo_cz.png}}} \fi
+		\ifflkr \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/flkr_logo_cz.png}}} \fi
+		\iffmk  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fmk_logo_cz.png}}} \fi
+		\ifft   \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/ft_logo_cz.png}}} \fi
+		\ifuni  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/uni_logo_cz.png}}} \fi
+	\else \ifenglish
+		\iffai  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fai_logo_en.png}}} \fi
+		\iffame \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fame_logo_en.png}}} \fi
+		\iffhs  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fhs_logo_en.png}}} \fi
+		\ifflkr \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/flkr_logo_en.png}}} \fi
+		\iffmk  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/fmk_logo_en.png}}} \fi
+		\ifft   \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/ft_logo_en.png}}} \fi
+		\ifuni  \put(82.2,-223.3){\makebox(84,16.4){\includegraphics[width=90mm]{graphics/logo/uni_logo_en.png}}} \fi
+	\fi \fi
+	\put(0,-205){\linethickness{1pt}\line(1,0){170}}
+	\ifczech
+		\ifbp \put(4,-215){\makebox(69.5,4.5)[l]{\noindent\fontsize{16}{1}\usefont{OT1}{phv}{m}{n}Bakalářská práce}} \fi
+		\ifdp \put(4,-215){\makebox(69.5,4.5)[l]{\noindent\fontsize{16}{1}\usefont{OT1}{phv}{m}{n}Diplomová práce}} \fi
+	\else \ifenglish
+		\ifbp \put(4,-215){\makebox(69.5,4.5)[l]{\noindent\fontsize{16}{1}\usefont{OT1}{phv}{m}{n}Bachelor's thesis}} \fi
+		\ifdp \put(4,-215){\makebox(69.5,4.5)[l]{\noindent\fontsize{16}{1}\usefont{OT1}{phv}{m}{n}Master's thesis}} \fi
+	\fi \fi
+	\put(4,-220){\makebox(69.5,4.5)[l]{\noindent\fontsize{16}{1}\usefont{OT1}{phv}{m}{n}\rok}}
+	\put(0,-225){\linethickness{1pt}\line(1,0){170}}
+	\put(75,-223.3){\linethickness{1pt}\line(0,1){16.4}}
+}
+
+% Úvodní stránka s logem fakulty
+\newcommand{\titulnistrana}{
+	\thispagestyle{empty}
+	\voffset=-2.01cm\evensidemargin=0pt\oddsidemargin=0cm\parindent=0pt\headsep=0pt\headheight=0pt\parskip=0pt\textheight=272mm\textwidth=200mm
+	\renewcommand{\baselinestretch}{0}
+	
+	\setlength{\unitlength}{1mm}
+	\begin{picture}(-10,8)
+		\ifczech
+			% Nazev prace
+			%\put(0,-100){\makebox(170,50){\fontsize{24}{1}\usefont{OT1}{phv}{b}{n}#1}}
+			%		\put(0,-100){\makebox(170,50){\protect\parbox{0.8\textwidth}{\protect\centering\fontsize{24}{1}\usefont{OT1}{phv}{b}{n}#1}}}
+			
+			% Vyreseno odradkovani
+			\put(0,-100){\makebox(170,50){\protect\parbox{0.8\textwidth}{\protect\centering\setstretch{2.0}\usefont{OT1}{phv}{b}{n}{\Huge\nazevcz}}}}
+			
+			% Jmeno autora
+			\put(0,-135){\makebox(170,25){\fontsize{20}{1}\usefont{OT1}{phv}{m}{n}\autor}}
+		\else \ifenglish
+			% Nazev prace
+			%\put(0,-100){\makebox(170,50){\fontsize{24}{1}\usefont{OT1}{phv}{b}{n}#1}}
+			%\put(0,-95){\makebox(170,50){\protect\parbox{0.8\textwidth}{\protect\centering\fontsize{24}{1}\usefont{OT1}{phv}{b}{n}#1}}}
+			\put(0,-88){\makebox(170,50){\protect\parbox{0.8\textwidth}{\protect\centering\setstretch{2.0}\usefont{OT1}{phv}{b}{n}{\Huge\nazeven}}}}
+	
+			%\put(0,-111){\makebox(170,50){\fontsize{20}{1}\usefont{OT1}{phv}{m}{n}#1}}
+			%\put(0,-116){\makebox(170,50){\protect\parbox{0.8\textwidth}{\protect\centering\fontsize{20}{1}\usefont{OT1}{phv}{m}{n}#2}}}
+			\put(0,-115){\makebox(170,50){\protect\parbox{0.8\textwidth}{\protect\centering\setstretch{1.5}\usefont{OT1}{phv}{m}{n}{\Large\nazevcz}}}}
+			
+			% Jmeno autora
+			\put(0,-140){\makebox(170,25){\fontsize{20}{1}\usefont{OT1}{phv}{m}{n}\autor}}
+		\fi \fi
+		\logopracerok
+	\end{picture}
+}
+
+
+% Strana s abstraktem a klíčovými slovy v češtině a angličtině
+\newcommand{\abstraktaklicovaslova}{
+	\clearpage
+	\thispagestyle{empty}
+	\nm{Abstrakt}
+	\abstraktcz
+	
+	\vspace{1cm}
+	Klíčová slova: \klicovaslovacz
+	
+	\vspace{3cm}
+	
+	\nns{Abstract}
+	\abstrakten
+	
+	\vspace{1cm}
+	Keywords: \klicovaslovaen
+}
+
+
+% ============================================================================ %
+% NASTAVENÍ ZOBRAZENÍ PŘÍLOH -- SEZNAM, ČÍSLOVÁNÍ, VLASTNÍ STYL
+
+\makeatletter % tímto příkazem dávám najevo, že budu editovat přímo příkazy ze šablony
+
+% definice seznamu příloh - příkaz \listofappendices
+\def\listofappendices{%
+	\newpage
+	\setcounter{section}{0}
+	\ifczech
+		\addcontentsline{toc}{section}{SEZNAM PŘÍLOH}
+		\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn\fi
+		\section*{SEZNAM PŘÍLOH}
+	\else \ifenglish
+		\addcontentsline{toc}{section}{LIST OF APPENDICES}
+		\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn\fi
+		\section*{LIST OF APPENDICES}
+	\fi \fi
+	\@mkboth{LIST OF APPENDICES}{LIST OF APPENDICES}
+	\@starttoc{loa}\if@restonecol\twocolumn\fi
+	\pagestyle{empty}
+	\thispagestyle{fancy}
+}
+
+\def\ext@appendix{loa}
+\def\tocname{loa}
+
+% definice příkazu \priloha{nazev prilohy} pro vložení nové přílohy
+\newcommand{\priloha}[1]{
+	\clearpage
+	\refstepcounter{section}
+	%\voffset=-3cm  % vertikalni posun
+	\addtocontents{loa}{\protect\makebox[1.5cm][l]{P \@Roman\c@section.} #1\newline}
+	\ifczech
+		{\bf PŘÍLOHA P \@Roman\c@section. \MakeTextUppercase{#1}}
+	\else \ifenglish
+		{\bf APPENDIX P \@Roman\c@section. \MakeTextUppercase{#1}}
+	\fi \fi
+	\par
+}
+
+% ============================================================================ %
+% OBSAH: NASTAVENÍ VELKÝCH PÍSMEN PRO NÁZVY SEKCÍ A HLAVNÍCH NADPISŮ
+
+\let\oldcontentsline\contentsline
+\def\contentsline#1#2{%
+  \expandafter\ifx\csname l@#1\endcsname\l@section
+    \expandafter\@firstoftwo
+  \else
+    \expandafter\@secondoftwo
+  \fi
+  {%
+    \oldcontentsline{#1}{\MakeTextUppercase{#2}}%
+  }{%
+    \oldcontentsline{#1}{#2}%
+  }%
+}
+
+\def\@part[#1]#2{
+	\ifnum \c@secnumdepth >\m@ne
+		\refstepcounter{part}
+		\addcontentsline{toc}{section}{\protect\makebox[0.85cm]{\thepart\hfill} #1}
+	\else
+		\addcontentsline{toc}{section}{#1}
+	\fi
+	{\parindent \z@ \raggedright
+	\interlinepenalty \@M
+	\clearpage
+	\normalfont
+    \ifnum \c@secnumdepth >\m@ne
+    	\Large\bfseries
+		\nobreak
+	\fi
+	\vspace*{9cm}
+	\center\huge \bfseries\thepart. \MakeTextUppercase{#2}
+	\markboth{}{}\par}
+	\nobreak
+	\clearpage
+    \@afterheading
+}
+
+
+% ============================================================================ %
+% NASTAVENÍ FORMÁTU ČÍSLOVÁNÍ OBRÁZKŮ A TABULEK
+
+\def\thefigure{\arabic{figure}}      % číslování obrázků typu (y)
+\def\thetable{\arabic{table}}        % číslování tabulek typu (y)
+\captiondelim{. } % změníme dvoutečku za Obr/Tab za tečku
+
+% Nastavení číslování obrázků, tabulek i rovnic do formátu <číslo kapitoly>.<pořadové číslo>
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\counterwithin{equation}{section}
+
+% Odsazeni popisku v seznamu obrazku a tabulek
+\patchcmd{\@caption}{\csname the#1\endcsname}{\csname fnum@#1\endcsname}{}{}
+%{\renewcommand*\numberline[1]{Fig. \,#1\space}}
+\renewcommand*\l@figure{\@dottedtocline{1}{0em}{5.0em}}
+\renewcommand*\l@table{\@dottedtocline{1}{0em}{5.0em}}
+
+% Vynulování čítačů
+\@addtoreset{table}{section}
+\@addtoreset{figure}{section}
+\@addtoreset{footnote}{section}
+	
+\makeatother % a to je ukončení \makeatletter
+
+
+% ============================================================================ %
+% ÚPRAVA VZHLEDU OBSAHU, SEZNAMU OBRÁZKŮ A TABULEK
+
+% nastavení vertikální mezery před stylem část, nadpis 1--3
+\setlength{\cftbeforepartskip}{3pt}
+\setlength{\cftbeforesecskip}{3pt}
+\setlength{\cftbeforesubsecskip}{3pt}
+\setlength{\cftbeforesubsubsecskip}{0cm}
+
+% odsazení zleva pro styl část, nadpis 1--3
+\setlength{\cftpartindent}{0cm}
+\setlength{\cftsecindent}{0cm}
+\setlength{\cftsubsecindent}{0cm}
+\setlength{\cftsubsubsecindent}{0cm}
+
+% nastavení fontu pro styl část, nadpis 1--3
+\renewcommand{\cftpartfont}{\small\bfseries}
+\renewcommand{\cftsecfont}{\small\bfseries}
+\renewcommand{\cftsubsecfont}{\scshape}
+\renewcommand{\cftsubsubsecfont}{}
+
+% odsazení čísla a textu titulku pro styl část, nadpis 1--3
+\cftsetindents{part}{0cm}{1cm}
+\cftsetindents{sec}{0cm}{1cm}
+\cftsetindents{subsec}{0.5cm}{1.25cm}
+\cftsetindents{subsubsec}{1cm}{1.5cm}
+\cftsetindents{fig}{0cm}{1.5cm}
+\cftsetindents{tab}{0cm}{1.5cm}
+
+% nastavení vodící čáry pro styl část, nadpis 1--3, obrázky a tabulky
+\renewcommand{\cftdot}{\ensuremath{.}} % tímto příkazem lze změnit vodící tečky v obsahu na jiný znak
+\renewcommand{\cftpartleader}{\cftdotfill{0.3}}
+\renewcommand{\cftsecleader}{\cftdotfill{0.3}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{0.3}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{0.3}}
+\renewcommand{\cftfigleader}{\cftdotfill{0.3}}
+\renewcommand{\cfttableader}{\cftdotfill{0.3}}
+
+% změna fontu pro text "Obsah", "Seznam obrázků" a "Seznam tabulek"
+\renewcommand{\cfttoctitlefont}{\normalsize\bfseries\thispagestyle{empty}}
+\renewcommand{\cftloftitlefont}{\normalsize\bfseries\thispagestyle{fancy}}
+\renewcommand{\cftlottitlefont}{\normalsize\bfseries\thispagestyle{fancy}}
+\renewcommand{\cftfigpresnum}{Obr. }
+\renewcommand{\cftfigaftersnum}{.}
+\renewcommand{\cfttabpresnum}{Tab. }
+\renewcommand{\cfttabaftersnum}{.}
+
+
+% ============================================================================ %
+% NASTAVENÍ FONTU PRO NADPISY
+
+\sectionfont{\normalsize}
+\subsectionfont{\normalsize\bfseries}
+\subsubsectionfont{\small\bfseries}
+\paragraphfont{\small\bf}
+
+% definice nového stylu \comment -- komentář k šabloně
+\newcommand{\comment}[1]{\color{red}#1\color{black}}
+
+
+% ============================================================================ %
+% VSTUPY
+
+% Nastaveni a kontrola fakulty
+\newcommand{\nastavfakultu}[1]{
+	\newcommand{\fakulta}{#1}
+	\newif\iffai  \let\iffai\iffalse
+	\newif\iffame \let\iffame\iffalse
+	\newif\iffhs  \let\iffhs\iffalse
+	\newif\ifflkr \let\ifflkr\iffalse
+	\newif\iffmk  \let\iffmk\iffalse
+	\newif\ifft   \let\ifft\iffalse
+	\newif\ifuni  \let\ifuni\iffalse
+	
+	\ifthenelse{\equal{#1}{FAI}}{\let\iffai\iftrue}{}
+	\ifthenelse{\equal{#1}{FAME}}{\let\iffame\iftrue}{}
+	\ifthenelse{\equal{#1}{FHS}}{\let\iffhs\iftrue}{}
+	\ifthenelse{\equal{#1}{FLKR}}{\let\ifflkr\iftrue}{}
+	\ifthenelse{\equal{#1}{FMK}}{\let\iffmk\iftrue}{}
+	\ifthenelse{\equal{#1}{FT}}{\let\ifft\iftrue}{}
+	\ifthenelse{\equal{#1}{UNI}}{\let\ifuni\iftrue}{}
+	
+	\iffai \else \iffame \else \iffhs \else \ifflkr \else \iffmk \else \ifft \else \ifuni \else
+		\errmessage{Chyba nastaveni fakulty}
+	\fi \fi \fi \fi \fi \fi \fi
+}
+
+% Nastaveni a kontrola typu prace
+\newcommand{\nastavtyp}[1]{
+	\newcommand{\typ}{#1}
+	
+	\newif\ifbp \let\ifbp\iffalse
+	\newif\ifdp \let\ifdp\iffalse
+	
+	\ifthenelse{\equal{#1}{BP}}{\let\ifbp\iftrue}{}
+	\ifthenelse{\equal{#1}{DP}}{\let\ifdp\iftrue}{}
+	
+	\ifbp \else \ifdp \else
+		\errmessage{Chyba nastaveni typu prace}
+	\fi \fi
+}
+
+% Nastaveni roku
+\newcommand{\nastavrok}[1]{
+	\newcommand{\rok}{#1}
+}
+
+% Nastaveni jmena
+\newcommand{\nastavautora}[1]{
+	\newcommand{\autor}{#1}
+}
+
+% Nastaveni nazvu
+\newcommand{\nastavnazevcz}[1]{
+	\newcommand{\nazevcz}{#1}
+}
+\newcommand{\nastavnazeven}[1]{
+	\newcommand{\nazeven}{#1}
+}
+
+% Nastaveni abstraktu
+\newcommand{\nastavabstraktcz}[1]{
+	\newcommand{\abstraktcz}{#1}
+}
+\newcommand{\nastavabstrakten}[1]{
+	\newcommand{\abstrakten}{#1}
+}
+
+% Nastaveni klicovych slov
+\newcommand{\nastavklicovaslovacz}[1]{
+	\newcommand{\klicovaslovacz}{#1}
+}
+\newcommand{\nastavklicovaslovaen}[1]{
+	\newcommand{\klicovaslovaen}{#1}
+}
+
+% Nastaveni a kontrola jazyka
+\newcommand{\nastavjazyk}[1]{
+	\newcommand{\jazyk}{#1}
+	
+	\newif\ifczech   \let\ifczech\iffalse
+	\newif\ifenglish \let\ifenglish\iffalse
+	
+	\ifthenelse{\equal{#1}{CZ}}{\let\ifczech\iftrue}{}
+	\ifthenelse{\equal{#1}{EN}}{\let\ifenglish\iftrue}{}
+	
+	\ifczech \else \ifenglish \else
+		\errmessage{Chyba nastaveni jazyka}
+	\fi \fi
+	
+	\ifczech
+		\usepackage[czech]{babel}
+		% Vlastni definice nazvu
+		\addto\captionsczech{\renewcommand{\contentsname}{\MakeTextUppercase{Obsah}}}
+		\addto\captionsczech{\renewcommand{\refname}{\MakeTextUppercase{Seznam použité literatury}}}
+		\addto\captionsczech{\renewcommand{\listfigurename}{\MakeTextUppercase{Seznam obrázků}}}
+		\addto\captionsczech{\renewcommand{\listtablename}{\MakeTextUppercase{Seznam tabulek}}}
+		\addto\captionsczech{\renewcommand{\figurename}{Obr.}}
+		\addto\captionsczech{\renewcommand{\tablename}{Tab.}}
+	\else \ifenglish
+		\usepackage[english]{babel}	
+		% Vlastni definice nazvu
+		\addto\captionsenglish{\renewcommand{\contentsname}{\MakeTextUppercase{Table of Contents}}}
+		\addto\captionsenglish{\renewcommand{\refname}{\MakeTextUppercase{References}}}
+		\addto\captionsenglish{\renewcommand{\listfigurename}{\MakeTextUppercase{List of Figures}}}
+		\addto\captionsenglish{\renewcommand{\listtablename}{\MakeTextUppercase{List of Tables}}}
+		\addto\captionsenglish{\renewcommand{\figurename}{Fig.}}
+		\addto\captionsenglish{\renewcommand{\tablename}{Tab.}}
+	\fi \fi
+}
+
+
+% Nastaveni vertikalniho odsazeni nad rovnicemi/soustavami rovnic (prvni parametr),
+% a pod (druhy parametr)
+\newcommand{\nastavmezerukolemrovnic}[2]{
+	\let\oldequation=\equation
+	\let\endoldequation=\endequation
+	\renewenvironment{equation}{\vspace{#1}\begin{oldequation}}{\end{oldequation}\vspace{#2}}
+	
+	\let\oldeqnarray=\eqnarray
+	\let\endoldeqnarray=\endeqnarray
+	\renewenvironment{eqnarray}{\vspace{#1}\begin{oldeqnarray}}{\end{oldeqnarray}\vspace{#2}}
+}
+
+% Nastaveni vertikalniho odsazeni nad tabulkami (prvni parametr),
+% a pod (druhy parametr)
+\newcommand{\nastavmezerukolemtabulek}[2]{
+	\let\oldtable=\table
+	\let\endoldtable=\endtable
+	\renewenvironment{table}{\vspace{#1}\begin{oldtable}}{\end{oldtable}\vspace{#2}}
+}
+
+% Nastaveni vertikalniho odsazeni nad obrazky (prvni parametr),
+% a pod (druhy parametr)
+\newcommand{\nastavmezerukolemobrazku}[2]{
+	\let\oldfigure=\figure
+	\let\endoldfigure=\endfigure
+	\renewenvironment{figure}{\vspace{#1}\begin{oldfigure}}{\end{oldfigure}\vspace{#2}}
+}
+
+
+% ============================================================================ %
+% STRANA S PROHLASENIM
+
+\newcommand{\prohlaseni}{{
+	\clearpage
+	\thispagestyle{empty}
+	\ifenglish \nm{THESIS AUTHOR STATEMENT} \fi
+	\textbf{Prohlašuji, že}
+	\begin{itemize}
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{0pt}
+		\setstretch{1.05}
+		\item{beru na vědomí, že odevzdáním \ifbp bakalářské \else \ifdp diplomové \fi \fi práce souhlasím se zveřejněním své práce podle zákona č. 111/1998 Sb. o vysokých školách a o změně a doplnění dalších zákonů (zákon o vysokých školách), ve znění pozdějších právních předpisů, bez ohledu na výsledek obhajoby;}
+		\item{beru na vědomí, že \ifbp bakalářské \else \ifdp diplomové \fi \fi práce bude uložena v elektronické podobě v univerzitním informačním systému dostupná k prezenčnímu nahlédnutí, že jeden výtisk \ifbp bakalářské \else \ifdp diplomové \fi \fi práce bude uložen v příruční knihovně \iffai Fakulty aplikované informatiky. \else \iffame Fakulty managementu a ekonomiky. \else \iffhs Fakulty humanitních studií. \else \ifflkr Fakulty logistiky a krizového řízení. \else \iffmk Fakutly mutimediálních komunikací. \else \ifft Fakulty technologické. \else \ifuni Univerzitního institutu. \if \fi \fi \fi \fi \fi \fi \fi \fi Univerzity Tomáše Bati ve Zlíně a jeden výtisk bude uložen u vedoucího práce; }
+		\item{byl/a jsem seznámen/a s tím, že na moji \ifbp bakalářskou \else \ifdp diplomovou \fi \fi práci se plně vztahuje zákon č. 121/2000 Sb. o právu autorském, o právech souvisejících s právem autorským a o změně některých zákonů (autorský zákon) ve znění pozdějších právních předpisů, zejm. § 35 odst. 3;}
+		\item{beru na vědomí, že podle § 60 odst. 1 autorského zákona má UTB ve Zlíně právo na uzavření licenční smlouvy o užití školního díla v rozsahu § 12 odst. 4 autorského zákona;}
+		\item{beru na vědomí, že podle § 60 odst. 2 a 3 autorského zákona mohu užít své dílo – \ifbp bakalářskou \else \ifdp diplomovou \fi \fi práci nebo poskytnout licenci k~jejímu využití jen připouští-li tak licenční smlouva uzavřená mezi mnou a Univerzitou Tomáše Bati ve Zlíně s~tím, že vyrovnání případného přiměřeného příspěvku na úhradu nákladů, které byly Univerzitou Tomáše Bati ve Zlíně na vytvoření díla vynaloženy (až do jejich skutečné výše) bude rovněž předmětem této licenční smlouvy;}
+		\item{beru na vědomí, že pokud bylo k vypracování \ifbp bakalářské \else \ifdp diplomové \fi \fi práce využito softwaru poskytnutého Univerzitou Tomáše Bati ve Zlíně nebo jinými subjekty pouze ke~studijním a výzkumným účelům (tedy pouze k~nekomerčnímu využití), nelze výsledky \ifbp bakalářské \else \ifdp diplomové \fi \fi práce využít ke komerčním účelům;}
+		\item{beru na vědomí, že pokud je výstupem \ifbp bakalářské \else \ifdp diplomové \fi \fi práce jakýkoliv softwarový produkt, považují se za součást práce rovněž i zdrojové kódy, popř. soubory, ze kterých se projekt skládá. Neodevzdání této součásti může být důvodem k~neobhájení práce.}
+	\end{itemize}
+	
+	\bigskip
+	
+%	\clearpage
+%	\thispagestyle{empty}
+	
+	\textbf{Prohlašuji,}
+	
+	\begin{itemize}
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{0pt}
+		\setstretch{1.05}
+		\item{že jsem na \ifbp bakalářské \else \ifdp diplomové \fi \fi práci pracoval samostatně a použitou literaturu jsem citoval. V případě publikace výsledků budu uveden jako spoluautor.}
+		\item{že odevzdaná verze \ifbp bakalářské \else \ifdp diplomové \fi \fi práce a verze elektronická nahraná do IS/STAG jsou totožné.}
+	\end{itemize}
+	
+	\bigskip
+	
+	Ve Zlíně \hspace{7.2cm}\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots
+	
+	\hspace{10.4cm}podpis autora
+}}
+
+% ============================================================================ %
