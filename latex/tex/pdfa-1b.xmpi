@@ -16,7 +16,7 @@ xmlns:prism = "http://prismstandard.org/namespaces/basic/2.0/">
 <dc:format>application/pdf</dc:format> 
 <dc:title>Technologie Blockchain pro ov¥°ování dokument·</dc:title> 
 <dc:creator><rdf:Seq><rdf:li>Martin Tvaróg</rdf:li></rdf:Seq></dc:creator> 
-<dc:subject><rdf:Bag><rdf:li>P°ehled klí£ových slov</rdf:li></rdf:Bag></dc:subject> 
+<dc:subject><rdf:Bag><rdf:li>Blockchain, Ethereum, Ethereum Attestation Service, Decentralizované aplikace, Kryptografie</rdf:li></rdf:Bag></dc:subject> 
 <prism:aggregationType>journal</prism:aggregationType> 
 <prism:copyright>Tomas Bata University in Zlín, Czech Republic</prism:copyright> 
 <dc:publisher>Tomas Bata University in Zlín, Czech Republic</dc:publisher> 
@@ -37,9 +37,9 @@ xmlns:prism = "http://prismstandard.org/namespaces/basic/2.0/">
 <pdfaid:conformance>B</pdfaid:conformance> 
 <xap:CreatorTool></xap:CreatorTool> 
 <xapRights:Marked>True</xapRights:Marked> 
-<xap:ModifyDate>2024-02-26T12:11:46+01:00</xap:ModifyDate> 
-<xap:CreateDate>2024-02-26T12:11:46+01:00</xap:CreateDate> 
-<xap:MetadataDate>2024-02-26T12:11:46+01:00</xap:MetadataDate> 
+<xap:ModifyDate>2024-03-20T18:39:38+01:00</xap:ModifyDate> 
+<xap:CreateDate>2024-03-20T18:39:38+01:00</xap:CreateDate> 
+<xap:MetadataDate>2024-03-20T18:39:38+01:00</xap:MetadataDate> 
 </rdf:Description> 
 </rdf:RDF> 
 </x:xmpmeta> 

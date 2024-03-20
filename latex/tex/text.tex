@@ -4,24 +4,118 @@
 
 % ============================================================================ %
 \nn{Úvod}
-První odstavec pod nadpisem se neodsazuje, ostatní ano (pouze první řádek, odsazení vertikální mezy odstavci je typycké pro anglickou sazbu; czech babel toto respektuje, netřeba do textu přidávat jakékoliv explicitní formátování, viz ukázka sazby tohoto textu s následujícím odstavcem).
+Technologie blockchain, která získala globální pozornost díky svému použití v digitální měně Bitcoin, nabízí inovativní možnosti v různých oblastech, včetně ověřování dokumentů. Bitcoin představuje decentralizovaný systém pro transakce, který eliminuje potřebu třetí strany jako ověřovatele. Tento koncept decentralizace je klíčovým impulsem pro tuto práci, jejímž cílem je vytvořit decentralizovanou aplikaci pro ověřování dokumentů pomocí blockchainu a konkrétně Ethereum blockchainu.
 
-Formátování druhého odstavce. Text text text text text text text text text text text text.
+Hlavním úkolem této práce je seznámení se s principem blockchainu, výběr a aplikace Ethereum blockchainu jako vhodné technologie pro zpracování dat a vývoj aplikace. Technologie blockchain je tu využita pro ověřování, zpracování a ukládání dokumentů do systému a na následné představení způsobu verifikace těchto dokumentů. Důležitá je i tvorba intuitivního uživatelského rozhraní tzv - frontednu, který umožnuje uživatelům aplikace s block chainem jednoduše iteragovat.
+
+V teoretické části práce se budeme hlouběji zabývat funkcemi a principy blockchainu, roli kryptografie v blockchainu a také vlastnostmi a využitím Ethereum blockchainu a decentralizovaných aplikací. Budou představeny také nástroje jako Ethereum Attestation Service a MetaMask, které jsou klíčové a umožní nám realizovat naše cíle, a React, který bude použit pro vývoj frontendu aplikace.
+
+Praktická část práce pokrývá návrh a implementaci samotné aplikace. Bude zde představen scénář, který ilustruje, jak může univerzita generovat atestace a k nim připojené dokumenty, a jak je může student předat zaměstnavateli k ověření pravosti pomocí naší aplikace. Tato aplikační demonstrace ukáže, jak může být blockchain efektivně využit k ověření pravosti dokumentů v decentralizovaném systému.
+
+V závěru práce shrneme dosažené výsledky a zhodnotíme výkon aplikace. Pozornost bude věnována také diskusi o možných budoucích vylepšeních a dopadech našeho výzkumu. Cílem práce je tedy vytvořit transparentní, bezpečný a decentralizovaný systém pro ověřování dokumentů s využitím technologie blockchainu.
+
 
 
 % ============================================================================ %
 \cast{Teoretická část}
 
 \n{1}{Blockchain}
+Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Blockchain je decentralizovaná, distribuovaná a veřejná digitální účetní kniha, která je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. [1]
+
+\obr{Vazba mezi blokem a hashem[3]}{fig:HashAndBlock}{0.5}{graphics/What-Is-Blockchain-Infographic.jpg}
+
+
+
+\n{2}{Historie}
+V roce 1976 byla publikována práce "New Directions in Cryptography", která diskutovala koncept distribuované účetní knihy. S pokrokem v oblasti kryptografie byla publikována další práce nazvaná "How to Time-Stamp a Digital Document" od Stuarta Habera a Scotta Stornetty, která představila koncept časového razítka dat namísto média. Další důležitý koncept, který přispěl k vývoji blockchainu, byla "elektronická hotovost" nebo "digitální měna" založená na modelu navrženém Davidem Chaumem. Tento koncept následovaly například protokoly jako e-cash schémata, které detekovaly dvojité utracení. Adam Back v roce 1997 představil koncept "hashcash", který nabídl řešení pro kontrolu spamových e-mailů. To vedlo k vytvoření "b-money" Wei Daie založené na peer-to-peer síti. Považuje se, že Satoshi Nakamoto je vynálezcem technologie blockchain, když v roce 2008 publikoval dokument o bitcoinu "Bitcoin: A Peer-to-Peer Electronic Cash System". Jeho cílem bylo umožnit přímou online platbu z jednoho zdroje na druhý bez spoléhání se na třetí stranu. Jeho dokument navrhoval elektronický platební systém založený na kryptografii, který řešil problém dvojitého utracení, kde digitální měna nemůže být duplikována a nelze ji utratit více než jednou. [2]
+
+
+
+\n{2}{Principy}
+Jedinečnost a krása blockchainu je v jejím distrubovaném přístupu bez nutnosti centralní entity a neměnnosti, která díky samotné nátuře znemožnuje podvody. 
+\n{3}{Immutability}
+
+\n{3}{Bloky}
+text
+\n{3}{Transakce}
+text
+\n{3}{Mining}
+text
+\n{2}{Kryptografie}
+text
+\n{3}{Symetrická kryptografie}
+text
+\n{3}{Asymetrická kryptografie}
+text
+\n{3}{Digitalní Peněženky a Digitalní podpis}
+text
+\n{3}{Hashovací funkce}
+text
+\n{3}{Výhody a limitace}
+text
+\n{2}{Konsesus}
+text
+\n{3}{Proof of Work}
+text
+\n{3}{Proof of Stake}
+text
+\n{3}{Ostatní algoritmy konsensu}
 text
 
-\n{1}{Další nadpis}
-Tato sekce obsahuje ukázku vložení obrázku (Obr. \ref{fig:logo}).
+
+
+\n{1}{Decentralizované aplikace}
+text
+\n{2}{Web2 vs Web3}
+text
+\n{2}{Smart kontrakty}
+text
+\n{2}{Distribuované úložiště}
+text
+\n{2}{Výhodné a nevýhodné vlastnosti}
+text
+\n{2}{Sítě typu peer-to-peer}
+text
+\n{2}{Persistence}
+
+
+
+
+
+\n{1}{Ethereum}
+text
+\n{2}{Ether}
+text
+\n{2}{Ucty}
+text
+\n{2}{Transakce}
+text
+\n{2}{Bloky}
+text
+\n{2}{Ethereum Virtual Machine}
+text
+\n{2}{Gas}
+text
+\n{2}{Uzly a klienti}
+text
+\n{2}{Konsensus}
+text
+\n{2}{Ethereum stack}
+text
+\n{3}{Smart kontrakty}
+text
+\n{3}{Development networks}
+text
+
+
+
+
+% \n{1}{Další nadpis}
+% Tato sekce obsahuje ukázku vložení obrázku (Obr. \ref{fig:logo}).
 
 % Obrázek lze vkládat pomocí následujícího zjednodušeného stylu, nebo klasickým LaTex způsobem
 % Pozor! Obrázek nesmí obsahovat alfa kanál (průhlednost). Jde to proti standardu PDF/A.
 \obr{Popisek obrázku}{fig:logo}{0.5}{graphics/logo/fai_logo_cz.png}
-
 
 \n{2}{Podnadpis}
 Tato sekce obsahuje ukázku vložení tabulky (Tab. \ref{tab:priklad}).
@@ -42,19 +136,129 @@ Citace knihy. \cite{chmel}
 % ============================================================================ %
 
 % Pokud Vaše práce neobsahuje analytickou část, stačí odstranit či zakomentovat nasledujících pár rádků
-\cast{Analytická část}
+% \cast{Analytická část}
 
-\n{1}{Nadpis}
+% \n{1}{Nadpis}
 
-\n{2}{Podnadpis}
+% \n{2}{Podnadpis}
 
 
 % ============================================================================ %
 \cast{Projektová část}
 
-\n{1}{Nadpis}
+\n{1}{Aplikace pro ověřování dokumentů}
+Text
+\n{2}{Řešený problém}
+text
+\n{2}{Navrhované řešení}
+text
+\n{2}{Terminologie}
+text
+\n{3}{Dokument}
+text
+\n{3}{Atestace}
+text
 
-\n{2}{Podnadpis}
+
+\n{1}{Nástroje a technologie pro vývoj}
+text
+
+\n{2}{Ethereum Attestation Service}
+text
+\n{3}{Atestace}
+text
+\n{3}{Schémata}
+text
+\n{3}{Onchain vs Offchain}
+text
+\n{3}{Privacy}
+text
+\n{3}{Resolver Contracts}
+text
+\n{3}{Developer Tools}
+text
+\n{3}{EAS SDK}
+text
+
+
+\n{2}{MetaMask (nebo jiná digitální peněženka)}
+text
+\n{3}{Integrace do aplikace}
+text
+\n{3}{API}
+
+
+
+\n{2}{Inter Planetary File System}
+text
+\n{3}{IPFS vs HTTP}
+text
+\n{3}{Životní cyklus dat}
+text
+\n{3}{Hashovani}
+text
+\n{3}{Imutabilita}
+text
+\n{3}{Persistence}
+text
+\n{3}{Privacy a sifrovani}
+text
+\n{3}{Uzly}
+text
+\n{3}{Pinata}
+text
+\n{3}{Filecoin}
+text
+\n{3}{Web3.storage}
+text
+\n{3}{Fleek storage}
+text
+
+\n{2}{Front-end}
+text
+\n{3}{Zduvodneni volby}
+text
+
+\n{2}{Back-end}
+text
+\n{3}{Zduvodneni volby}
+
+
+
+
+\n{1}{Implementace a postup vývoje}
+text
+\n{2}{Datový model}
+\n{3}{Jake data sbirat}
+\n{3}{Kam ukladat}
+\n{3}{Jak ukladat}
+
+\n{2}{Aktoři}
+\n{3}{Odesilatel atestace}
+\n{3}{Prijmce atestace}
+\n{3}{Verifier}
+kdo je to uzivatel aplikace
+
+\n{2}{Use cases}
+jake jsou use-cases
+
+\n{2}{Konfigurace aplikace}
+text
+\n{3}{SDK EAS}
+text
+\n{3}{SDK MetaMask/neco jineho nevim zatim}
+text
+\n{3}{SDK IPFS}
+text
+
+
+
+
+
+\n{2}{Webová prezentace}
+text
+\n{2}{Video prezentace}
+
 
 
 % ============================================================================ %
@@ -63,3 +267,16 @@ Text závěru
 
 
 % ============================================================================ %
+
+
+% PLAN PRACE NA BP
+
+% soucasny plan:
+% PRAKTICKA CAST
+% v 1. kroku analyza technologii a nastroju {Ethereum(EVM, Smart Contracts, Security,Network,....), BC(consenus, co je to blok, transakce,...),Kryptologie(asymetricke sifrovani, hash funkce,.....),IPFS(jak ulozit dokument), MetaMask(intro do SDK, jak integrovat do aplikace), Ethereum Attestation Service(co to atestace, schemata, resolver contracts,....), dApps(co to je, )}
+% v 2.kroku analyza dat, aktoru (jake data sbirat, kam ukladat, kdo je to uzivatel aplikace, jake jsou use-cases)
+% v 3. kroku bude pak tech design (kde bych chtel rozebrat podobrne flow aplikace, popsat jak do sebe jednotlive SDK zapadaji, jak spolu komunikuji, poukazat na mozne vyzvy v implementaci, navrh FE).
+% ve 4. kroku bych chtel udelat MVP(zakladni flow, jednoduchy FE)
+% krok 5. zacit psat tu Praktickou cast ( popsat jak jsem postupoval pri tvorbe aplikace)
+% TED ZACINA TEORETICKA CAST
+% krok 6. teoreticka cast, napsat o blockchainu, ethereu, EAS, IFPS, krypotologii v BC, oduvodnit volbu technologii atd.

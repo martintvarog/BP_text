@@ -36,7 +36,7 @@
 \usepackage{chngcntr}   % Umožňuje změnu nastavení číslování obrázků, tabulek i rovnic
 \usepackage{etoolbox}   % Tool-box for LaTeX programmers
 \usepackage[labelsep=space,tableposition=bottom,justification=centering]{caption} % Přenastavení popisků u figur a tabulek
-
+\usepackage{pdfpages}
 % ---------------------------------------------------------------------------- %
 
 \usepackage{xmpincl}
@@ -385,11 +385,9 @@
 	\clearpage
 	\thispagestyle{empty}
 	\voffset=\valueVOffset\evensidemargin=\valueSideMargin\oddsidemargin=\valueSideMargin\headsep=\valueHeadSep\headheight=\valueHeadHeight\setlength{\parskip}{3pt}\textheight=\valueTextHeight\textwidth=\valueTextWidth
-	*** Nascanované zadání, strana 1 ***
-	
-	\clearpage
-	\thispagestyle{empty}
-	*** Nascanované zadání, strana 2 ***
+\clearpage
+\includepdf[pages=-]{graphics/zadani_A21295_66903.pdf}
+\thispagestyle{empty}
 }
 
 % Nastaveni zobrazovani zahlavi dokumentu
