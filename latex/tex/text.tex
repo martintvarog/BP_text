@@ -19,47 +19,78 @@ V závěru práce shrneme dosažené výsledky a zhodnotíme výkon aplikace. Po
 % ============================================================================ %
 \cast{Teoretická část}
 
-\n{1}{Blockchain}
+\section{Blockchain}
 Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Blockchain je decentralizovaná, distribuovaná a veřejná digitální účetní kniha, která je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. [1]
 
-\obr{Vazba mezi blokem a hashem[3]}{fig:HashAndBlock}{0.5}{graphics/What-Is-Blockchain-Infographic.jpg}
+\obr{Vazba mezi blokem a hashem[3]}{fig:HashAndBlock}{1}{graphics/What-Is-Blockchain-Infographic.jpg}
 
 
 
-\n{2}{Historie}
+\subsection{Historie}
 V roce 1976 byla publikována práce "New Directions in Cryptography", která diskutovala koncept distribuované účetní knihy. S pokrokem v oblasti kryptografie byla publikována další práce nazvaná "How to Time-Stamp a Digital Document" od Stuarta Habera a Scotta Stornetty, která představila koncept časového razítka dat namísto média. Další důležitý koncept, který přispěl k vývoji blockchainu, byla "elektronická hotovost" nebo "digitální měna" založená na modelu navrženém Davidem Chaumem. Tento koncept následovaly například protokoly jako e-cash schémata, které detekovaly dvojité utracení. Adam Back v roce 1997 představil koncept "hashcash", který nabídl řešení pro kontrolu spamových e-mailů. To vedlo k vytvoření "b-money" Wei Daie založené na peer-to-peer síti. Považuje se, že Satoshi Nakamoto je vynálezcem technologie blockchain, když v roce 2008 publikoval dokument o bitcoinu "Bitcoin: A Peer-to-Peer Electronic Cash System". Jeho cílem bylo umožnit přímou online platbu z jednoho zdroje na druhý bez spoléhání se na třetí stranu. Jeho dokument navrhoval elektronický platební systém založený na kryptografii, který řešil problém dvojitého utracení, kde digitální měna nemůže být duplikována a nelze ji utratit více než jednou. [2]
 
 
 
-\n{2}{Principy}
+\subsection{Principy}
 Jedinečnost a krása blockchainu je v jejím distrubovaném přístupu a neměnnosti, která díky samotné nátuře znemožnuje podvody a to i bez nutnosti centralní entity.
 
-\n{3}{Decentralizace}
-V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodovací zodpovědnosti od centralizované entity (jednotlivec, společnost nebo skupina lidí) do distribuované sítě. Účelem těchto distribuovaných sítí je minimalizovat úroveň důvěry, kterou by měli účastníci vkládat jeden do druhého, a bránit v uplatňování autority nebo kontroly, která by mohla negativně ovlivnit efektivitu dané sítě.
+\subsubsection{Decentralizace}
+V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodovací zodpovědnosti od centralizované entity (jednotlivec, společnost nebo skupina lidí) do distribuované sítě. Účelem těchto distribuovaných sítí je minimalizovat úroveň důvěry, kterou by měli účastníci vkládat jeden do druhého, a bránit v uplatňování autority nebo kontroly, která by mohla negativně ovlivnit efektivitu dané sítě.[5?]
 
 
 
 
-\n{3}{Immutability}
-Klíčovou vlastností technologie blockchain je neměnnost. To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. [3]
+\subsubsection{Immutability}
+Klíčovou vlastností technologie blockchain je neměnnost. To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. [4]
 
-Neměnnost je vlastnost blockchainu, která zaručuje jeho věrohodnost a bezpečnost, ta je zaručena přímočarou logikou, která i tak čelí výzvám. Jednou z možných hrozeb je tzv. Útok 51, kdy útočník, nebo skupina útočníků ovládne více než 50 procent hashovací síly sítě a tak může blokovat nové transakce nebo je dokonce vracet, což vede k dvojtému utácení.[mozna 4] Kvantové počítače mohou v budoucnosti také představovat problém, protože v blockchainu je využita asymetrická kryptografie, lze tak získat z podpisu transakce veřejný klíč a při dostatečném výpočetním výkonu uhádnou klíč soukromý. Tento problém se netýká ale výhradně blockchainu, nýbrž kryptografie a asymetrické kryptografie obecně.
+Neměnnost je vlastnost blockchainu, která zaručuje jeho věrohodnost a bezpečnost, ta je zaručena přímočarou logikou, která i tak čelí výzvám. Jednou z možných hrozeb je tzv. Útok 51, kdy útočník, nebo skupina útočníků ovládne více než 50 procent hashovací síly sítě a tak může blokovat nové transakce nebo je dokonce vracet, což vede k dvojtému utácení.[mozna 6] "Kvantové počítače mohou v budoucnosti také představovat problém, protože v blockchainu je využita asymetrická kryptografie, lze tak získat z podpisu transakce veřejný klíč a při dostatečném výpočetním výkonu uhádnou klíč soukromý. Tento problém se netýká ale výhradně blockchainu, nýbrž kryptografie a asymetrické kryptografie obecně." [mozna 6]
+
+\subsubsection{Bloky}\label{subsubsec:Bloky}
+Blok je kontejner, který uchovává sadu transakcí a další metadata. Skládá se ze dvou částí a to záhlaví a těla. Záhlaví se mohou v různých systémech lišit, zpravidla ale obsahují informace o samotném bloku a jejím autorovi vyjádřených těmito atributy : 
+
+\begin{itemize}
+	\item Hash předchozího bloku: Je kryptografický otisk využíván pro propojení bloku n+1 s blokem n pomocí hash kódu. Stručně řečeno, tato metoda slouží jako odkaz na hash předchozího (rodičovského) bloku v řetězci.[7]
+	\item Nonce: zkratka z anglického "number used only once" (číslo použité pouze jednou), je náhodné číslo, které těžaři hledají s cílem vytěžit nový blok (více v sekci \ref{subsubsec:Mining})
+	\item Časový otisk: anglicky "Timestamp" identifikuje čas, kdy byl blok vytěžen
+	\item Náročnost: anglicky "Difficulty" je měřítko definující složitost prováděných operací v dané síti
+	\item Merkle root hash: kořenový kryptografický otisk (nebo-li hash) všech transakcí v bloku. Více v sekci \ref{subsubsec:MerkeRootHash}
+	\item Výška bloku: anglicky "Block height" inkrementovaná hodnota vyjadřující počet bloků vytěžených od počátku (anglicky "genesis")
+\end{itemize}
+
+
+\obr{Struktura bloků[7]}{fig:HashAndBlock}{1}{graphics/Structureofblocksinblockchain.png}
+
+
+Tělo bloku obsahuje seznam všech transakcí. Každá transakce zahrnuje adresy odesílatele a příjemce, množství převáděné kryptoměny a digitální podpisy zapojených stran. Transakce v bloku jsou organizovány v určitém pořadí, kde prvním je speciální transakce označovaná jako "coinbase". Tato transakce představuje způsob, jakým jsou do systému zavedeny nové mince a jak je těžař odměněn za svou práci.[8]
 
 
 
--- k zpracovani blok
-Neměnnost blockchainu je známá zaručením bezpečnosti dat, ale v některých případech může být citlivá data uložená v blockchainu náchylná k útokům. Největší výzvou, kterou neměnnost představuje, je nemožnost opravit chyby v datech, jakmile jsou přidány do blockchainu. To může způsobit problémy, pokud existuje právní požadavek na odstranění určitých informací. Existují dva hlavní výzvy, kterým neměnnost v blockchainu čelí:
 
-Útok 51 procent Útok 51 procent může narušit neměnnost blockchainu. Při tomto druhu útoku může jedna entita nebo organizace ovládnout hashovací výkon blockchainu a způsobit tak narušení. Útočník musí ovládat více než 50\% hashovací rychlosti sítě, aby získal kontrolu. Proto je útok nazýván útokem 51 procent. S takovou silou může útočník blokovat nové transakce nebo dokonce vracet transakce, což vede k útoku dvojitého utrácení.
+\subsubsection{Transakce}
 
-Kvantové výpočty Kvantové výpočty představují velkou výzvu pro kryptografii v průmyslu blockchainu. Mohou zpětně vypočítat veřejný klíč blockchainové sítě a objevit soukromé klíče pro napadení systému. Kvantové výpočty mohou překonat kryptografii blockchainu, což vede k krádežím kryptoměn. Studie společnosti Deloitte potvrdila, že k roku 2020 bylo 25 \% bitcoinů náchylných k kybernetickým útokům, což v té době stálo přibližně 40 miliard dolarů.
+Transakci můžeme definovat jako smlouvu, dohodu, převod nebo výměnu aktiv mezi dvěma nebo více stranami. Obvykle se jedná o hotovost nebo majetek. [9]
 
-\n{3}{Bloky}
+Obdobně se transakce v blockchainu nejedná o nic jiného než přenos dat napříč sítí počítačů blockchainového systému. Síť počítačů blockchainu ukládá transakční data jako repliky v úložišti, kterému se často říká digitální účetní kniha. [9]
+
+Uživatel inicializuje transakci v aplikaci a poté ji odesílá do blockchainu. Transakce uživatele je následně umístěna do "mempoolu" (dobře organizované fronty, ve které jsou transakce uschovávány a tříděny před přidáním do nově vytvořeného bloku) s dalšími čekajícími transakcemi a čeká na své "těžení". Jakmile dostatečné množství těžařů potvrdí transakci, je trvale uložena v bloku. Podle principu jsou transakce v blockchainu nevratné. Více v sekci \ref{subsubsec:Mining} [9]
+
+Blok obsahuje sadu transakcí, má omezení jak časová, tak velikostní ve smyslu kolik transakcí může obsahovat. Po uplynutí časovače bloku nebo při dosažení maximálního počtu transakcí je blok přidán do řetězce a začíná iterace dalšího bloku.[9]
+
+
+
+
+
+\subsubsection{Mining}\label{subsubsec:Mining}
+test
 text
-\n{3}{Transakce}
-text
-\n{3}{Mining}
-text
+
+
+
+
+
+
+
+
 \n{2}{Kryptografie}
 text
 \n{3}{Symetrická kryptografie}
@@ -70,6 +101,7 @@ text
 text
 \n{3}{Hashovací funkce}
 text
+\subsubsection{Merke root hash}\label{subsubsec:MerkeRootHash}
 \n{3}{Výhody a limitace}
 text
 \n{2}{Konsesus}
