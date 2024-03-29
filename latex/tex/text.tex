@@ -81,8 +81,57 @@ Blok obsahuje sadu transakcí, má omezení jak časová, tak velikostní ve smy
 
 
 \subsubsection{Mining}\label{subsubsec:Mining}
-test
-text
+Těžení je typické pro sítě implementující PoW (Proof-of-work) konsensus mezi které patří i nejznámější kryptoměna Bitcoin. Více o různých typech konsensů v kapitole \ref{subsec:Konsensus}
+
+Těžba je proces, který Bitcoin a některé další kryptoměny využívají k vytváření nových mincí a ověřování nových transakcí. Zahrnuje velké množství decentralizované sítě počítačů po celém světě, které ověřují a zabezpečují blokchain. Jako odměnu za přispění svého výpočetního výkonu jsou těžaři v síti odměněni novými mincemi. Jedná se o ctnostný cyklus: těžaři udržují a zabezpečují blockchain, blockchain je odměňuje mincemi, mince poskytují podnět pro těžaře k udržování blockchainu.[10]
+
+
+
+
+
+\subsection{Kryptografie}
+Kryptografie představuje metodologii pro ochranu informací před neautorizovaným přístupem. V blockchain technologii je kryptografie využívána k zabezpečení transakcí prováděných mezi dvěma uzly. K tomuto slouží dva fundamentální koncepty: kryptografie a hashování (viz \ref{subsubsec:Hash}). Kryptografie se používá pro šifrování zpráv v P2P síti, hashování slouží k zabezpečení dat bloků a pro spojení bloků v blockchainu.
+
+Kryptografie se primárně soustředí na zajištění bezpečnosti účastníků, transakcí a ochranu proti dvojitému utracení. Pomáhá zabezpečovat různé transakce v blockchainové síti. Zajišťuje, že pouze jednotlivci, pro které jsou data transakce určena, mohou získat, číst a zpracovávat transakci.[11]
+
+
+
+
+
+\subsubsection{Symetrická kryptografie}\label{subsubsec:SymKrypt}
+
+Tento typ šifrování používá stejný klíč pro oba procesy - šifrování i dešifrování. Symetrické šifrování je primárně používáno pro ochranu webových spojení a šifrování dat. Může být také označováno jako kryptografie s tajným klíčem. Jednou z výzev této metody je bezpečná výměna klíčů mezi odesílatelem a příjemcem. Data Encryption System (DES) je známým příkladem systému s symetrickým klíčem.[11]
+
+
+\obr{Symetrická kryptografie [12]}{fig:logo}{1}{graphics/SymmetricEncrypt.jpg}
+
+
+\subsubsection{Asymetrická kryptografie}
+
+Metoda asymetrického šifrování používá různé klíče pro šifrování a dešifrování. K tomu využívá klíč veřejný a soukromí. Šifrování veřejným klíčem umožňuje sdílet informace s zcela neznámými stranami jako například ID Email. Soukromý klíč poté slouží k dešifrování zprávy a ověření digitálního podpisu (více v \ref{subsubsec:DigSig}). Matematický vztah mezi klíči spočívá v tom, že soukromý klíč nelze odvodit z veřejného klíče, ale veřejný klíč lze odvodit od klíče soukromého. Příklady asymetrické kryptografie jsou: ECC, DSS a další. [12]
+
+
+\obr{Asymetrická kryptografie [12]}{fig:logo}{1}{graphics/AsymmetricEncrypt.jpg}
+
+
+
+
+
+\subsubsection{Digitální podpis}\label{subsubsec:DigSig}
+
+
+Digitální podpis je kryptografická technika používaná k ověření pravosti zprávy, transakce nebo dokumentu.[13] 
+
+V kontextu blockchainu se digitální podpis používá k prokázání vlastnictví určité transakce nebo dat jednotlivcem nebo entitou.[13]
+
+Digitální podpisy jsou zásadní součástí technologie blockchain. Zajišťují pravost a integritu transakcí potažmo dat v síti. Poskytují bezpečný a decentralizovaný způsob ověřování vlastnictví, eliminují potřebu prostředníků a zvyšují důvěru mezi stranami.[13]
+
+
+\subsubsection{Digitální peněženka}\label{subsubsec:DigWallet}
+
+Blockchainová peněženka je speciální softwarové nebo hardwarové zařízení, které se používá k uchování informací o transakcích a osobních informací uživatele. Blockchainové peněženky neobsahují skutečnou měnu. Peněženky se používají k uchování soukromých klíčů a udržování bilance transakcí.[11]
+
+Peněženky jsou pouze komunikační nástroj pro provádění transakcí s ostatními uživateli. Skutečná data nebo měna jsou uložena v blocích v blockchainu.[11]
 
 
 
@@ -90,22 +139,14 @@ text
 
 
 
-
-\n{2}{Kryptografie}
-text
-\n{3}{Symetrická kryptografie}
-text
-\n{3}{Asymetrická kryptografie}
-text
-\n{3}{Digitalní Peněženky a Digitalní podpis}
-text
-\n{3}{Hashovací funkce}
+\subsubsection{Hashovací funkce}\label{subsubsec:Hash}
 text
 \subsubsection{Merke root hash}\label{subsubsec:MerkeRootHash}
 \n{3}{Výhody a limitace}
 text
-\n{2}{Konsesus}
-text
+\subsection{Konsensus}\label{subsec:Konsensus}
+
+
 \n{3}{Proof of Work}
 text
 \n{3}{Proof of Stake}
