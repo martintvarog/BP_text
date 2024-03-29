@@ -195,13 +195,45 @@ Nevýhody:
 
 \subsection{Konsensus}\label{subsec:Konsensus}
 
+Algoritmus konsenzu je nástroj, který umožňuje uživatelům nebo strojům koordinaci v distribuovaném prostředí. Musí zajistit, že všichni aktéři v systému se mohou shodnout na jednom pravdivém zdroji informací, a to i v případě, že některé části systému selžou. Jinými slovy, systém musí být odolný vůči chybám.[16]
 
-\n{3}{Proof of Work}
-text
-\n{3}{Proof of Stake}
-text
-\n{3}{Ostatní algoritmy konsensu}
-text
+
+\subsubsection{Proof of Work}\label{subsubsec:PoW}
+
+Proof of Work protokol stanovuje podmínky, za kterých je blok platný. Může například stanovit, že platný je pouze blok, jehož hash začíná "00". Jediný způsob, jak těžař může vytvořit blok odpovídající této kombinaci, je \textit{brute-force} (hrubou silou) testovat vstupy. Mohou upravit parametry svých vstupních dat tak, aby vytvořili jiný výsledek pro každý pokus, až najdou ten správný hash.
+
+U známých blockchainů je laťka nastavena neuvěřitelně vysoko. Abyste mohli konkurovat ostatním těžařům, potřebovali byste sklad plný speciálního hashovacího hardwaru (ASIC) pro možnost vytvoření platného bloku.
+
+Pro síť je poté triviální ověřit, zda jste skutečně vytvořili správný blok. I když jste vyzkoušeli biliony kombinací, aby jste získali správný hash, stačí, když vaše data jednou projdou funkcí. Pokud vaše data vytvoří platný hash, budou přijata a vy získáte odměnu. Pokud ne, síť jej odmítne a vy jste zbytečně promarnili čas a elektřinu.[17]
+
+
+
+\subsubsection{Proof of Stake}\label{subsubsec:PoS}
+
+Proof of Stake byl navržen v počátcích Bitcoinu jako alternativa k Proof of Work. V systému PoS neexistuje pojem těžařů, specializovaného hardwaru nebo masivní spotřeby energie. V PoS nenabízíte externí zdroje (jako je elektrická energie nebo hardware), ale interní - kryptoměnu. 
+
+Těžař je nahrazen tzv. Validátorem nebo skupinou validátorů, kteří uzamknou své prostředky v peněžence (nemohou být přesunuty, pokud sázíte). Obvykle se dohodnete s ostatními validátory o tom, jaké transakce půjdou do dalšího bloku. V jakémsi smyslu sázíte na blok, který bude vybrán, a protokol jeden vybere.
+
+Pokud je vybrán váš blok, obdržíte podíl na transakčních poplatcích v závislosti na vašem vkladu. Čím více prostředků máte uzamčených, tím více můžete získat. Pokud však pokusíte podvádět tím, že navrhnete neplatné transakce, ztratíte část (nebo vše) ze svého vkladu. Máme tedy podobný mechanismus jako u PoW - čestné jednání je ziskovější než nečestné. [17]
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Ostatní algoritmy konsensu}\label{subsubsec:OtherKonAlgs}
+
+Mimo velmi známé a rozšířené algoritmy, kterými bez pochyby Pow a Pos jsou, existují i jiné alternativní, jenž mohou v jistých případech přinést větší přidanou hodnotu.
+
+Jedním z takových je Proof of Authority což je konsensusový algoritmus založený na reputaci, který přináší praktické a efektivní řešení pro blockchainové sítě (zejména pro ty privátní). Tento termín navrhl v roce 2017 Gavin Wood, spoluzakladatel Ethereum a bývalý CTO.
+
+Konsensusový algoritmus PoA využívá váhu identit, což znamená, že validátoři bloků nestaví mince, ale jejich vlastní reputaci. Proto jsou blockchainy PoA zabezpečeny validujícími uzly, které jsou libovolně vybrány jako důvěryhodné entity. Model PoA spoléhá na omezený počet validátorů bloků a právě to jej činí vysoce škálovatelným systémem. Bloky a transakce ověřují předem schválení účastníci, kteří působí jako moderátoři systému.[17]
+
+
 
 
 
