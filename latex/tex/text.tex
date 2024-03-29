@@ -103,7 +103,7 @@ Kryptografie se primárně soustředí na zajištění bezpečnosti účastník�
 Tento typ šifrování používá stejný klíč pro oba procesy - šifrování i dešifrování. Symetrické šifrování je primárně používáno pro ochranu webových spojení a šifrování dat. Může být také označováno jako kryptografie s tajným klíčem. Jednou z výzev této metody je bezpečná výměna klíčů mezi odesílatelem a příjemcem. Data Encryption System (DES) je známým příkladem systému s symetrickým klíčem.[11]
 
 
-\obr{Symetrická kryptografie [12]}{fig:logo}{1}{graphics/SymmetricEncrypt.jpg}
+\obr{Symetrická kryptografie [12]}{fig:SymEn}{1}{graphics/SymmetricEncrypt.jpg}
 
 
 \subsubsection{Asymetrická kryptografie}
@@ -111,7 +111,7 @@ Tento typ šifrování používá stejný klíč pro oba procesy - šifrování 
 Metoda asymetrického šifrování používá různé klíče pro šifrování a dešifrování. K tomu využívá klíč veřejný a soukromí. Šifrování veřejným klíčem umožňuje sdílet informace s zcela neznámými stranami jako například ID Email. Soukromý klíč poté slouží k dešifrování zprávy a ověření digitálního podpisu (více v \ref{subsubsec:DigSig}). Matematický vztah mezi klíči spočívá v tom, že soukromý klíč nelze odvodit z veřejného klíče, ale veřejný klíč lze odvodit od klíče soukromého. Příklady asymetrické kryptografie jsou: ECC, DSS a další. [12]
 
 
-\obr{Asymetrická kryptografie [12]}{fig:logo}{1}{graphics/AsymmetricEncrypt.jpg}
+\obr{Asymetrická kryptografie [12]}{fig:SymEn}{1}{graphics/AsymmetricEncrypt.jpg}
 
 
 
@@ -120,16 +120,16 @@ Metoda asymetrického šifrování používá různé klíče pro šifrování a
 \subsubsection{Digitální podpis}\label{subsubsec:DigSig}
 
 
-Digitální podpis je kryptografická technika používaná k ověření pravosti zprávy, transakce nebo dokumentu.[13] 
+Digitální podpis je kryptografická technika používaná k ověření pravosti zprávy, transakce nebo dokumentu. 
 
-V kontextu blockchainu se digitální podpis používá k prokázání vlastnictví určité transakce nebo dat jednotlivcem nebo entitou.[13]
+V kontextu blockchainu se digitální podpis používá k prokázání vlastnictví určité transakce nebo dat jednotlivcem nebo entitou.
 
 Digitální podpisy jsou zásadní součástí technologie blockchain. Zajišťují pravost a integritu transakcí potažmo dat v síti. Poskytují bezpečný a decentralizovaný způsob ověřování vlastnictví, eliminují potřebu prostředníků a zvyšují důvěru mezi stranami.[13]
 
 
 \subsubsection{Digitální peněženka}\label{subsubsec:DigWallet}
 
-Blockchainová peněženka je speciální softwarové nebo hardwarové zařízení, které se používá k uchování informací o transakcích a osobních informací uživatele. Blockchainové peněženky neobsahují skutečnou měnu. Peněženky se používají k uchování soukromých klíčů a udržování bilance transakcí.[11]
+Digitální nebo-li Blockchainová peněženka je speciální softwarové nebo hardwarové zařízení, které se používá k uchování informací o transakcích a osobních informací uživatele. Blockchainové peněženky neobsahují skutečnou měnu. Peněženky se používají k uchování soukromých klíčů a udržování bilance transakcí.
 
 Peněženky jsou pouze komunikační nástroj pro provádění transakcí s ostatními uživateli. Skutečná data nebo měna jsou uložena v blocích v blockchainu.[11]
 
@@ -140,10 +140,59 @@ Peněženky jsou pouze komunikační nástroj pro provádění transakcí s osta
 
 
 \subsubsection{Hashovací funkce}\label{subsubsec:Hash}
-text
+
+Hash je matematická funkce, která převádí vstup s libovolnou délkou na šifrovaný výstup s pevnou délkou. Tudíž, bez ohledu na původní množství dat nebo velikost souboru, bude jeho jedinečný hash vždy stejné velikosti. Co je však důležité, hash nelze použít k \it{reverse-engineeringu}\textsuperscript{1} vstupu z hashovaného výstupu, protože hashovací funkce jsou „jednosměrné“. To znamená, že pokud použijete takovou funkci na stejná data, její hash bude identický, takže pokud již znáte jeho hash, můžete ověřit, že data jsou stejná (tedy nezměněná).
+
+Hashovací funkce jsou základem pro vytváření odtisků dat (tzv. checksumů) a zajišťují integritu a autenticitu dat v rámci blockchainu. Dále, v kontextu blockchainových technologií, hashování je zásadní pro vytváření nových bloků. Pokud je jakýkoliv prvek bloku změněn, změní se celkový hash bloku, což efektivně znamená, že jakákoliv neautorizovaná změna je okamžitě viditelná. Takové vlastnosti hashovacích funkcí přidávají vrstvu bezpečnosti a transparentnosti do technologie blockchain.[14]
+
+
+
+
+
+
 \subsubsection{Merke root hash}\label{subsubsec:MerkeRootHash}
-\n{3}{Výhody a limitace}
-text
+
+Merkle Tree je základním prvkem technologie blockchain. Jedná se o matematickou datovou strukturu složenou z hashů jednotlivých datových bloků, které slouží jako shrnutí všech transakcí v bloku. Tato struktura umožňuje efektivní a bezpečné ověřování obsahu v rozsáhlém množství dat a tak pomáhá při ověřování konzistence a samotného obsahu dat. Jak Bitcoin, tak Ethereum používají strukturu Merkle Tree. Merkle Tree je také známý jako Hashovací strom. 
+
+Koncept Stromu Merkle je pojmenován po Ralphu Merkleovi, který tento nápad patentoval v roce 1979.[15]
+
+
+\obr{Zjednodušená forma Merkle Tree [15]}{fig:MerkleTree}{0.6}{graphics/blockchain-merkle-tree.png}
+
+
+
+
+\subsubsection{Výhody a limitace}
+
+Výhody:
+\begin{itemize}
+	\item Přístupnost: Jednou z hlavních výhod technologie blockchain je její otevřenost. To znamená, že se kdokoli může stát účastníkem a přispět. Pro připojení k distribuované síti není nutná žádná smlouva nebo specifické povolení.
+	
+	\item Decentralizace: Technologie blockchain je považována za osvobozenou od cenzury, jelikož není ovládána žádnou jednotlivou entitou. Spíše funguje na principu důvěryhodných uzlů pro ověřování a konsenzuálních protokolů, které schvalují transakce pomocí chytrých kontraktů.
+
+	\item Bezpečnost: Technologie blockchain dosahuje vysoké úrovně bezpečnosti díky využití hashovacích technik. Ty umožňují ukládání každé jednotlivé transakce do bloků, které jsou vzájemně propojeny. To zajišťuje robustní ochranu dat. Jednou z takových technik, kterou blockchain užívá pro ukládání transakcí, je SHA 256.[16]
+
+	
+\end{itemize}
+
+
+Nevýhody:
+
+\begin{itemize}
+	
+	\item Škálovatelnost: Jedna z největších nevýhod technologie mnoha technologií blockchain technologií je pevná velikost bloku, která je 1 MB. To omezuje počet transakcí, které může blok obsahovat a výrazně snižuje škálovatelnost a univerzálnost použití blockchainu.
+	
+	
+	\item Časová náročnost: Proces přidání nového bloku do blockchainu vyžaduje, aby těžaři opakovaně vypočítávali hodnoty nonce (vysvětleno v sekci \ref{subsubsec:Bloky}). Tento proces je nesmírně časově náročný a je třeba ho optimalizovat, aby blockchain byl efektivně využitelný na průmyslové úrovni. Tento problém se týká výhradně řešeních využívající Proof-of-work konsensus.
+	
+	
+	\item Regulační výzvy: Regulační výzvy se týkají technologie blockchain, která implementuje arbitrární monetární politky a tak čelí určitým výzvám, zejména ze strany finančních institucí. Pro širší uplatnění blockchainu je nutné řešit další technologické aspekty a navrhnout vhodné regulace.[16]
+	
+	
+\end{itemize}
+
+
+
 \subsection{Konsensus}\label{subsec:Konsensus}
 
 
