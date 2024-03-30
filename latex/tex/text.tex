@@ -321,7 +321,7 @@ Citace knihy. \cite{chmel}
 
 \section{Aplikace pro ověřování dokůmentů}
 
-Hlavním cílem praktické části této diplomové práce je navrhnout a implementovat aplikaci, která spojuje robustní funkcionalitu s přívětivým a intuitivním uživatelským rozhraním. Uživatelské rozhraní by mělo být navrženo tak, aby bylo jednoduché a snadno ovladatelné pro širokou škálu uživatelů, bez ohledu na jejich technickou zdatnost.
+Hlavním cílem praktické části této diplomové práce je navrhnout a implementovat aplikaci, která spojuje robustní funkcionalitu s přívětivým a intuitivním uživatelským rozhraním. Uživatelské rozhraní by mělo být navrženo tak, aby bylo jednoduché a snadno ovladatelné pro širokou škálu uživatelů, bez ohledu na jejich technickou zdatnost a tak co nejvíc abstrahovat fakt, že aplikace funguje nad technologií block chain.
 
 Aplikace bude navržena s cílem umožnit uživatelům uložit data spojená s konkrétními dokumenty a poskytnout nástroje pro jejich následnou verifikaci. Tento přístup nejen maximalizuje efektivitu a zjednodušuje proces ověřování, ale také zvyšuje transparentnost a důvěru v integritu uložených dat.
 
@@ -331,13 +331,18 @@ Dále bude kladen důraz na zajištění, aby byla tato aplikace bezpečná a so
 \subsection{Řešený problém}
 
 
+Tato práce se zaměřuje na situaci, kdy určitá entita - v našem případě univerzita - chce veřejně sdělit nějaký konkrétní fakt o dané osobě, konkrétně o studentovi. Jako příklad můžeme uvést Potvrzení o studiu.
 
+Momentální postup je takový, že student, ať už fyzicky nebo elektronicky, předstoupí před autorizovaného pracovníka univerzity, kde se prokáže, například svým studentským průkazem. Poté se mohou udát dvě situace, z nichž ani jedna není ideální.
 
+První scénář spočívá v tom, že student po fyzické identifikaci na studijním oddělení obdrží dokument ve fyzické podobě, opatřený již poněkud zastaralým razítkem a podpisem. Tento přístup je problematický z několika důvodů. Dokument je totiž možné snadno falšovat v jakémkoli softwaru pro úpravu dokumentů, což znamená, že ověřitel tohoto dokumentu si nemůže být jistý jeho autenticitou. Dalším problémem je sdílení tohoto dokumentu - jelikož je ve fyzické formě, musí být pro elektronické sdílení převeden do digitálního formátu, například pomocí fotoaparátu nebo skeneru.
+
+Druhý scénář je modernější variantou, kde se celý proces odehrává v digitálním prostředí. Autentifikace studenta před získáním dokumentu je v tomto případě značně jednodušší, jelikož pro získání tohoto dokumentu musí být student přihlášen do systému univerzity. Univerzita poté několika jednoduchými dotazy ověří, zda je student oprávněn tento dokument získat. Sám dokument je pak opatřen digitálním podpisem (vysvětleno v \ref{subsubsec:DigSig}), což značně ztěžuje jeho falšování oproti předchozí situaci. Ovšem ani tato varianta není idealní, jelikož pro opatření dokumentu elektronickou pečetí je potřeba třetí strany, například České pošty. Toto vytváří situaci man-in-middle, kdy se v komunikaci mezi dvěma stranami (Univerzita-Student) objevuje nutnost třetí strany, která ale dle návrhu pro tento úkon nutná není.
 
 
 \subsection{Navrhované řešení}
 
-text
+texty
 
 
 

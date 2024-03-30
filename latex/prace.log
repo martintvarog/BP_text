@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  29 MAR 2024 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  30 MAR 2024 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,54 +977,54 @@ Package hyperref Warning: Composite letter `\textasciicaron+R'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 331.
 
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 338.
-
-
-Package hyperref Warning: Composite letter `\textring+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 368.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 371.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 374.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 379.
-
-
-Package hyperref Warning: Composite letter `\textring+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 379.
-
 [27
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 382.
+(hyperref)                removing `\textasciicaron' on input line 344.
+
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 374.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 377.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 380.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 385.
 
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 385.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 388.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 391.
+
 [28]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 412.
+(hyperref)                removing `\textasciicaron' on input line 418.
 
 [29
 
@@ -1032,7 +1032,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 464.
+(hyperref)                removing `\textasciicaron' on input line 470.
 
 [32
 
@@ -1040,7 +1040,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 493.
+(hyperref)                removing `\textasciicaron' on input line 499.
 
 ) [33
 
@@ -1225,7 +1225,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
 Here is how much of TeX's memory you used:
  12867 strings out of 481239
  192838 string characters out of 5920377
- 501258 words of memory out of 5000000
+ 501262 words of memory out of 5000000
  27659 multiletter control sequences out of 15000+600000
  551164 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1241,9 +1241,9 @@ r/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr
 ype1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on prace.pdf (40 pages, 1449086 bytes).
+Output written on prace.pdf (40 pages, 1451041 bytes).
 PDF statistics:
- 890 PDF objects out of 1000 (max. 8388607)
+ 891 PDF objects out of 1000 (max. 8388607)
  172 named destinations out of 1000 (max. 500000)
  924 words of extra memory for PDF output out of 10000 (max. 10000000)
 
