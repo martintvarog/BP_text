@@ -20,7 +20,7 @@ V závěru práce shrneme dosažené výsledky a zhodnotíme výkon aplikace. Po
 \cast{Teoretická část}
 
 \section{Blockchain}
-Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Blockchain je decentralizovaná, distribuovaná a veřejná digitální účetní kniha, která je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. [1]
+Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Tato databáze je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. [1]
 
 \obr{Vazba mezi blokem a hashem[3]}{fig:HashAndBlock}{1}{graphics/What-Is-Blockchain-Infographic.jpg}
 
@@ -32,7 +32,7 @@ V roce 1976 byla publikována práce "New Directions in Cryptography", která di
 
 
 \subsection{Principy}
-Jedinečnost a krása blockchainu je v jejím distrubovaném přístupu a neměnnosti, která díky samotné nátuře znemožnuje podvody a to i bez nutnosti centralní entity.
+Jedinečnost blockchainu je v jejím distrubovaném přístupu a neměnnosti, která díky samotné nátuře znemožnuje podvody a to i bez nutnosti centralní entity.
 
 \subsubsection{Decentralizace}
 V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodovací zodpovědnosti od centralizované entity (jednotlivec, společnost nebo skupina lidí) do distribuované sítě. Účelem těchto distribuovaných sítí je minimalizovat úroveň důvěry, kterou by měli účastníci vkládat jeden do druhého, a bránit v uplatňování autority nebo kontroly, která by mohla negativně ovlivnit efektivitu dané sítě.[5?]
@@ -41,7 +41,7 @@ V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodov
 
 
 \subsubsection{Immutability}
-Klíčovou vlastností technologie blockchain je neměnnost. To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. [4]
+Klíčovou vlastností technologie blockchain je neměnnost (anglicky Immutability). To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. [4]
 
 Neměnnost je vlastnost blockchainu, která zaručuje jeho věrohodnost a bezpečnost, ta je zaručena přímočarou logikou, která i tak čelí výzvám. Jednou z možných hrozeb je tzv. Útok 51, kdy útočník, nebo skupina útočníků ovládne více než 50 procent hashovací síly sítě a tak může blokovat nové transakce nebo je dokonce vracet, což vede k dvojtému utácení.[mozna 6] "Kvantové počítače mohou v budoucnosti také představovat problém, protože v blockchainu je využita asymetrická kryptografie, lze tak získat z podpisu transakce veřejný klíč a při dostatečném výpočetním výkonu uhádnou klíč soukromý. Tento problém se netýká ale výhradně blockchainu, nýbrž kryptografie a asymetrické kryptografie obecně." [mozna 6]
 
@@ -160,6 +160,8 @@ Koncept Stromu Merkle je pojmenován po Ralphu Merkleovi, který tento nápad pa
 \obr{Zjednodušená forma Merkle Tree [15]}{fig:MerkleTree}{0.6}{graphics/blockchain-merkle-tree.png}
 
 
+
+\subsubsection{Zero-knowledge}\label{subsubsec:ZK}
 
 
 \subsubsection{Výhody a limitace}
@@ -321,11 +323,11 @@ Citace knihy. \cite{chmel}
 
 \section{Aplikace pro ověřování dokůmentů}
 
-Hlavním cílem praktické části této diplomové práce je navrhnout a implementovat aplikaci, která spojuje robustní funkcionalitu s přívětivým a intuitivním uživatelským rozhraním. Uživatelské rozhraní by mělo být navrženo tak, aby bylo jednoduché a snadno ovladatelné pro širokou škálu uživatelů, bez ohledu na jejich technickou zdatnost a tak co nejvíc abstrahovat fakt, že aplikace funguje nad technologií block chain.
+Hlavním cílem praktické části této práce je navrhnout a implementovat aplikaci, která spojuje robustní funkcionalitu s přívětivým a intuitivním uživatelským rozhraním. Uživatelské rozhraní by mělo být navrženo tak, aby bylo jednoduché a snadno ovladatelné pro širokou škálu uživatelů, bez ohledu na jejich technickou zdatnost a tak co nejvíc abstrahovat fakt, že aplikace funguje nad technologií blockchain.
 
 Aplikace bude navržena s cílem umožnit uživatelům uložit data spojená s konkrétními dokumenty a poskytnout nástroje pro jejich následnou verifikaci. Tento přístup nejen maximalizuje efektivitu a zjednodušuje proces ověřování, ale také zvyšuje transparentnost a důvěru v integritu uložených dat.
 
-Dále bude kladen důraz na zajištění, aby byla tato aplikace bezpečná a současně respektovala soukromí uživatelů. To znamená implementaci nejnovějších bezpečnostních opatření a pravidel pro ochranu dat.
+Dále bude kladen důraz na zajištění, aby byla tato aplikace bezpečná a současně respektovala soukromí uživatelů. To znamená implementaci nejnovějších bezpečnostních opatření a pravidel pro ochranu dat jako například princip ZK.
 
 
 \subsection{Řešený problém}
@@ -337,37 +339,80 @@ Momentální postup je takový, že student, ať už fyzicky nebo elektronicky, 
 
 První scénář spočívá v tom, že student po fyzické identifikaci na studijním oddělení obdrží dokument ve fyzické podobě, opatřený již poněkud zastaralým razítkem a podpisem. Tento přístup je problematický z několika důvodů. Dokument je totiž možné snadno falšovat v jakémkoli softwaru pro úpravu dokumentů, což znamená, že ověřitel tohoto dokumentu si nemůže být jistý jeho autenticitou. Dalším problémem je sdílení tohoto dokumentu - jelikož je ve fyzické formě, musí být pro elektronické sdílení převeden do digitálního formátu, například pomocí fotoaparátu nebo skeneru.
 
-Druhý scénář je modernější variantou, kde se celý proces odehrává v digitálním prostředí. Autentifikace studenta před získáním dokumentu je v tomto případě značně jednodušší, jelikož pro získání tohoto dokumentu musí být student přihlášen do systému univerzity. Univerzita poté několika jednoduchými dotazy ověří, zda je student oprávněn tento dokument získat. Sám dokument je pak opatřen digitálním podpisem (vysvětleno v \ref{subsubsec:DigSig}), což značně ztěžuje jeho falšování oproti předchozí situaci. Ovšem ani tato varianta není idealní, jelikož pro opatření dokumentu elektronickou pečetí je potřeba třetí strany, například České pošty. Toto vytváří situaci man-in-middle, kdy se v komunikaci mezi dvěma stranami (Univerzita-Student) objevuje nutnost třetí strany, která ale dle návrhu pro tento úkon nutná není.
+Druhý scénář je modernější variantou, kde se celý proces odehrává v digitálním prostředí. Autentifikace studenta před získáním dokumentu je v tomto případě značně jednodušší, jelikož pro získání tohoto dokumentu musí být student přihlášen do systému univerzity. Univerzita poté několika jednoduchými dotazy ověří, zda je student oprávněn tento dokument získat. Sám dokument je pak opatřen digitálním podpisem (vysvětleno v \ref{subsubsec:DigSig}), což značně ztěžuje jeho falšování oproti předchozí situaci. Ovšem ani tato varianta není idealní, jelikož pro opatření dokumentu elektronickou pečetí je potřeba třetí strany, například České pošty. Toto vytváří situaci man-in-middle, kdy se v komunikaci mezi dvěmi stranami (Univerzita-Student) objevuje nutnost třetí strany, která ale dle návrhu pro tento úkon nutná není.
 
 
 \subsection{Navrhované řešení}
 
-texty
+Aplikace, která využije technologie block chain a potažmo její abstrakce ve formě Ethereum Attestation Service (vice v kapitole ???) k umožnění sdílení a ověřování dokumentů bez nutnosti třetí strany. Nemmenost a bezpečnost zarucena technologii blockchain. 
 
+
+Návrhem řešení je vývoj aplikace, která efektivně využije technologii blockchain s cílem optimalizovat proces sdílení a ověřování dokumentů. Klíčovou složkou aplikace bude Ethereum Attestation Service, což je pokročilá abstrakce technologie blockchain, která bude podrobněji vysvětlena v kapitole ???.
+
+Výsledná aplikace eliminuje nutnost třetí strany v procesu ověřování, což zvyšuje efektivitu a zjednodušuje celý proces. Blockchain technologie zároveň zaručuje odolnost proti změnám a hashovací techniky zase zabezpečení neveřejných dat.
+
+Díky tomu je možné dosáhnout výrazného zvýšení spolehlivosti a důvěryhodnosti celého procesu ověřování dokumentů. Toto řešení představuje inovativní přístup k problému ověřování dokumentů v digitálním světě, který je plně v souladu s nejnovějšími trendy v oblasti technologií a využití blockchainu.
 
 
 
 
 
 \subsection{Terminologie}
-text
+
+
+Před podrobnějším rozborem navrhovaného postupu řešení, který byl naznačen v předešlých kapitolách, je klíčové přesně definovat klíčové pojmy používané v rámci této práce. Tyto termíny - Entita, Příjemce, Ověřovatel, Dokument a Atestace - představují základní stavební kameny, na nichž je celý koncept a metodologie řešení založeny. Jejich správné porozumění je nezbytné pro adekvátní interpretaci celého navrhovaného postupu a pro hlubší pochopení této studie.
 
 
 
+
+\subsubsection{Entita}
+
+Pod pojmem "Entita" si představme různé subjekty, jako jsou soukromé Společnosti, Instituce nebo Atestoři, které v rámci aplikace působí jako klíčoví aktéři s cílem předat určité informace o Příjemci (podrobněji pojednáno v části \ref{subsubsec:User}). Tito aktéři se stávají zprostředkovateli specifických faktů či tvrzení o Příjemci. V demonstrovaném příkladu "Potvrzení o studiu", kde relace Univerzita-Student je předmětem zkoumání, představuje Entitu právě Univerzita. Nicméně, Entitou se může stát rovněž jakákoli soukromá společnost, veřejný ústav, úřad, nebo teoreticky kterýkoli subjekt s určitou mírou autority, který si přeje vyjádřit konkrétní skutečnost o Příjemci.
+
+Jako ilustraci z praxe soukromého sektoru uvedeme audit. V takovém případě by Entitou, která vydává atestaci neboli veřejné prohlášení o skutečnosti, byl Auditor. Auditor má za cíl sdělit informaci o proběhnutém auditu s konkrétními výsledky a jako Příjemce označí konkrétní Firmu.
+
+Dalším myšleným příkladem může být situace z veřejného sektoru, kde finanční Úřad, tedy Entita, sděluje, že Příjemce - Daňový poplatník - má za určené období řádně splněné svoje odvody.
+
+Tímto způsobem se Entita stává klíčovou komponentou procesu sdělování oveřitelných informací mezi různými subjekty, a to skrze platformou zajišťující transparentnost, důvěru a integritu přenášených údajů.
+
+Důležitou vlastností Entity je vlastnění Ethereum Identity, protože je to právě ona, která podepisuje transakci a následně hradí transakční poplatky při vytvoření atestace.
+
+\subsubsection{Příjemce}\label{subsubsec:User}
+
+V našem kontextu je Příjemcem typicky jednotlivec, jako například Student, ale může se rovněž jednat o konkrétní společnost, jak bylo zmíněno v předchozí sekci. Zásadním požadavkem pro Příjemce je držení Ethereum identity, jelikož jeho ethereum adresa je použita během procesu vytváření atestace, kde je určen jako adresát atestace.
+
+
+
+
+\subsubsection{Ověřovatel}
+
+Ověřovatel v rámci aplikace jako jediný nemusí mít Ethereum identitu. Jeho primárním cílem je ověření autenticity informací sdílených Příjemcem. Příjemce může atestaci, nebo-li potvrzení o skutečnosti, sdílet s Ověřovatelem dvěmi způsoby:
+
+\begin{itemize}
+	 
+	 \item \textbf{Veřejně} - Příjemce poskytne Ověřovateli odkaz na aplikaci, kde lze nalézt informace o atestaci. Díky implementaci konceptu Zero-Knowledge (viz sekce \ref{subsubsec:ZK}), jsou zde dostupná pouze neosobní data.
+	 
+	 \item \textbf{Soukromě} - Příjemce soukromě sdílí s Ověřovatelem jak odkaz ověření atestace v aplikaci, tak i příslušný Dokument, který je součástí atestace, pomocí libovolného komunikačního kanálu. Ověřovatel má následně možnost ověřit, že dokument zaslaný Příjemcem odpovídá tomu, co původně vydala příslušná Entita. 
+ 
+\end{itemize}
+
+Příjemce má možnost určit, jaký rozsah citlivých informací je ochoten sdílet, zatímco Ověřovatel může v každém z těchto případů efektivně ověřit prezentované tvrzení.
+
+
+
+\subsubsection{Atestace}
+
+V rámci této práce je atestace chápána jako vyjádření určité skutečnosti ze strany Entity. Podrobnější rozbor datového modelu atestace bude předmětem následujících sekcí práce.
 
 
 
 
 \subsubsection{Dokument}
 
-text
 
 
+Dokument v rámci procesu atestace je definován jako hash hodnota obsahu souboru, fungující jako digitální otisk. Tento hash primárně umožňuje zabezpečené zakódování detailních informací o atestované skutečnosti. Hlavním důvodem použití tohoto hashování je umožnění následného porovnání a ověření dokumentu při jeho verifikaci. To zajišťuje, že dokument zůstává nezměněn a autentický od okamžiku jeho atestace. Kvůli udržení standardizace a optimalizaci procesu je každý Dokument do aplikace vložen výhradně ve formátu PDF.
 
-
-
-\subsubsection{Atestace}
-text
 
 
 \subsection{Analýza požadavků na systém}
