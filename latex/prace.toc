@@ -58,55 +58,55 @@
 \contentsline {subsubsection}{\numberline {4.4.1}Funk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{31}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Nefunk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{31}{subsubsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.5}Diagram p\IeC {\v r}\IeC {\'\i }pad\IeC {\r u} u\IeC {\v z}it\IeC {\'\i }}{32}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}P\IeC {\v r}\IeC {\'\i }pady u\IeC {\v z}it\IeC {\'\i }}{32}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Sc\IeC {\'e}n\IeC {\'a}\IeC {\v r}e}{33}{subsubsection.4.5.2}%
-\contentsline {section}{\numberline {5}N\IeC {\'a}stroje a technologie pro v\IeC {\'y}voj}{38}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Ethereum Attestation Service}{38}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Atestace}{38}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Sch\IeC {\'e}mata}{38}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Onchain vs Offchain}{38}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Privacy}{38}{subsubsection.5.1.4}%
-\contentsline {subsubsection}{\numberline {5.1.5}Resolver Contracts}{38}{subsubsection.5.1.5}%
-\contentsline {subsubsection}{\numberline {5.1.6}Developer Tools}{38}{subsubsection.5.1.6}%
-\contentsline {subsubsection}{\numberline {5.1.7}EAS SDK}{38}{subsubsection.5.1.7}%
-\contentsline {subsection}{\numberline {5.2}MetaMask (nebo jin\IeC {\'a} digit\IeC {\'a}ln\IeC {\'\i } pen\IeC {\v e}\IeC {\v z}enka)}{38}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Integrace do aplikace}{38}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}API}{38}{subsubsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.3}Inter Planetary File System}{38}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}IPFS vs HTTP}{39}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}\IeC {\v Z}ivotn\IeC {\'\i } cyklus dat}{39}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Hashovani}{39}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Imutabilita}{39}{subsubsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.5}Persistence}{39}{subsubsection.5.3.5}%
-\contentsline {subsubsection}{\numberline {5.3.6}Privacy a sifrovani}{39}{subsubsection.5.3.6}%
-\contentsline {subsubsection}{\numberline {5.3.7}Uzly}{39}{subsubsection.5.3.7}%
-\contentsline {subsubsection}{\numberline {5.3.8}Pinata}{39}{subsubsection.5.3.8}%
-\contentsline {subsubsection}{\numberline {5.3.9}Filecoin}{39}{subsubsection.5.3.9}%
-\contentsline {subsubsection}{\numberline {5.3.10}Web3.storage}{39}{subsubsection.5.3.10}%
-\contentsline {subsubsection}{\numberline {5.3.11}Fleek storage}{39}{subsubsection.5.3.11}%
-\contentsline {subsection}{\numberline {5.4}Front-end}{39}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Zduvodneni volby}{40}{subsubsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.5}Back-end}{40}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}Zduvodneni volby}{40}{subsubsection.5.5.1}%
-\contentsline {section}{\numberline {6}Implementace a postup v\IeC {\'y}voje}{41}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Datov\IeC {\'y} model}{41}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Jake data sbirat}{41}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Kam ukladat}{41}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Jak ukladat}{41}{subsubsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}Akto\IeC {\v r}i}{41}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Odesilatel atestace}{41}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Prijmce atestace}{41}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Verifier}{41}{subsubsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.3}Use cases}{41}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Konfigurace aplikace}{41}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}SDK EAS}{41}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}SDK MetaMask/neco jineho nevim zatim}{41}{subsubsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.3}SDK IPFS}{41}{subsubsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.5}Webov\IeC {\'a} prezentace}{41}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Video prezentace}{41}{subsection.6.6}%
-\contentsline {section}{Z\IeC {\'a}v\IeC {\v e}r}{42}{section*.22}%
-\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'e} literatury}{43}{section*.22}%
-\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch symbol\IeC {\r u} a zkratek}{45}{section*.24}%
-\contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{46}{section*.24}%
-\contentsline {section}{Seznam tabulek}{47}{section*.24}%
-\contentsline {section}{SEZNAM P\IeC {\v R}\IeC {\'I}LOH}{48}{section*.24}%
+\contentsline {subsubsection}{\numberline {4.5.1}P\IeC {\v r}\IeC {\'\i }pady u\IeC {\v z}it\IeC {\'\i }}{34}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Sc\IeC {\'e}n\IeC {\'a}\IeC {\v r}e}{35}{subsubsection.4.5.2}%
+\contentsline {section}{\numberline {5}N\IeC {\'a}stroje a technologie pro v\IeC {\'y}voj}{40}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Ethereum Attestation Service}{40}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Atestace}{40}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Sch\IeC {\'e}mata}{40}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Onchain vs Offchain}{40}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Privacy}{40}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}Resolver Contracts}{40}{subsubsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.6}Developer Tools}{40}{subsubsection.5.1.6}%
+\contentsline {subsubsection}{\numberline {5.1.7}EAS SDK}{40}{subsubsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.2}MetaMask (nebo jin\IeC {\'a} digit\IeC {\'a}ln\IeC {\'\i } pen\IeC {\v e}\IeC {\v z}enka)}{40}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Integrace do aplikace}{40}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}API}{40}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Inter Planetary File System}{40}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}IPFS vs HTTP}{41}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}\IeC {\v Z}ivotn\IeC {\'\i } cyklus dat}{41}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Hashovani}{41}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Imutabilita}{41}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Persistence}{41}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Privacy a sifrovani}{41}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Uzly}{41}{subsubsection.5.3.7}%
+\contentsline {subsubsection}{\numberline {5.3.8}Pinata}{41}{subsubsection.5.3.8}%
+\contentsline {subsubsection}{\numberline {5.3.9}Filecoin}{41}{subsubsection.5.3.9}%
+\contentsline {subsubsection}{\numberline {5.3.10}Web3.storage}{41}{subsubsection.5.3.10}%
+\contentsline {subsubsection}{\numberline {5.3.11}Fleek storage}{41}{subsubsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.4}Front-end}{41}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Zduvodneni volby}{42}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Back-end}{42}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Zduvodneni volby}{42}{subsubsection.5.5.1}%
+\contentsline {section}{\numberline {6}Implementace a postup v\IeC {\'y}voje}{43}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Datov\IeC {\'y} model}{43}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Jake data sbirat}{43}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Kam ukladat}{43}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Jak ukladat}{43}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Akto\IeC {\v r}i}{43}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Odesilatel atestace}{43}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Prijmce atestace}{43}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Verifier}{43}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Use cases}{43}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Konfigurace aplikace}{43}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}SDK EAS}{43}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}SDK MetaMask/neco jineho nevim zatim}{43}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}SDK IPFS}{43}{subsubsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.5}Webov\IeC {\'a} prezentace}{43}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Video prezentace}{43}{subsection.6.6}%
+\contentsline {section}{Z\IeC {\'a}v\IeC {\v e}r}{44}{section*.22}%
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'e} literatury}{45}{section*.22}%
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch symbol\IeC {\r u} a zkratek}{47}{section*.24}%
+\contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{48}{section*.24}%
+\contentsline {section}{Seznam tabulek}{49}{section*.24}%
+\contentsline {section}{SEZNAM P\IeC {\v R}\IeC {\'I}LOH}{50}{section*.24}%
