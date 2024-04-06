@@ -479,14 +479,12 @@ Na počátku vývoje je potřeba provést analýzu požadavků na systém, aby b
 
 V následných diagramech případů užití je znázorněno, jakým způsobem budou aktéři - Entita, Příjemce a Ověřitel - systém používat.
 
+\obr{Diagram případu použití Entita}{fig:Entita.UC]}{0.7}{graphics/DiagramPouzitiEntita.png}
 
 
-Diagram TBD
+\obr{Diagram případu použití Příjemce}{fig:Entita.UC]}{0.7}{graphics/DiagramPouzitiPrijemce.png}
 
-
-
-
-
+\obr{Diagram případu použití Ověřitel}{fig:Entita.UC]}{0.7}{graphics/DiagramPouzitiOveritel.png}
 
 
 
@@ -517,9 +515,248 @@ Diagram TBD
 
 
 
-
 \subsubsection{Scénáře}
-text
+
+
+% Pripoijeni metamask penezenky
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Připojení Metamask peněženky} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC01} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém připojí digitální peněženku Entity pomocí Metamask} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Entita} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Entita & Vybere možnost vytvoření atestace. \\ \hline
+		2 & Systém & Vyhodnotí stav, připojí Metamask peněženku. \\ \hline
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Připojení Metamask peněženky}
+	\label{tab:usecase-metamask-connection}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
+
+% Vytvoreni atestace 
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Vytvoření atestace} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC02} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém vytvoří novou atestaci} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Entita} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Entita & Vybere možnost vytvoření atestace. \\ \hline
+		2 & Systém & Vyhodnotí stav, připojí Metamask peněženku. \\ \hline
+		3 & Entita & Vyplní data atestace. \\ \hline
+		4 & Entita & Připojí pomocí drag\&drop dokument.\\ \hline
+		5 & Entita & Klikne na potvrdit atestaci. \\ \hline
+		6 & Systém & Validuje zadané data. \\ \hline
+		6 & Entita & Potvrdí a zaplatí transakci pomocí Metamask.\\ \hline
+		7 & Systém & Zobrazí atestaci a její metadata. \\ \hline
+		
+		\multicolumn{3}{|l|}{\textbf{Alternativní scénáře:}} \\ \hline
+		\multicolumn{3}{|l|}{UC02-6A, UC02-4A} \\ \hline
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Vytvoření atestace}
+	\label{tab:usecase-attestation-creation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
+%Alternativni scenar k vytvoreni atestace, spatny input od uzivatele
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Alternativní scénář k UC02 - Nevalidní data} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC02-6A} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém upozorní o neúspěšném vytvoření atestace.} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Entita} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Systém & Upozorní Entitu o neúspěšném vytvoření atestace. \\ \hline
+		2 & Entita & Vyplní formulář pro vytvoření atestace znovu. \\ \hline
+
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Nevalidní data při vytvoření atestace}
+	\label{tab:usecase-alt-attestation-creation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
+
+
+% Zobrazení atestace
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Zobrazení atestace} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC03} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém zobrazí atestaci} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Příjemce} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Příjemce  & Vybere možnost zobrazení atestace. \\ \hline
+		2 & Příjemce  & Vloží id transakce. \\ \hline
+		3 & Systém    & Zobrazí atestaci. \\ \hline
+		
+		\multicolumn{3}{|l|}{\textbf{Alternativní scénáře:}} \\ \hline
+		\multicolumn{3}{|l|}{UC03-2A} \\ \hline
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Zobrazení atestace}
+	\label{tab:usecase-view-attestation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
+% Alt k zobrazeni atestace, prijemce vlozi neexistujici transaction id 
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Alternativní scénář k UC03 - nevalidní id transakce} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC03-2A} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém upozorní na neexistující id transakce v Block chain} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Příjemce} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		3 & Systém    & Upozorní na neexistující id transakce. \\ \hline
+		4 & Systém    & Umožní uživateli vložit id transakce znovu. \\ \hline
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Zobrazení atestace s neexistujícím id transakce}
+	\label{tab:usecase-alt-view-attestation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
+
+
+
+
+% Sdileni atestace
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Sdílení atestace} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC04} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém zkopíruje odkaz na atestaci.} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Příjemce} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Příjemce  & Vybere možnost zobrazení atestace. \\ \hline
+		2 & Příjemce  & Vloží id transakce. \\ \hline
+		3 & Systém    & Zobrazí atestaci. \\ \hline
+		4 & Příjemce  & Vybere sdílet atestaci. \\ \hline
+		5 & Systém    & Zkopíruje odkaz na atestaci do schránky. \\ \hline
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Sdílení atestace}
+	\label{tab:usecase-share-attestation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
+% Overeni dokumentu u atestace
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Ověření dokumentu u atestace} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC05} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém ověření shody dokumentů.} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Ověřitel} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Ověřitel  & Vybere možnost ověřit atestaci. \\ \hline
+		2 & Ověřitel  & Vloží id transakce. \\ \hline
+		3 & Systém    & Zobrazí atestaci. \\ \hline
+		4 & Ověřitel  & Vybere ověřit dokument. \\ \hline
+		5 & Systém    & Zobrazí drag\&drop. \\ \hline
+		6 & Ověřitel  & Vloží dokument. \\ \hline
+		7 & Systém    & Vyhodnotí shodu dokumentů. \\ \hline
+		8 & Systém    & Zobrazí výsledek. \\ \hline
+		
+		\multicolumn{3}{|l|}{\textbf{Alternativní scénáře:}} \\ \hline
+		\multicolumn{3}{|l|}{UC05-6A} \\ \hline
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Sdílení atestace}
+	\label{tab:usecase-verify-attestation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+% Alt, vlozeni dokumentu ve spatnem formatu
+\vspace{-1mm} % Zmenšení mezery před tabulkou
+\renewcommand{\arraystretch}{1.5} % Zvětšení vertikálního rozestupu řádků tabulky na 1.5násobek.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|}
+		\hline
+		\multicolumn{3}{|l|}{\textbf{Název:} Alternativní scénář k UC02,UC03 - nepodporovaný formát dokumentu.} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{ID:} UC02-4A/UC05-6A} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Charakteristika:}} \\ \hline
+		\multicolumn{3}{|l|}{Systém upozorní na nepodporovaný formát souboru.} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Primární aktér:} Entita, Ověřitel} \\ \hline
+		\multicolumn{3}{|l|}{\textbf{Hlavní scénář:}} \\ \hline
+		\textbf{Krok} & \textbf{Aktér} & \textbf{Popis} \\ \hline
+		1 & Systém    & Upozorní na nepodporovaný formát dokumentu. \\ \hline
+		2 & Systém    & Umožní uživateli vložit dokument znovu. \\ \hline
+		
+	\end{tabular}
+	\vspace{10pt} % Zvětšení mezery mezi tabulkou a popiskem.
+	\caption{Případ užití: Vložení dokumentu v nepodporovaném formátu.}
+	\label{tab:usecase-alt-intput-document-attestation}
+\end{table}
+\renewcommand{\arraystretch}{1} % Vrátí rozestup řádků zpět na původní hodnotu.
+
+
+
 
 
 
