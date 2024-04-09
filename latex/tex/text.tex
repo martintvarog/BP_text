@@ -40,7 +40,7 @@ V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodov
 
 
 
-\subsubsection{Immutability}
+\subsubsection{Immutability}\label{subsubsec:immutability}
 Klíčovou vlastností technologie blockchain je neměnnost (anglicky Immutability). To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. [4]
 
 Neměnnost je vlastnost blockchainu, která zaručuje jeho věrohodnost a bezpečnost, ta je zaručena přímočarou logikou, která i tak čelí výzvám. Jednou z možných hrozeb je tzv. Útok 51, kdy útočník, nebo skupina útočníků ovládne více než 50 procent hashovací síly sítě a tak může blokovat nové transakce nebo je dokonce vracet, což vede k dvojtému utácení.[mozna 6] "Kvantové počítače mohou v budoucnosti také představovat problém, protože v blockchainu je využita asymetrická kryptografie, lze tak získat z podpisu transakce veřejný klíč a při dostatečném výpočetním výkonu uhádnou klíč soukromý. Tento problém se netýká ale výhradně blockchainu, nýbrž kryptografie a asymetrické kryptografie obecně." [mozna 6]
@@ -239,14 +239,30 @@ Konsensusový algoritmus PoA využívá váhu identit, což znamená, že valid�
 
 
 
-\n{1}{Decentralizované aplikace}
-text
-\n{2}{Web2 vs Web3}
-text
-\n{2}{Smart kontrakty}
-text
-\n{2}{Distribuované úložiště}
-text
+\section{Decentralizované aplikace}
+
+
+DApp (decentralizovaná aplikace) je aplikace, která běží na distribuovaném výpočetním systému, jako je blockchain, například Ethereum nebo Algorand. Na první pohled se DApp jeví podobně jako běžné aplikace v rámci Web 2.0 (více v \ref{subsec:Web2vsWeb3}), které jsou součástí každodeního života nás všech, ale samotná architektura je velmi odlišná. Na rozdíl od tradičních aplikací, které fungují z centralizovaného serveru, DApp běží na logice uložené v blockchainu v rámci chytrých kontraktů (ang. "smart-contracts"  více v sekci  \ref{subsec:SmartContract}). Decentralizovaná povaha takovýmto aplikacím umožňuje fungovat odkudkoli na světě s připojením k blockchainu. Populární využití decentralizovaných aplikací je v DeFi (decentralizováné finance, což je souhrnné označení pro finační služby na veřejném blockchain) v rámci DEx aplikací (decentralizované směnárny anglicky "Decentralized Exchange").[21]
+
+
+\subsection{Web2 vs Web3}\label{subsec:Web2vsWeb3}
+
+
+Jedním z hlavních rozdílů mezi web2 a web3 je přístup k ukládání a zpracování dat. Web2 se spoléhá na centralizované servery a systémy pro ukládání a zpracování dat, zatímco web3 používá blockchain, k decentralizovanému ukládání a zpracování dat. Tento rozdíl má řadu důsledků pro bezpečnost, transparentnost a interoperabilitu dat.
+
+Dalším klíčovým rozdílem mezi web2 a web3 je úroveň kontroly a vlastnictví, kterou uživatelé mají nad svými daty. V prostředí web2 jsou uživatelská data často kontrolována a vlastněna centralizovanými subjekty, jako jsou sociální média nebo vyhledávače. Ve web3 mají uživatelé větší kontrolu a vlastnictví nad svými daty, protože jsou uložena na blockchainu a lze je přímo přistupovat a spravovat uživatelem.[22]
+
+
+\subsection{Smart contracts}\label{subsec:SmartContract}
+
+Smart-contract nebo také česky chytrý kontrakt je definován jako digitální smlouva, která je podepsána a uložena v blockchainové síti, a automaticky se vykoná, jakmile jsou splněny podmínky uvedené v kontraktu. Tyto podmínky jsou zapsány v blockchainových programovacích jazycích, jako je například Solidity.[23]
+
+
+\subsection{Distribuované úložiště}
+
+
+
+
 \n{2}{Výhodné a nevýhodné vlastnosti}
 text
 \n{2}{Sítě typu peer-to-peer}
@@ -255,8 +271,10 @@ text
 
 
 
+\section{Ethereum Attestation Service}\label{sec:eas}
 
 
+%tuto cast o Ethereum vynechat
 \n{1}{Ethereum}
 text
 \n{2}{Ether}
@@ -400,9 +418,9 @@ Příjemce má možnost určit, jaký rozsah citlivých informací je ochoten sd
 
 
 
-\subsubsection{Atestace}
+\subsubsection{Atestace}\label{subsubsec:terminology-attestation}
 
-V rámci této práce je atestace chápána jako vyjádření určité skutečnosti ze strany Entity. Podrobnější rozbor datového modelu atestace bude předmětem následujících sekcí práce.
+V rámci této práce je atestace chápána jako vyjádření určité skutečnosti ze strany Entity k Příjemcovi. Podrobnější rozbor datového modelu atestace bude předmětem následujících sekcí práce.
 
 
 
@@ -768,23 +786,55 @@ V následných diagramech případů užití je znázorněno, jakým způsobem b
 \clearpage
 \section{Nástroje a technologie pro vývoj}
 
-Tato sekce uvede a odůvodní výběr jednotlivých nástrojů a technologií.
+Tato sekce popisuje a odůvodňuje výběr specifických nástrojů a technologií, které byly vybrány pro vývoj projektu. Pečlivý výběr nástrojů a technologií je klíčový pro úspěšnou implementaci projektu a splnění jeho požadavků.
+
+\subsection{Programovací jazyky}
+
+\textbf{TypeScript:} Silně typovaný nadstavbový jazyk JavaScriptu, který přináší lepší kontrolu nad kódem a zvyšuje jeho čitelnost a udržitelnost. Jeho rozšířenost a široká podpora knihoven, zejména pro práci s Web3 a blockchainovými technologiemi, činí z TypeScriptu ideální volbu pro vývoj moderních webových aplikací zaměřených na interakci s decentralizovanými aplikacemi.
+
+\textbf{React:} Populární JavaScriptová knihovna pro vytváření uživatelských rozhraní, zejména jednostránkových aplikací. React byl vybrán pro svou modularitu, výkon a rozsáhlé ekosystém komponent, což umožňuje rychlý vývoj dynamických a interaktivních webových aplikací.
 
 
 
+\textbf{Vite.js:} Moderní nástroj pro vývoj front-endu, Vite.js, nabízí rychlý start a okamžité reloady díky využití ES modulů a hot module replacement (HMR). Jeho snadná konfigurace a podpora pro rámce jako React a TypeScript, z Vite.js činí efektivní volbu pro vývojáře chtějící zjednodušit a urychlit svůj vývojový proces.
 
-\n{2}{Ethereum Attestation Service}
+
+\subsection{Nástroje pro správu verzí}
+
+\textbf{Git:} Univerzálně akceptovaný systém pro správu verzí kódu, který usnadňuje práci v týmech a podporuje efektivní sledování změn a spolupráci na projektech. Git byl vybrán pro svou flexibilitu, bezpečnost a integraci s mnoha vývojovými platformami a službami, jako je GitHub.
+
+
+\subsection{Blockchain platformy}
+
+\textbf{EAS (zkráceně Ethereum attestation service):} byl vybrán jako vhodná abstrakce nad block chainem, který nijak nesvazuje programátora a implementuje jednoduchou architekturu s dvěmi chytrými kontrakty: Vytvoření Schéma a Atestace k danému schématu. Více o EAS v sekci \ref{sec:eas}
+
+\subsubsection{Atestace v rámci EAS}
+Atestace poskytují kryptograficky podepsané potvrzení o autentičnosti určité informace, což usnadňuje ostatním důvěřovat této informaci a spoléhat se na ni.[18] Více o Atestaci v kontextu této práce v sekci \ref{subsubsec:terminology-attestation}
+
+\subsubsection{Schéma}
+Schémata definují strukturu a typ dat, která mohou být zahrnuta v atestaci. Fungují jako plán informací, které mají být atestovány, zajišťují konzistenci a jasnost.[19] Více o tvorbě schématu pro účel této práce v \ref{subsec:schema-creation}
+
+
+
+\subsubsection{Onchain vs Offchain}
+
+Atestace na blockchainu: Přímo na Ethereum blockchainu uložené atestace s neměnností a vysokou bezpečností. Ideální pro interakci s chytrými kontrakty nebo když je požadována stoprocentní dostupnost.
+
+Atestace mimo blockchain: Ukládány mimo Ethereum, typicky v databázích, s odkazem na blockchain kryptografickými podpisy. Vhodné pro soukromé držení a selektivní sdílení.[20]
+
+Pro tuto práci byl zvolen Onchain způsob a to kvůli dostupnosti, bezpečnosti a nemměnnosti blockchainu. Také kvůli tomu, že data uložená na blockchainu jsou buď veřejné nebo šifrované.
+
+
+\subsubsection{Privacy}
+
+dulezita cast zadani
 text
-\n{3}{Atestace}
-text
-\n{3}{Schémata}
-text
-\n{3}{Onchain vs Offchain}
-text
-\n{3}{Privacy}
-text
-\n{3}{Resolver Contracts}
-text
+
+% zamyslet se jestli je to neco co uvadet v praci, kdyz to nejspis nepouziji.
+%\subsubsection{Resolver Contracts}
+%text
+
+
 \n{3}{Developer Tools}
 text
 \n{3}{EAS SDK}
@@ -838,6 +888,8 @@ text
 
 \n{1}{Implementace a postup vývoje}
 text
+
+\subsection{Vytvoření schématu}\label{subsec:schema-creation}
 \n{2}{Datový model}
 \n{3}{Jake data sbirat}
 \n{3}{Kam ukladat}
