@@ -20,36 +20,36 @@ V závěru práce shrneme dosažené výsledky a zhodnotíme výkon aplikace. Po
 \cast{Teoretická část}
 
 \section{Blockchain}
-Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Tato databáze je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. [1]
+Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Tato databáze je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. \cite{blockchainobecne}
 
-\obr{Vazba mezi blokem a hashem[3]}{fig:HashAndBlock}{1}{graphics/What-Is-Blockchain-Infographic.jpg}
+\obr{Vazba mezi blokem a hashem \cite{blockAndHash}}{fig:HashAndBlock}{1}{graphics/What-Is-Blockchain-Infographic.jpg}
 
 
 
 \subsection{Historie}
-V roce 1976 byla publikována práce "New Directions in Cryptography", která diskutovala koncept distribuované účetní knihy. S pokrokem v oblasti kryptografie byla publikována další práce nazvaná "How to Time-Stamp a Digital Document" od Stuarta Habera a Scotta Stornetty, která představila koncept časového razítka dat namísto média. Další důležitý koncept, který přispěl k vývoji blockchainu, byla "elektronická hotovost" nebo "digitální měna" založená na modelu navrženém Davidem Chaumem. Tento koncept následovaly například protokoly jako e-cash schémata, které detekovaly dvojité utracení. Adam Back v roce 1997 představil koncept "hashcash", který nabídl řešení pro kontrolu spamových e-mailů. To vedlo k vytvoření "b-money" Wei Daie založené na peer-to-peer síti. Považuje se, že Satoshi Nakamoto je vynálezcem technologie blockchain, když v roce 2008 publikoval dokument o bitcoinu "Bitcoin: A Peer-to-Peer Electronic Cash System". Jeho cílem bylo umožnit přímou online platbu z jednoho zdroje na druhý bez spoléhání se na třetí stranu. Jeho dokument navrhoval elektronický platební systém založený na kryptografii, který řešil problém dvojitého utracení, kde digitální měna nemůže být duplikována a nelze ji utratit více než jednou. [2]
+V roce 1976 byla publikována práce "New Directions in Cryptography", která diskutovala koncept distribuované účetní knihy. S pokrokem v oblasti kryptografie byla publikována další práce nazvaná "How to Time-Stamp a Digital Document" od Stuarta Habera a Scotta Stornetty, která představila koncept časového razítka dat namísto média. Další důležitý koncept, který přispěl k vývoji blockchainu, byla "elektronická hotovost" nebo "digitální měna" založená na modelu navrženém Davidem Chaumem. Tento koncept následovaly například protokoly jako e-cash schémata, které detekovaly dvojité utracení. Adam Back v roce 1997 představil koncept "hashcash", který nabídl řešení pro kontrolu spamových e-mailů. To vedlo k vytvoření "b-money" Wei Daie založené na peer-to-peer síti. Považuje se, že Satoshi Nakamoto je vynálezcem technologie blockchain, když v roce 2008 publikoval dokument o bitcoinu "Bitcoin: A Peer-to-Peer Electronic Cash System". Jeho cílem bylo umožnit přímou online platbu z jednoho zdroje na druhý bez spoléhání se na třetí stranu. Jeho dokument navrhoval elektronický platební systém založený na kryptografii, který řešil problém dvojitého utracení, kde digitální měna nemůže být duplikována a nelze ji utratit více než jednou. \cite{blockchainhistory}
 
 
 
 \subsection{Principy}
 Jedinečnost blockchainu je v jejím distrubovaném přístupu a neměnnosti, která díky samotné nátuře znemožnuje podvody a to i bez nutnosti centralní entity.
 
-\subsubsection{Decentralizace}
-V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodovací zodpovědnosti od centralizované entity (jednotlivec, společnost nebo skupina lidí) do distribuované sítě. Účelem těchto distribuovaných sítí je minimalizovat úroveň důvěry, kterou by měli účastníci vkládat jeden do druhého, a bránit v uplatňování autority nebo kontroly, která by mohla negativně ovlivnit efektivitu dané sítě.[5?]
+\subsubsection{Decentralizace}\label{subsubsec:Decentralization}
+V kontextu blockchainu decentralizace představuje převedení dozoru a rozhodovací zodpovědnosti od centralizované entity (jednotlivec, společnost nebo skupina lidí) do distribuované sítě. Účelem těchto distribuovaných sítí je minimalizovat úroveň důvěry, kterou by měli účastníci vkládat jeden do druhého, a bránit v uplatňování autority nebo kontroly, která by mohla negativně ovlivnit efektivitu dané sítě. \cite{Decentralizace-blockchainu}
 
 
 
 
 \subsubsection{Immutability}\label{subsubsec:immutability}
-Klíčovou vlastností technologie blockchain je neměnnost (anglicky Immutability). To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. [4]
+Klíčovou vlastností technologie blockchain je neměnnost (anglicky Immutability). To v praxi znamená, že po vložení dat do sítě již není možno s těmito záznamy nijak manipulovat. Informace jsou uloženy v řetězci datových bloků, přičemž každý blok odkazuje na svého předchůdce pomocí hodnoty uložené v záhlaví ve tvaru alfanumerického řetězce, který je odvozen od předešlého bloku (typicky pomocí hash funkce) ,tak udržuje pospolitost bloků. Tato skutečnost znemožňuje provádění změn v datech předešlých bloků, protože by již nesouhlasily hodnoty odkazující na předešlé datové bloky. Němennost je jedním z důvodů proč technologie blockchain vzbuzuje velkou důvěru mezi uživateli. 
 
-Neměnnost je vlastnost blockchainu, která zaručuje jeho věrohodnost a bezpečnost, ta je zaručena přímočarou logikou, která i tak čelí výzvám. Jednou z možných hrozeb je tzv. Útok 51, kdy útočník, nebo skupina útočníků ovládne více než 50 procent hashovací síly sítě a tak může blokovat nové transakce nebo je dokonce vracet, což vede k dvojtému utácení.[mozna 6] "Kvantové počítače mohou v budoucnosti také představovat problém, protože v blockchainu je využita asymetrická kryptografie, lze tak získat z podpisu transakce veřejný klíč a při dostatečném výpočetním výkonu uhádnou klíč soukromý. Tento problém se netýká ale výhradně blockchainu, nýbrž kryptografie a asymetrické kryptografie obecně." [mozna 6]
+Neměnnost je vlastnost blockchainu, která zaručuje jeho věrohodnost a bezpečnost, ta je zaručena přímočarou logikou, která i tak čelí výzvám. Jednou z možných hrozeb je tzv. Útok 51, kdy útočník, nebo skupina útočníků ovládne více než 50 procent hashovací síly sítě a tak může blokovat nové transakce nebo je dokonce vracet, což vede k dvojtému utácení.[mozna 6] "Kvantové počítače mohou v budoucnosti také představovat problém, protože v blockchainu je využita asymetrická kryptografie, lze tak získat z podpisu transakce veřejný klíč a při dostatečném výpočetním výkonu uhádnou klíč soukromý. Tento problém se netýká ale výhradně blockchainu, nýbrž kryptografie a asymetrické kryptografie obecně." \cite{Imutabilita-blockchainu} \cite{hrozby-immutability}
 
 \subsubsection{Bloky}\label{subsubsec:Bloky}
 Blok je kontejner, který uchovává sadu transakcí a další metadata. Skládá se ze dvou částí a to záhlaví a těla. Záhlaví se mohou v různých systémech lišit, zpravidla ale obsahují informace o samotném bloku a jejím autorovi vyjádřených těmito atributy : 
 
 \begin{itemize}
-	\item Hash předchozího bloku: Je kryptografický otisk využíván pro propojení bloku n+1 s blokem n pomocí hash kódu. Stručně řečeno, tato metoda slouží jako odkaz na hash předchozího (rodičovského) bloku v řetězci.[7]
+	\item Hash předchozího bloku: Je kryptografický otisk využíván pro propojení bloku n+1 s blokem n pomocí hash kódu. Stručně řečeno, tato metoda slouží jako odkaz na hash předchozího (rodičovského) bloku v řetězci.
 	\item Nonce: zkratka z anglického "number used only once" (číslo použité pouze jednou), je náhodné číslo, které těžaři hledají s cílem vytěžit nový blok (více v sekci \ref{subsubsec:Mining})
 	\item Časový otisk: anglicky "Timestamp" identifikuje čas, kdy byl blok vytěžen
 	\item Náročnost: anglicky "Difficulty" je měřítko definující složitost prováděných operací v dané síti
@@ -61,38 +61,39 @@ Blok je kontejner, který uchovává sadu transakcí a další metadata. Sklád�
 \obr{Struktura bloků[7]}{fig:HashAndBlock}{1}{graphics/Structureofblocksinblockchain.png}
 
 
-Tělo bloku obsahuje seznam všech transakcí. Každá transakce zahrnuje adresy odesílatele a příjemce, množství převáděné kryptoměny a digitální podpisy zapojených stran. Transakce v bloku jsou organizovány v určitém pořadí, kde prvním je speciální transakce označovaná jako "coinbase". Tato transakce představuje způsob, jakým jsou do systému zavedeny nové mince a jak je těžař odměněn za svou práci.[8]
+Tělo bloku obsahuje seznam všech transakcí. Každá transakce zahrnuje adresy odesílatele a příjemce, množství převáděné kryptoměny a digitální podpisy zapojených stran. Transakce v bloku jsou organizovány v určitém pořadí, kde prvním je speciální transakce označovaná jako "coinbase". Tato transakce představuje způsob, jakým jsou do systému zavedeny nové mince a jak je těžař odměněn za svou práci. \cite{struktura-bloku} \cite{telo-bloku}
 
 
 
 
-\subsubsection{Transakce}
+\subsubsection{Transakce}\label{subsubsec:Transactions}
 
-Transakci můžeme definovat jako smlouvu, dohodu, převod nebo výměnu aktiv mezi dvěma nebo více stranami. Obvykle se jedná o hotovost nebo majetek. [9]
+Transakci můžeme definovat jako smlouvu, dohodu, převod nebo výměnu aktiv mezi dvěma nebo více stranami. Obvykle se jedná o hotovost nebo majetek.
 
-Obdobně se transakce v blockchainu nejedná o nic jiného než přenos dat napříč sítí počítačů blockchainového systému. Síť počítačů blockchainu ukládá transakční data jako repliky v úložišti, kterému se často říká digitální účetní kniha. [9]
+Obdobně se transakce v blockchainu nejedná o nic jiného než přenos dat napříč sítí počítačů blockchainového systému. Síť počítačů blockchainu ukládá transakční data jako repliky v úložišti, kterému se často říká digitální účetní kniha.
 
-Uživatel inicializuje transakci v aplikaci a poté ji odesílá do blockchainu. Transakce uživatele je následně umístěna do "mempoolu" (dobře organizované fronty, ve které jsou transakce uschovávány a tříděny před přidáním do nově vytvořeného bloku) s dalšími čekajícími transakcemi a čeká na své "těžení". Jakmile dostatečné množství těžařů potvrdí transakci, je trvale uložena v bloku. Podle principu jsou transakce v blockchainu nevratné. Více v sekci \ref{subsubsec:Mining} [9]
+Uživatel inicializuje transakci v aplikaci a poté ji odesílá do blockchainu. Transakce uživatele je následně umístěna do "mempoolu" (dobře organizované fronty, ve které jsou transakce uschovávány a tříděny před přidáním do nově vytvořeného bloku) s dalšími čekajícími transakcemi a čeká na své "těžení". Jakmile dostatečné množství těžařů potvrdí transakci, je trvale uložena v bloku. Podle principu jsou transakce v blockchainu nevratné. Více v sekci \ref{subsubsec:Mining}
 
-Blok obsahuje sadu transakcí, má omezení jak časová, tak velikostní ve smyslu kolik transakcí může obsahovat. Po uplynutí časovače bloku nebo při dosažení maximálního počtu transakcí je blok přidán do řetězce a začíná iterace dalšího bloku.[9]
+Blok obsahuje sadu transakcí, má omezení jak časová, tak velikostní ve smyslu kolik transakcí může obsahovat. Po uplynutí časovače bloku nebo při dosažení maximálního počtu transakcí je blok přidán do řetězce a začíná iterace dalšího bloku. \cite{Transakce}
 
 
-
+???? Mozna zde poukazat na poplatky v ramci transakci, https://cointelegraph.com/news/ethereum-l2s-fees-decline-99-post-dencun??
 
 
 \subsubsection{Mining}\label{subsubsec:Mining}
 Těžení je typické pro sítě implementující PoW (Proof-of-work) konsensus mezi které patří i nejznámější kryptoměna Bitcoin. Více o různých typech konsensů v kapitole \ref{subsec:Konsensus}
 
-Těžba je proces, který Bitcoin a některé další kryptoměny využívají k vytváření nových mincí a ověřování nových transakcí. Zahrnuje velké množství decentralizované sítě počítačů po celém světě, které ověřují a zabezpečují blokchain. Jako odměnu za přispění svého výpočetního výkonu jsou těžaři v síti odměněni novými mincemi. Jedná se o ctnostný cyklus: těžaři udržují a zabezpečují blockchain, blockchain je odměňuje mincemi, mince poskytují podnět pro těžaře k udržování blockchainu.[10]
+Těžba je proces, který Bitcoin a některé další kryptoměny využívají k vytváření nových mincí a ověřování nových transakcí. Zahrnuje velké množství decentralizované sítě počítačů po celém světě, které ověřují a zabezpečují blokchain. Jako odměnu za přispění svého výpočetního výkonu jsou těžaři v síti odměněni novými mincemi. Jedná se o ctnostný cyklus: těžaři udržují a zabezpečují blockchain, blockchain je odměňuje mincemi, mince poskytují podnět pro těžaře k udržování blockchainu. \cite{Mining}
 
 
+\subsubsection{Open-source}\label{subsubsec:OpenSource}
 
 
 
 \subsection{Kryptografie}
 Kryptografie představuje metodologii pro ochranu informací před neautorizovaným přístupem. V blockchain technologii je kryptografie využívána k zabezpečení transakcí prováděných mezi dvěma uzly. K tomuto slouží dva fundamentální koncepty: kryptografie a hashování (viz \ref{subsubsec:Hash}). Kryptografie se používá pro šifrování zpráv v P2P síti, hashování slouží k zabezpečení dat bloků a pro spojení bloků v blockchainu.
 
-Kryptografie se primárně soustředí na zajištění bezpečnosti účastníků, transakcí a ochranu proti dvojitému utracení. Pomáhá zabezpečovat různé transakce v blockchainové síti. Zajišťuje, že pouze jednotlivci, pro které jsou data transakce určena, mohou získat, číst a zpracovávat transakci.[11]
+Kryptografie se primárně soustředí na zajištění bezpečnosti účastníků, transakcí a ochranu proti dvojitému utracení. Pomáhá zabezpečovat různé transakce v blockchainové síti. Zajišťuje, že pouze jednotlivci, pro které jsou data transakce určena, mohou získat, číst a zpracovávat transakci. \cite{Kryptografie v Blockchain}
 
 
 
@@ -100,18 +101,18 @@ Kryptografie se primárně soustředí na zajištění bezpečnosti účastník�
 
 \subsubsection{Symetrická kryptografie}\label{subsubsec:SymKrypt}
 
-Tento typ šifrování používá stejný klíč pro oba procesy - šifrování i dešifrování. Symetrické šifrování je primárně používáno pro ochranu webových spojení a šifrování dat. Může být také označováno jako kryptografie s tajným klíčem. Jednou z výzev této metody je bezpečná výměna klíčů mezi odesílatelem a příjemcem. Data Encryption System (DES) je známým příkladem systému s symetrickým klíčem.[11]
+Tento typ šifrování používá stejný klíč pro oba procesy - šifrování i dešifrování. Symetrické šifrování je primárně používáno pro ochranu webových spojení a šifrování dat. Může být také označováno jako kryptografie s tajným klíčem. Jednou z výzev této metody je bezpečná výměna klíčů mezi odesílatelem a příjemcem. Data Encryption System (DES) je známým příkladem systému s symetrickým klíčem. \cite{Kryptografie v Blockchain}
 
 
-\obr{Symetrická kryptografie [12]}{fig:SymEn}{1}{graphics/SymmetricEncrypt.jpg}
+\obr{Symetrická kryptografie \cite{Sifrovani} }{fig:SymEn}{1}{graphics/SymmetricEncrypt.jpg}
 
 
 \subsubsection{Asymetrická kryptografie}
 
-Metoda asymetrického šifrování používá různé klíče pro šifrování a dešifrování. K tomu využívá klíč veřejný a soukromí. Šifrování veřejným klíčem umožňuje sdílet informace s zcela neznámými stranami jako například ID Email. Soukromý klíč poté slouží k dešifrování zprávy a ověření digitálního podpisu (více v \ref{subsubsec:DigSig}). Matematický vztah mezi klíči spočívá v tom, že soukromý klíč nelze odvodit z veřejného klíče, ale veřejný klíč lze odvodit od klíče soukromého. Příklady asymetrické kryptografie jsou: ECC, DSS a další. [12]
+Metoda asymetrického šifrování používá různé klíče pro šifrování a dešifrování. K tomu využívá klíč veřejný a soukromí. Šifrování veřejným klíčem umožňuje sdílet informace s zcela neznámými stranami jako například ID Email. Soukromý klíč poté slouží k dešifrování zprávy a ověření digitálního podpisu (více v \ref{subsubsec:DigSig}). Matematický vztah mezi klíči spočívá v tom, že soukromý klíč nelze odvodit z veřejného klíče, ale veřejný klíč lze odvodit od klíče soukromého. Příklady asymetrické kryptografie jsou: ECC, DSS a další. \cite{Sifrovani}
 
 
-\obr{Asymetrická kryptografie [12]}{fig:SymEn}{1}{graphics/AsymmetricEncrypt.jpg}
+\obr{Asymetrická kryptografie \cite{Sifrovani}  }{fig:SymEn}{1}{graphics/AsymmetricEncrypt.jpg}
 
 
 
@@ -124,14 +125,14 @@ Digitální podpis je kryptografická technika používaná k ověření pravost
 
 V kontextu blockchainu se digitální podpis používá k prokázání vlastnictví určité transakce nebo dat jednotlivcem nebo entitou.
 
-Digitální podpisy jsou zásadní součástí technologie blockchain. Zajišťují pravost a integritu transakcí potažmo dat v síti. Poskytují bezpečný a decentralizovaný způsob ověřování vlastnictví, eliminují potřebu prostředníků a zvyšují důvěru mezi stranami.[13]
+Digitální podpisy jsou zásadní součástí technologie blockchain. Zajišťují pravost a integritu transakcí potažmo dat v síti. Poskytují bezpečný a decentralizovaný způsob ověřování vlastnictví, eliminují potřebu prostředníků a zvyšují důvěru mezi stranami.	\cite{Digitální podpis}
 
 
 \subsubsection{Digitální peněženka}\label{subsubsec:DigWallet}
 
 Digitální nebo-li Blockchainová peněženka je speciální softwarové nebo hardwarové zařízení, které se používá k uchování informací o transakcích a osobních informací uživatele. Blockchainové peněženky neobsahují skutečnou měnu. Peněženky se používají k uchování soukromých klíčů a udržování bilance transakcí.
 
-Peněženky jsou pouze komunikační nástroj pro provádění transakcí s ostatními uživateli. Skutečná data nebo měna jsou uložena v blocích v blockchainu.[11]
+Peněženky jsou pouze komunikační nástroj pro provádění transakcí s ostatními uživateli. Skutečná data nebo měna jsou uložena v blocích v blockchainu.	\cite{Kryptografie v Blockchain}
 
 
 
@@ -143,7 +144,7 @@ Peněženky jsou pouze komunikační nástroj pro provádění transakcí s osta
 
 Hash je matematická funkce, která převádí vstup s libovolnou délkou na šifrovaný výstup s pevnou délkou. Tudíž, bez ohledu na původní množství dat nebo velikost souboru, bude jeho jedinečný hash vždy stejné velikosti. Co je však důležité, hash nelze použít k \it{reverse-engineeringu}\textsuperscript{1} vstupu z hashovaného výstupu, protože hashovací funkce jsou „jednosměrné“. To znamená, že pokud použijete takovou funkci na stejná data, její hash bude identický, takže pokud již znáte jeho hash, můžete ověřit, že data jsou stejná (tedy nezměněná).
 
-Hashovací funkce jsou základem pro vytváření odtisků dat (tzv. checksumů) a zajišťují integritu a autenticitu dat v rámci blockchainu. Dále, v kontextu blockchainových technologií, hashování je zásadní pro vytváření nových bloků. Pokud je jakýkoliv prvek bloku změněn, změní se celkový hash bloku, což efektivně znamená, že jakákoliv neautorizovaná změna je okamžitě viditelná. Takové vlastnosti hashovacích funkcí přidávají vrstvu bezpečnosti a transparentnosti do technologie blockchain.[14]
+Hashovací funkce jsou základem pro vytváření odtisků dat (tzv. checksumů) a zajišťují integritu a autenticitu dat v rámci blockchainu. Dále, v kontextu blockchainových technologií, hashování je zásadní pro vytváření nových bloků. Pokud je jakýkoliv prvek bloku změněn, změní se celkový hash bloku, což efektivně znamená, že jakákoliv neautorizovaná změna je okamžitě viditelná. Takové vlastnosti hashovacích funkcí přidávají vrstvu bezpečnosti a transparentnosti do technologie blockchain.	\cite{Hash-funkce}
 
 
 
@@ -154,10 +155,10 @@ Hashovací funkce jsou základem pro vytváření odtisků dat (tzv. checksumů)
 
 Merkle Tree je základním prvkem technologie blockchain. Jedná se o matematickou datovou strukturu složenou z hashů jednotlivých datových bloků, které slouží jako shrnutí všech transakcí v bloku. Tato struktura umožňuje efektivní a bezpečné ověřování obsahu v rozsáhlém množství dat a tak pomáhá při ověřování konzistence a samotného obsahu dat. Jak Bitcoin, tak Ethereum používají strukturu Merkle Tree. Merkle Tree je také známý jako Hashovací strom. 
 
-Koncept Stromu Merkle je pojmenován po Ralphu Merkleovi, který tento nápad patentoval v roce 1979.[15]
+Koncept Stromu Merkle je pojmenován po Ralphu Merkleovi, který tento nápad patentoval v roce 1979.	\cite{Merkle-Tree}
 
 
-\obr{Zjednodušená forma Merkle Tree [15]}{fig:MerkleTree}{0.6}{graphics/blockchain-merkle-tree.png}
+\obr{Zjednodušená forma Merkle Tree 	\cite{Merkle-Tree}  }{fig:MerkleTree}{0.6}{graphics/blockchain-merkle-tree.png}
 
 
 
@@ -172,7 +173,7 @@ Výhody:
 	
 	\item Decentralizace: Technologie blockchain je považována za osvobozenou od cenzury, jelikož není ovládána žádnou jednotlivou entitou. Spíše funguje na principu důvěryhodných uzlů pro ověřování a konsenzuálních protokolů, které schvalují transakce pomocí chytrých kontraktů.
 
-	\item Bezpečnost: Technologie blockchain dosahuje vysoké úrovně bezpečnosti díky využití hashovacích technik. Ty umožňují ukládání každé jednotlivé transakce do bloků, které jsou vzájemně propojeny. To zajišťuje robustní ochranu dat. Jednou z takových technik, kterou blockchain užívá pro ukládání transakcí, je SHA 256.[16]
+	\item Bezpečnost: Technologie blockchain dosahuje vysoké úrovně bezpečnosti díky využití hashovacích technik. Ty umožňují ukládání každé jednotlivé transakce do bloků, které jsou vzájemně propojeny. To zajišťuje robustní ochranu dat. Jednou z takových technik, kterou blockchain užívá pro ukládání transakcí, je SHA 256.
 
 	
 \end{itemize}
@@ -188,7 +189,7 @@ Nevýhody:
 	\item Časová náročnost: Proces přidání nového bloku do blockchainu vyžaduje, aby těžaři opakovaně vypočítávali hodnoty nonce (vysvětleno v sekci \ref{subsubsec:Bloky}). Tento proces je nesmírně časově náročný a je třeba ho optimalizovat, aby blockchain byl efektivně využitelný na průmyslové úrovni. Tento problém se týká výhradně řešeních využívající Proof-of-work konsensus.
 	
 	
-	\item Regulační výzvy: Regulační výzvy se týkají technologie blockchain, která implementuje arbitrární monetární politky a tak čelí určitým výzvám, zejména ze strany finančních institucí. Pro širší uplatnění blockchainu je nutné řešit další technologické aspekty a navrhnout vhodné regulace.[16]
+	\item Regulační výzvy: Regulační výzvy se týkají technologie blockchain, která implementuje arbitrární monetární politky a tak čelí určitým výzvám, zejména ze strany finančních institucí. Pro širší uplatnění blockchainu je nutné řešit další technologické aspekty a navrhnout vhodné regulace.  \cite{Výhody-a-nevýhody-BC}
 	
 	
 \end{itemize}
@@ -197,7 +198,7 @@ Nevýhody:
 
 \subsection{Konsensus}\label{subsec:Konsensus}
 
-Algoritmus konsenzu je nástroj, který umožňuje uživatelům nebo strojům koordinaci v distribuovaném prostředí. Musí zajistit, že všichni aktéři v systému se mohou shodnout na jednom pravdivém zdroji informací, a to i v případě, že některé části systému selžou. Jinými slovy, systém musí být odolný vůči chybám.[16]
+Algoritmus konsenzu je nástroj, který umožňuje uživatelům nebo strojům koordinaci v distribuovaném prostředí. Musí zajistit, že všichni aktéři v systému se mohou shodnout na jednom pravdivém zdroji informací, a to i v případě, že některé části systému selžou. Jinými slovy, systém musí být odolný vůči chybám. \cite{Konsensus}
 
 
 \subsubsection{Proof of Work}\label{subsubsec:PoW}
@@ -206,7 +207,7 @@ Proof of Work protokol stanovuje podmínky, za kterých je blok platný. Může 
 
 U známých blockchainů je laťka nastavena neuvěřitelně vysoko. Abyste mohli konkurovat ostatním těžařům, potřebovali byste sklad plný speciálního hashovacího hardwaru (ASIC) pro možnost vytvoření platného bloku.
 
-Pro síť je poté triviální ověřit, zda jste skutečně vytvořili správný blok. I když jste vyzkoušeli biliony kombinací, aby jste získali správný hash, stačí, když vaše data jednou projdou funkcí. Pokud vaše data vytvoří platný hash, budou přijata a vy získáte odměnu. Pokud ne, síť jej odmítne a vy jste zbytečně promarnili čas a elektřinu.[17]
+Pro síť je poté triviální ověřit, zda jste skutečně vytvořili správný blok. I když jste vyzkoušeli biliony kombinací, aby jste získali správný hash, stačí, když vaše data jednou projdou funkcí. Pokud vaše data vytvoří platný hash, budou přijata a vy získáte odměnu. Pokud ne, síť jej odmítne a vy jste zbytečně promarnili čas a elektřinu.	\cite{Konsensus}
 
 
 
@@ -216,7 +217,7 @@ Proof of Stake byl navržen v počátcích Bitcoinu jako alternativa k Proof of 
 
 Těžař je nahrazen tzv. Validátorem nebo skupinou validátorů, kteří uzamknou své prostředky v peněžence (nemohou být přesunuty, pokud sázíte). Obvykle se dohodnete s ostatními validátory o tom, jaké transakce půjdou do dalšího bloku. V jakémsi smyslu sázíte na blok, který bude vybrán, a protokol jeden vybere.
 
-Pokud je vybrán váš blok, obdržíte podíl na transakčních poplatcích v závislosti na vašem vkladu. Čím více prostředků máte uzamčených, tím více můžete získat. Pokud však pokusíte podvádět tím, že navrhnete neplatné transakce, ztratíte část (nebo vše) ze svého vkladu. Máme tedy podobný mechanismus jako u PoW - čestné jednání je ziskovější než nečestné. [17]
+Pokud je vybrán váš blok, obdržíte podíl na transakčních poplatcích v závislosti na vašem vkladu. Čím více prostředků máte uzamčených, tím více můžete získat. Pokud však pokusíte podvádět tím, že navrhnete neplatné transakce, ztratíte část (nebo vše) ze svého vkladu. Máme tedy podobný mechanismus jako u PoW - čestné jednání je ziskovější než nečestné. 	\cite{Konsensus}
 
 
 
@@ -233,7 +234,7 @@ Mimo velmi známé a rozšířené algoritmy, kterými bez pochyby Pow a Pos jso
 
 Jedním z takových je Proof of Authority což je konsensusový algoritmus založený na reputaci, který přináší praktické a efektivní řešení pro blockchainové sítě (zejména pro ty privátní). Tento termín navrhl v roce 2017 Gavin Wood, spoluzakladatel Ethereum a bývalý CTO.
 
-Konsensusový algoritmus PoA využívá váhu identit, což znamená, že validátoři bloků nestaví mince, ale jejich vlastní reputaci. Proto jsou blockchainy PoA zabezpečeny validujícími uzly, které jsou libovolně vybrány jako důvěryhodné entity. Model PoA spoléhá na omezený počet validátorů bloků a právě to jej činí vysoce škálovatelným systémem. Bloky a transakce ověřují předem schválení účastníci, kteří působí jako moderátoři systému.[17]
+Konsensusový algoritmus PoA využívá váhu identit, což znamená, že validátoři bloků nestaví mince, ale jejich vlastní reputaci. Proto jsou blockchainy PoA zabezpečeny validujícími uzly, které jsou libovolně vybrány jako důvěryhodné entity. Model PoA spoléhá na omezený počet validátorů bloků a právě to jej činí vysoce škálovatelným systémem. Bloky a transakce ověřují předem schválení účastníci, kteří působí jako moderátoři systému. 	\cite{Konsensus}
 
 
 
@@ -242,7 +243,7 @@ Konsensusový algoritmus PoA využívá váhu identit, což znamená, že valid�
 \section{Decentralizované aplikace}
 
 
-DApp (decentralizovaná aplikace) je aplikace, která běží na distribuovaném výpočetním systému, jako je blockchain, například Ethereum nebo Algorand. Na první pohled se DApp jeví podobně jako běžné aplikace v rámci Web 2.0 (více v \ref{subsec:Web2vsWeb3}), které jsou součástí každodeního života nás všech, ale samotná architektura je velmi odlišná. Na rozdíl od tradičních aplikací, které fungují z centralizovaného serveru, DApp běží na logice uložené v blockchainu v rámci chytrých kontraktů (ang. "smart-contracts"  více v sekci  \ref{subsec:SmartContract}). Decentralizovaná povaha takovýmto aplikacím umožňuje fungovat odkudkoli na světě s připojením k blockchainu. Populární využití decentralizovaných aplikací je v DeFi (decentralizováné finance, což je souhrnné označení pro finační služby na veřejném blockchain) v rámci DEx aplikací (decentralizované směnárny anglicky "Decentralized Exchange").[21]
+DApp (decentralizovaná aplikace) je aplikace, která běží na distribuovaném výpočetním systému, jako je blockchain, například Ethereum nebo Algorand. Na první pohled se DApp jeví podobně jako běžné aplikace v rámci Web 2.0 (více v \ref{subsec:Web2vsWeb3}), které jsou součástí každodeního života nás všech, ale samotná architektura je velmi odlišná. Na rozdíl od tradičních aplikací, které fungují z centralizovaného serveru, DApp běží na logice uložené v blockchainu v rámci chytrých kontraktů (ang. "smart-contracts"  více v sekci  \ref{subsec:SmartContract}). Decentralizovaná povaha takovýmto aplikacím umožňuje fungovat odkudkoli na světě s připojením k blockchainu. Populární využití decentralizovaných aplikací je v DeFi (decentralizováné finance, což je souhrnné označení pro finační služby na veřejném blockchain) v rámci DEx aplikací (decentralizované směnárny anglicky "Decentralized Exchange").	\cite{DApps}
 
 
 \subsection{Web2 vs Web3}\label{subsec:Web2vsWeb3}
@@ -250,12 +251,22 @@ DApp (decentralizovaná aplikace) je aplikace, která běží na distribuovaném
 
 Jedním z hlavních rozdílů mezi web2 a web3 je přístup k ukládání a zpracování dat. Web2 se spoléhá na centralizované servery a systémy pro ukládání a zpracování dat, zatímco web3 používá blockchain, k decentralizovanému ukládání a zpracování dat. Tento rozdíl má řadu důsledků pro bezpečnost, transparentnost a interoperabilitu dat.
 
-Dalším klíčovým rozdílem mezi web2 a web3 je úroveň kontroly a vlastnictví, kterou uživatelé mají nad svými daty. V prostředí web2 jsou uživatelská data často kontrolována a vlastněna centralizovanými subjekty, jako jsou sociální média nebo vyhledávače. Ve web3 mají uživatelé větší kontrolu a vlastnictví nad svými daty, protože jsou uložena na blockchainu a lze je přímo přistupovat a spravovat uživatelem.[22]
+Dalším klíčovým rozdílem mezi web2 a web3 je úroveň kontroly a vlastnictví, kterou uživatelé mají nad svými daty. V prostředí web2 jsou uživatelská data často kontrolována a vlastněna centralizovanými subjekty, jako jsou sociální média nebo vyhledávače. Ve web3 mají uživatelé větší kontrolu a vlastnictví nad svými daty, protože jsou uložena na blockchainu a lze je přímo přistupovat a spravovat uživatelem. \cite{Web2VsWeb3}
+
+
+\subsection{Sítě typu peer-to-peer}
+
+
+
 
 
 \subsection{Smart contracts}\label{subsec:SmartContract}
 
-Smart-contract nebo také česky chytrý kontrakt je definován jako digitální smlouva, která je podepsána a uložena v blockchainové síti, a automaticky se vykoná, jakmile jsou splněny podmínky uvedené v kontraktu. Tyto podmínky jsou zapsány v blockchainových programovacích jazycích, jako je například Solidity.[23]
+Smart-contract nebo také česky chytrý kontrakt je definován jako digitální smlouva, která je podepsána a uložena v blockchainové síti, a automaticky se vykoná, jakmile jsou splněny podmínky uvedené v kontraktu. Tyto podmínky jsou zapsány v blockchainových programovacích jazycích, jako je například Solidity.	\cite{Smart-contract}
+
+
+\subsection{Decentralized identity}\label{subsec:DecentralizedIdentity}
+
 
 
 \subsection{Distribuované úložiště}
@@ -265,8 +276,8 @@ Smart-contract nebo také česky chytrý kontrakt je definován jako digitální
 
 \n{2}{Výhodné a nevýhodné vlastnosti}
 text
-\n{2}{Sítě typu peer-to-peer}
-text
+
+
 \n{2}{Persistence}
 
 
@@ -339,7 +350,7 @@ Citace knihy. \cite{chmel}
 % ============================================================================ %
 \cast{Projektová část}
 
-\section{Aplikace pro ověřování dokůmentů}
+\section{Verified: Aplikace pro ověřování dokůmentů}
 
 Hlavním cílem praktické části této práce je navrhnout a implementovat aplikaci, která spojuje robustní funkcionalitu s přívětivým a intuitivním uživatelským rozhraním. Uživatelské rozhraní by mělo být navrženo tak, aby bylo jednoduché a snadno ovladatelné pro širokou škálu uživatelů, bez ohledu na jejich technickou zdatnost a tak co nejvíc abstrahovat fakt, že aplikace funguje nad technologií blockchain.
 
@@ -360,12 +371,13 @@ První scénář spočívá v tom, že student po fyzické identifikaci na studi
 Druhý scénář je modernější variantou, kde se celý proces odehrává v digitálním prostředí. Autentifikace studenta před získáním dokumentu je v tomto případě značně jednodušší, jelikož pro získání tohoto dokumentu musí být student přihlášen do systému univerzity. Univerzita poté několika jednoduchými dotazy ověří, zda je student oprávněn tento dokument získat. Sám dokument je pak opatřen digitálním podpisem (vysvětleno v \ref{subsubsec:DigSig}), což značně ztěžuje jeho falšování oproti předchozí situaci. Ovšem ani tato varianta není idealní, jelikož pro opatření dokumentu elektronickou pečetí je potřeba třetí strany, například České pošty. Toto vytváří situaci man-in-middle, kdy se v komunikaci mezi dvěmi stranami (Univerzita-Student) objevuje nutnost třetí strany, která ale dle návrhu pro tento úkon nutná není.
 
 
+
 \subsection{Navrhované řešení}
 
-Aplikace, která využije technologie block chain a potažmo její abstrakce ve formě Ethereum Attestation Service (vice v kapitole ???) k umožnění sdílení a ověřování dokumentů bez nutnosti třetí strany. Nemmenost a bezpečnost zarucena technologii blockchain. 
+Aplikace, která využije technologie block chain a potažmo její abstrakce ve formě Ethereum Attestation Service (vice v kapitole \ref{sec:eas}) k umožnění sdílení a ověřování dokumentů bez nutnosti třetí strany. Nemmenost a bezpečnost zarucena technologii blockchain. 
 
 
-Návrhem řešení je vývoj aplikace, která efektivně využije technologii blockchain s cílem optimalizovat proces sdílení a ověřování dokumentů. Klíčovou složkou aplikace bude Ethereum Attestation Service, což je pokročilá abstrakce technologie blockchain, která bude podrobněji vysvětlena v kapitole ???.
+Návrhem řešení je vývoj aplikace, která efektivně využije technologii blockchain s cílem optimalizovat proces sdílení a ověřování dokumentů. Klíčovou složkou aplikace bude Ethereum Attestation Service, což je pokročilá abstrakce technologie blockchain, která bude podrobněji vysvětlena v kapitole \ref{sec:eas}.
 
 Výsledná aplikace eliminuje nutnost třetí strany v procesu ověřování, což zvyšuje efektivitu a zjednodušuje celý proces. Blockchain technologie zároveň zaručuje odolnost proti změnám a hashovací techniky zase zabezpečení neveřejných dat.
 
@@ -373,6 +385,38 @@ Díky tomu je možné dosáhnout výrazného zvýšení spolehlivosti a důvěry
 
 
 
+
+\subsection{Regulérnost v rámci GDPR}\label{subsec:GDPR}
+
+
+Regulace Evropské unie o ochraně osobních údajů, známá jako GDPR, se vztahuje na širokou řadu projektů a aplikací, včetně aplikace Verified. V rámci demonstračního scénáře jsou data vkládaná entitami veřejná a obecná. V případě souborů obsahujících citlivé údaje je obsah těchto souborů ihned po vložení převeden na hash (více v \ref{subsubsec:Hash}) a není dále ukládán ve své původní podobě. Tento přístup zajišťuje, že aplikace Verified je v souladu s požadavky GDPR na ochranu a zpracování osobních údajů.
+
+
+
+\subsection{Omezení navrhovaného řešení}\label{subsec:Restrictions}
+
+Navrhované řešení přináší určitá omezení související s jeho integrací do ekosystému web3 a Ethereum blockchainu. Kritické je, aby účastníci - v našem případě Entita i Příjemce - měli k dispozici ethereum identitu pro možnost interakce s aplikací. Toto vyžaduje, aby Entita disponovala rozšířením Metamask ve svém internetovém prohlížeči, jenž slouží jako most pro komunikaci mezi uživatelskou ethereum peněženkou a aplikací. V současné době je podpora omezena pouze na Metamask jakožto na nejrozšířenější softwarovou  peněženku, přičemž aplikace si zachovává potenciál pro budoucí rozšíření podpory pro další peněženky.
+
+Dále je třeba počítat s faktem, že jakékoli zápisy do blockchainu jsou spojeny s transakčními poplatky. Ačkoli jsou tyto poplatky relativně nízké – obvykle v řádech desetin či setin dolaru, což představuje jednotky korun českých. Tyto poplatky hradí v aplikaci Entita.
+
+
+
+
+\subsection{Srovnání navrhovaného řešení s konkurencí}\label{subsec: Competition}
+
+V rámci konkurenčního prostředí není na platformě Ethereum Attestation Service, kterou využíváme v této práci, znám žádný jiný projekt adresující totožné nebo podobné téma. Tento fakt pravděpodobně pramení z relativní novosti této infrastrukturní služby, jež byla oficiálně spuštěna do produkčního prostředí 27. 2. 2023, tedy přibližně před rokem v kontextu této studie.
+
+Jedním z projektů, který si vyžaduje zmínku a je relevantní pro srovnání, je česká iniciativa Certoo, orientující se primárně na ověření vlastníctví digitálního obsahu, včetně dokumentů, a nabízející také jejich ověřování. Vzhledem k tomu, že Certoo není řízen jako open-source projekt (dále diskutováno v sekci \ref{subsubsec:OpenSource}), neumožňuje nezávislou revizi kódu a postrádá veřejně dostupnou dokumentaci, tudíž k detailnímu srovnání s prací jsem odkázán na informace uvedené v sekci často kladených otázek na internetových stránkách Certoo.
+
+Certoo, oproti projektu Verified, operuje jako centralizovaná služba, což znamená, že může přistupovat k obsahu uložených souborů a data jsou centralizovaně skladována v jejich databázích, což představuje bezpečnostní riziko v případě kybernetického útoku.
+
+Další signifikantní divergenci lze nalézt ve výběru blockchainové platformy. Zatímco Certoo se omezuje na využití Litecoinu, náš projekt Verified nabízí možnost fungování na různých Ethereum blockchainech, jako jsou Polygon, Optimism či v rámci ukázky v této práci na testnetu Sepolia, čímž poskytuje větší flexibilitu.
+
+Certoo také nevyžaduje od uživatele decentralizovanou identitu, co ale vyžadují je registrace, což v praxi znamená, že uživatelé poskytují osobní údaje, jako je bydliště, přímo do aplikace. Se zánikem Certoo by uživatelé ztratili přístup ke všem datům uloženým v systému.
+
+Na rozdíl od Certoo nedovoluje Verified uživatelům spravovat vlastní privátní klíče k šifrovaným souborům, což je další dimenze, ve které se oba projekty liší, zejména z hlediska uživatelské kontroly a bezpečnosti dat.
+
+Pokud jde o náklady spojené s používáním aplikací, podle informací na svých webových stránkách stanovuje Certoo poplatek přibližně 100 Kč za každý dokument. Na druhé straně, aplikace Verified, vzhledem ke své decentralizované povaze, nenastavuje poplatky za oveřovací služby staticky. Místo toho jsou spojeny s aktuálními transakčními poplatky potřebnými pro zápis dat do blockchainu, čímž se tyto poplatky stávají proměnlivými. Finanční model aplikace Verified a jeho strategie jsou detailněji rozpracovány v následující části \ref{sec:NextSteps}. U jiných tradičních centralizovaných autorit vydávajících elektronické certifikáty jsou ceny ve stovkách až jednotkách tisíc korun dle způsobu použití a délky platnosti. \cite{CeskaPosta} \cite{Certoo}
 
 
 \subsection{Terminologie}
@@ -921,7 +965,7 @@ text
 text
 \n{2}{Video prezentace}
 
-
+\section{Mozne rozsireni}\label{sec:NextSteps}
 
 % ============================================================================ %
 \nn{Závěr}
