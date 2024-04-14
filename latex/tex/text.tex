@@ -19,7 +19,7 @@ V závěru práce shrneme dosažené výsledky a zhodnotíme výkon aplikace. Po
 % ============================================================================ %
 \cast{Teoretická část}
 
-\section{Blockchain}
+\section{BLOCKCHAIN}
 Blockchain je distribuovaná databáze, která udržuje neustále rostoucí seznam uspořádaných záznamů, nazývaných bloky. Tyto bloky jsou propojeny pomocí kryptografie. Každý blok obsahuje kryptografický otisk předchozího bloku, časové razítko a data transakce. Tato databáze je používána k zaznamenání transakcí napříč mnoha počítači, takže záznam nemůže být retroaktivně změněn bez úpravy všech následujících bloků a shody celé sítě. \cite{blockchainobecne}
 
 \obr{Vazba mezi blokem a hashem \cite{blockAndHash}}{fig:HashAndBlock}{1}{graphics/What-Is-Blockchain-Infographic.jpg}
@@ -86,9 +86,6 @@ Těžení je typické pro sítě implementující PoW (Proof-of-work) konsensus 
 Těžba je proces, který Bitcoin a některé další kryptoměny využívají k vytváření nových mincí a ověřování nových transakcí. Zahrnuje velké množství decentralizované sítě počítačů po celém světě, které ověřují a zabezpečují blokchain. Jako odměnu za přispění svého výpočetního výkonu jsou těžaři v síti odměněni novými mincemi. Jedná se o ctnostný cyklus: těžaři udržují a zabezpečují blockchain, blockchain je odměňuje mincemi, mince poskytují podnět pro těžaře k udržování blockchainu. \cite{Mining}
 
 
-\subsubsection{Open-source}\label{subsubsec:OpenSource}
-
-
 
 \subsection{Kryptografie}
 Kryptografie představuje metodologii pro ochranu informací před neautorizovaným přístupem. V blockchain technologii je kryptografie využívána k zabezpečení transakcí prováděných mezi dvěma uzly. K tomuto slouží dva fundamentální koncepty: kryptografie a hashování (viz \ref{subsubsec:Hash}). Kryptografie se používá pro šifrování zpráv v P2P síti, hashování slouží k zabezpečení dat bloků a pro spojení bloků v blockchainu.
@@ -107,7 +104,7 @@ Tento typ šifrování používá stejný klíč pro oba procesy - šifrování 
 \obr{Symetrická kryptografie \cite{Sifrovani} }{fig:SymEn}{1}{graphics/SymmetricEncrypt.jpg}
 
 
-\subsubsection{Asymetrická kryptografie}
+\subsubsection{Asymetrická kryptografie}\label{subsubsec:AsymKrypt}
 
 Metoda asymetrického šifrování používá různé klíče pro šifrování a dešifrování. K tomu využívá klíč veřejný a soukromí. Šifrování veřejným klíčem umožňuje sdílet informace s zcela neznámými stranami jako například ID Email. Soukromý klíč poté slouží k dešifrování zprávy a ověření digitálního podpisu (více v \ref{subsubsec:DigSig}). Matematický vztah mezi klíči spočívá v tom, že soukromý klíč nelze odvodit z veřejného klíče, ale veřejný klíč lze odvodit od klíče soukromého. Příklady asymetrické kryptografie jsou: ECC, DSS a další. \cite{Sifrovani}
 
@@ -239,8 +236,8 @@ Konsensusový algoritmus PoA využívá váhu identit, což znamená, že valid�
 
 
 
-
-\section{Decentralizované aplikace}
+\clearpage
+\section{DECENTRALIZOVANÉ APLIKACE}
 
 
 DApp (decentralizovaná aplikace) je aplikace, která běží na distribuovaném výpočetním systému, jako je blockchain, například Ethereum nebo Algorand. Na první pohled se DApp jeví podobně jako běžné aplikace v rámci Web 2.0 (více v \ref{subsec:Web2vsWeb3}), které jsou součástí každodeního života nás všech, ale samotná architektura je velmi odlišná. Na rozdíl od tradičních aplikací, které fungují z centralizovaného serveru, DApp běží na logice uložené v blockchainu v rámci chytrých kontraktů (ang. "smart-contracts"  více v sekci  \ref{subsec:SmartContract}). Decentralizovaná povaha takovýmto aplikacím umožňuje fungovat odkudkoli na světě s připojením k blockchainu. Populární využití decentralizovaných aplikací je v DeFi (decentralizováné finance, což je souhrnné označení pro finační služby na veřejném blockchain) v rámci DEx aplikací (decentralizované směnárny anglicky "Decentralized Exchange").	\cite{DApps}
@@ -248,15 +245,17 @@ DApp (decentralizovaná aplikace) je aplikace, která běží na distribuovaném
 
 \subsection{Web2 vs Web3}\label{subsec:Web2vsWeb3}
 
-
-Jedním z hlavních rozdílů mezi web2 a web3 je přístup k ukládání a zpracování dat. Web2 se spoléhá na centralizované servery a systémy pro ukládání a zpracování dat, zatímco web3 používá blockchain, k decentralizovanému ukládání a zpracování dat. Tento rozdíl má řadu důsledků pro bezpečnost, transparentnost a interoperabilitu dat.
+Jedním z hlavních rozdílů mezi web2 a web3 je přístup k ukládání a zpracování dat. Zatímco Web2 využívá k této manipulaci centralizovaný přístup, kdy klienti mají vysokou míru důvěry v danou entitu nebo aplikaci, která má úplnou kontrolu nad daty, tak Web3 volí decentralizovaný způsob, kdy jednotlivé data jsou šifrovány privátním klíčem uživatele a distribuovány v síti. Tento rozdíl má řadu důsledků pro bezpečnost, transparentnost a interoperabilitu dat.
 
 Dalším klíčovým rozdílem mezi web2 a web3 je úroveň kontroly a vlastnictví, kterou uživatelé mají nad svými daty. V prostředí web2 jsou uživatelská data často kontrolována a vlastněna centralizovanými subjekty, jako jsou sociální média nebo vyhledávače. Ve web3 mají uživatelé větší kontrolu a vlastnictví nad svými daty, protože jsou uložena na blockchainu a lze je přímo přistupovat a spravovat uživatelem. \cite{Web2VsWeb3}
 
 
-\subsection{Sítě typu peer-to-peer}
+\subsection{Sítě typu peer-to-peer}\label{subsec:P2P}
+
+Peer-to-peer (P2P) je decentralizovaná síťová architektura, v níž účastníci, nazývaní rovnocenné uzly, komunikují přímo mezi sebou bez nutnosti centrální autority nebo serveru. V P2P síti každý účastník funguje jak jako klient, tak jako server, což jim umožňuje přímo sdílet zdroje a služby s ostatními uzly.
 
 
+Mezi klíčovými vlastnostmi P2P sítí vyniká zejména schopnost odolnosti proti chybám a redundance. Díky absenci centrálního bodu kontroly nespadne celá síť v důsledku výpadku jednotlivých uzlů. Data a služby jsou rozprostřeny mezi více uzlů, což činí síť odolnější vůči selháním. Pokud se jeden uzel stane nedostupným, ostatní uzly mohou kompenzovat a převzít jeho zodpovědnosti, čímž zajišťují nepřetržitý chod sítě.	\cite{P2P site}
 
 
 
@@ -265,51 +264,151 @@ Dalším klíčovým rozdílem mezi web2 a web3 je úroveň kontroly a vlastnict
 Smart-contract nebo také česky chytrý kontrakt je definován jako digitální smlouva, která je podepsána a uložena v blockchainové síti, a automaticky se vykoná, jakmile jsou splněny podmínky uvedené v kontraktu. Tyto podmínky jsou zapsány v blockchainových programovacích jazycích, jako je například Solidity.	\cite{Smart-contract}
 
 
-\subsection{Decentralized identity}\label{subsec:DecentralizedIdentity}
+\subsection{Decentralizovaná identita}\label{subsec:DecentralizedIdentity}
+
+Decentralizovaná identita představuje bezpečnou a uživatelsky orientovanou metodu pro správu digitálních identit, eliminující závislost na centrálních autoritách pro autentizaci uživatelů. Využitím blockchainu a kryptografie tato technologie značně posiluje soukromí a kontrolu uživatele. Umožňuje jednotlivcům a organizacím nezávisle spravovat své identity, čímž jim dává úplnou kontrolu nad jejich daty, s možností rozhodnout kdy, jak a s kým budou jejich informace sdíleny. To je umožněno prostřednictvím decentralizovaných identifikátorů, které jsou vydávány, drženy a kontrolovány jednotlivci samotnými, což poskytuje značnou míru nezávislosti a autonomie.
+
+Jako konkrétní příklad této koncepce slouží účet Ethereum, který funguje jako decentralizovaný identifikátor. Uživatelé mohou vytvářet neomezené množství těchto účtů bez potřeby získávat povolení od kohokoli a také bez nutnosti ukládání těchto účtů v jakémkoli centrálním registru. Tato vlastnost decentralizované identity nejenže zvyšuje bezpečnost a soukromí, ale také zjednodušuje proces managementu identity a poskytuje uživatelům větší kontrolu nad jejich osobními a citlivými daty. Tyto decentralizované účtu v případě Etherea implementují kryptografii veřejného klíče vysvětlenou zde \ref{subsubsec:AsymKrypt} . \cite{Ethereum-Identity}
 
 
 
-\subsection{Distribuované úložiště}
+%\subsection{Distribuované úložiště}
 
 
 
 
-\n{2}{Výhodné a nevýhodné vlastnosti}
-text
-
-
-\n{2}{Persistence}
 
 
 
-\section{Ethereum Attestation Service}\label{sec:eas}
+
+
+%\n{2}{Persistence}
+
+%\subsection{Open-source}\label{subsec:OpenSource}
+
+%Open source označuje pojem, který se původně vztahoval k softwaru se otevřeným zdrojovým kódem (OSS). Software se otevřeným zdrojovým kódem je zpřístupněn tak, že je veřejně dostupný – kdokoliv může prohlížet, upravovat a distribuovat kód podle vlastního uvážení. Pojem Open source je take velmi důležitý pro Blockchain a decentralizované aplikace obecně. Jedním z důvodů je právě dlouholetost OSS projektů díky jejich decentralizaci a také obecně větší bezpečnost těchto aplikací. Tento samotný projekt, by nejspíš bez skutečnosti, že Ethereum je open source projekt nevznikl, protože by nevznikl nástroj, který je probrán v následující sekci a je klíčový pro aplikaci vyvíjenou v praktické části.% 
+
+
+\clearpage
+\section{ETHEREUM ATTESTATION SERVICE}\label{sec:eas}
+
+
+Ethereum Attestation Service (EAS) je veřejně dostupná open-source infrastruktura určená pro tvorbu potvrzení (attestací) jak na řetězci (onchain), tak mimo něj (offchain).
+
+Klíčové prvky \textbf{EAS}:
+
+\begin{itemize}
+	
+	\item \textbf{EAS} funguje na dvou jednoduchých chytrých kontraktech (vysvětleno zde \ref{subsec:SmartContract}): jeden pro registraci Schématu a druhý pro vytvoření Atestace k těmto Schématům. Schémata poté mohou být registrována pro různé případy použití a atestace k nim mohou být jak on-chain tak off-chain.
+	
+	\item \textbf{EAS} nabízí flexibilní základní vrstvu pro širokou škálu aplikací bez předpokladů o jejím využití nebo vhodné struktuře schématů pro konkrétní případ.
+	
+	\item \textbf{EAS} je software s volně přístupným zdrojovým kódem, bez povolení, bez tokenů a jeho použití je zdarma. Byl vytvořen komunitou pro komunitu. Jako veřejně prospěšný produkt dává přednost dopadu před ziskem.
+	
+	\item \textbf{EAS} atestace jsou zásadně odlišné od tokenů, které reprezentují typ digitálního aktiva. Hlavním účelem EAS je sloužit jako protokol, který umožňuje vytváření digitálních podpisů na strukturované informace, čímž zlepšuje jejich kompozitelnost a interoperabilitu, důvěru a ověření.
+	
+\end{itemize}
+
+EAS představuje normu a základní vrstvu, kde kterákoli entita může vytvářet attestace o čemkoli. Tento základní princip a účetní kniha potvrzení lze využít pro decentralizaci nejen peněz a aktiv. Umožní nám koordinovat a budovat systémy reputace, hlasovací systémy, systémy správy, decentralizovaná sociální média, prokazování původu zboží, znalostní a sociální grafy a mnoho dalšího. 	\cite{EAS:Intro}
+
+
+\obr{Pyramida užití EAS \cite{EAS:Pyramid}}{fig:logo}{1}{graphics/growthPyramid.png}
+
+
+
+\clearpage
+\subsection{Atestace}\label{subsec:Attestation}
+
+
+
+Ve své podstatě je atestace digitální podpis na strukturovaných datech. Představte si to jako digitální pečeť schválení nebo ověření. Je to způsob, jakým jedna entita (potvrzovatel) oznamuje nějaké tvrzení o jiné entitě nebo o určitých datech.
+
+Atestace slouží jako most mezi digitálním a fyzickým světem a poskytují mechanismus pro ověřování a potvrzování tvrzení v různých scénářích. Některé z případů užití mohou být například Ověřování pravosti produktu nebo přesnosti informací, Hlasovací systémy pro zaznamenání preferencí voličů a také v oblasti Ověřování dokončení kurzů, školení nebo dodržování standadtů.
+
+
+Atestace je kryptograficky podepsána, aby se zajistila jeho pravost a neměnnost. S EAS mohou být tvrzení vytvořena onchain nebo offchain (více v \ref{subsec:OnChain-OffChain}) 
+
+Proces vytváření atestace a její propagování:
+
+\begin{description}
+	
+	\item[Definování dat]: Atestace je vždy tvořena jako potvrzení určitého schématu.
+	
+	\item[Podepsání dat]: Entita jenž vytváří atestaci podepisuje strukturované data svým vlastním privátním klíčem. Tento podpis slouží jako kryptografická pečeť, která zajišťuje, že data nebyla nijak falšována.
+	
+	\item[Uložení Atestace]: Po podpisu atestace následuje její uložení na blockchain a to buď v rámci On-chain nebo Off-chain řešení.
+	
+	\item[Ověření]: Jakmile je atestace uložená na blockchain je toto tvrzení dostupné komukoliv. Je možné porovnat digitální podpis s veřejným klíčem vydavatele, a to zajišťuje autenticitu takovéto atestace.
+	
+	\item[Životní cyklus]: Atestace kvůli principům blockchainu nemohou být editovány, ale jejich platnost může být zrušena pomocí procesu "Revoke". Tato možnost můsí být definována v rámci schématu atestace a to že proběhla je zaznamenáno, což zajišťuje transparentní historie atestace.
+	
+	\item[Odkazovnání \& Tvoření ]: EAS umožňuje referencování jiných atestací a tak umožňuje tvořit sítě propojených atestací. Toto přidáva kontext k atestaci a rozšiřuje hloubku u ostatních. 
+	
+\end{description}
+
+Atestace jsou tedy klíčovým prvkem se kterým interagují různě uživatelé a to jak Entity, které tyto atestace vydávají, tak příjemci, nebo jiní aktéři, kteří mají zájem tyto atestace číst a jinak dál používat. \cite{EAS:Atestace}
+
+
+\subsection{Schéma}\label{subsec:Schema}
+
+Schémata definují strukturu a typ dat, která mohou být zahrnuta v atestaci. Fungují jako plán informací, které mají být atestovány, zajišťují konzistenci a jasnost.
+
+
+
+\begin{description}
+	\item[Schema \#] -  Jedná se o inkrementální číslo automaticky přiřazené schématu. Nejedná se o unikátní identifikátor.
+	\item[UID] - Toto je unikátní univerzální identifikátor přiřazený schématu.
+	\item[Creator] - Adresa peněženky, která schéma vytvořila.
+	\item[Transaction ID] - Ethereum transakce, která schéma zaregistrovala v EAS.
+	\item[Resolver Contract] - Volitelná smlouva přiřazená k schématu pro složitější případy užití.
+	\item[Attestation Count] - Množství potvrzení, které byly vytvořeny s potvrzeními on/off chain.
+	\item[Schema] - ABI kódované typy polí schématu.
+\end{description}
+
+
+Schémata jsou základním stavebním kamenem ekosystému EAS. Zajišťují konzistenci, ověřitelnost a významnost potvrzení (attestací).	\cite{EAS:Schema}
+
+
+
+
+\subsection{On-Chain vs Off-Chain}\label{subsec:OnChain-OffChain}
+
+
+
+
+
+
+
+\subsection{Privacy}\label{subsec:Privacy}
+
+
 
 
 %tuto cast o Ethereum vynechat
-\n{1}{Ethereum}
-text
-\n{2}{Ether}
-text
-\n{2}{Ucty}
-text
-\n{2}{Transakce}
-text
-\n{2}{Bloky}
-text
-\n{2}{Ethereum Virtual Machine}
-text
-\n{2}{Gas}
-text
-\n{2}{Uzly a klienti}
-text
-\n{2}{Konsensus}
-text
-\n{2}{Ethereum stack}
-text
-\n{3}{Smart kontrakty}
-text
-\n{3}{Development networks}
-text
+%\n{1}{Ethereum}
+%text
+%\n{2}{Ether}
+%text
+%\n{2}{Ucty}
+%text
+%\n{2}{Transakce}
+%text
+%\n{2}{Bloky}
+%text
+%\n{2}{Ethereum Virtual Machine}
+%text
+%\n{2}{Gas}
+%text
+%\n{2}{Uzly a klienti}
+%text
+%\n{2}{Konsensus}
+%text
+%\n{2}{Ethereum stack}
+%text
+%\n{3}{Smart kontrakty}
+%text
+%\n{3}{Development networks}
+%text
 
 
 
@@ -350,7 +449,7 @@ Citace knihy. \cite{chmel}
 % ============================================================================ %
 \cast{Projektová část}
 
-\section{Verified: Aplikace pro ověřování dokůmentů}
+\section{VERIFIED: APLIKACE PRO OVĚŘOVÁNÍ DOKUMENTŮ}
 
 Hlavním cílem praktické části této práce je navrhnout a implementovat aplikaci, která spojuje robustní funkcionalitu s přívětivým a intuitivním uživatelským rozhraním. Uživatelské rozhraní by mělo být navrženo tak, aby bylo jednoduché a snadno ovladatelné pro širokou škálu uživatelů, bez ohledu na jejich technickou zdatnost a tak co nejvíc abstrahovat fakt, že aplikace funguje nad technologií blockchain.
 
@@ -404,17 +503,17 @@ Dále je třeba počítat s faktem, že jakékoli zápisy do blockchainu jsou sp
 
 \subsection{Srovnání navrhovaného řešení s konkurencí}\label{subsec: Competition}
 
-V rámci konkurenčního prostředí není na platformě Ethereum Attestation Service, kterou využíváme v této práci, znám žádný jiný projekt adresující totožné nebo podobné téma. Tento fakt pravděpodobně pramení z relativní novosti této infrastrukturní služby, jež byla oficiálně spuštěna do produkčního prostředí 27. 2. 2023, tedy přibližně před rokem v kontextu této studie.
+V rámci konkurenčního prostředí není na platformě Ethereum Attestation Service, kterou využíváme v této práci, znám žádný jiný projekt adresující totožné nebo podobné téma. Tento fakt pravděpodobně pramení z relativní novosti této infrastrukturní služby, jež byla oficiálně spuštěna do produkčního prostředí přibližně před rokem v kontextu této studie.
 
 Jedním z projektů, který si vyžaduje zmínku a je relevantní pro srovnání, je česká iniciativa Certoo, orientující se primárně na ověření vlastníctví digitálního obsahu, včetně dokumentů, a nabízející také jejich ověřování. Vzhledem k tomu, že Certoo není řízen jako open-source projekt (dále diskutováno v sekci \ref{subsubsec:OpenSource}), neumožňuje nezávislou revizi kódu a postrádá veřejně dostupnou dokumentaci, tudíž k detailnímu srovnání s prací jsem odkázán na informace uvedené v sekci často kladených otázek na internetových stránkách Certoo.
 
-Certoo, oproti projektu Verified, operuje jako centralizovaná služba, což znamená, že může přistupovat k obsahu uložených souborů a data jsou centralizovaně skladována v jejich databázích, což představuje bezpečnostní riziko v případě kybernetického útoku.
+Certoo, oproti projektu Verified, operuje jako centralizovaná služba, což znamená, že může přistupovat k obsahu uložených souborů a data jsou centralizovaně skladována v jejich databázích, což představuje bezpečnostní riziko v případě kybernetického útoku. Se zánikem Certoo by uživatelé ztratili přístup ke všem datům uloženým v systému.
 
 Další signifikantní divergenci lze nalézt ve výběru blockchainové platformy. Zatímco Certoo se omezuje na využití Litecoinu, náš projekt Verified nabízí možnost fungování na různých Ethereum blockchainech, jako jsou Polygon, Optimism či v rámci ukázky v této práci na testnetu Sepolia, čímž poskytuje větší flexibilitu.
 
-Certoo také nevyžaduje od uživatele decentralizovanou identitu, co ale vyžadují je registrace, což v praxi znamená, že uživatelé poskytují osobní údaje, jako je bydliště, přímo do aplikace. Se zánikem Certoo by uživatelé ztratili přístup ke všem datům uloženým v systému.
+Certoo také nevyžaduje od uživatele decentralizovanou identitu, co ale vyžadují je registrace, což v praxi znamená, že uživatelé poskytují osobní údaje, jako je bydliště, přímo do aplikace.
 
-Na rozdíl od Certoo nedovoluje Verified uživatelům spravovat vlastní privátní klíče k šifrovaným souborům, což je další dimenze, ve které se oba projekty liší, zejména z hlediska uživatelské kontroly a bezpečnosti dat.
+Na rozdíl od Verified nedovoluje Certoo uživatelům spravovat vlastní privátní klíče k šifrovaným souborům, což je další dimenze, ve které se oba projekty liší, zejména z hlediska uživatelské kontroly a bezpečnosti dat.
 
 Pokud jde o náklady spojené s používáním aplikací, podle informací na svých webových stránkách stanovuje Certoo poplatek přibližně 100 Kč za každý dokument. Na druhé straně, aplikace Verified, vzhledem ke své decentralizované povaze, nenastavuje poplatky za oveřovací služby staticky. Místo toho jsou spojeny s aktuálními transakčními poplatky potřebnými pro zápis dat do blockchainu, čímž se tyto poplatky stávají proměnlivými. Finanční model aplikace Verified a jeho strategie jsou detailněji rozpracovány v následující části \ref{sec:NextSteps}. U jiných tradičních centralizovaných autorit vydávajících elektronické certifikáty jsou ceny ve stovkách až jednotkách tisíc korun dle způsobu použití a délky platnosti. \cite{CeskaPosta} \cite{Certoo}
 
@@ -828,7 +927,7 @@ V následných diagramech případů užití je znázorněno, jakým způsobem b
 
 
 \clearpage
-\section{Nástroje a technologie pro vývoj}
+\section{NÁSTROJE A TECHNOLOGIE PRO VÝVOJ}
 
 Tato sekce popisuje a odůvodňuje výběr specifických nástrojů a technologií, které byly vybrány pro vývoj projektu. Pečlivý výběr nástrojů a technologií je klíčový pro úspěšnou implementaci projektu a splnění jeho požadavků.
 
@@ -929,8 +1028,9 @@ text
 
 
 
+\clearpage
+\section{IMPLEMENTACE A POSTUP VÝVOJE}\label{sec:implementace}
 
-\n{1}{Implementace a postup vývoje}
 text
 
 \subsection{Vytvoření schématu}\label{subsec:schema-creation}
