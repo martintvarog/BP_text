@@ -42,6 +42,7 @@
 \contentsline {subsection}{\numberline {4.3}Regul\IeC {\'e}rnost v r\IeC {\'a}mci GDPR}{33}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Omezen\IeC {\'\i } navrhovan\IeC {\'e}ho \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{33}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Srovn\IeC {\'a}n\IeC {\'\i } navrhovan\IeC {\'e}ho \IeC {\v r}e\IeC {\v s}en\IeC {\'\i } s konkurenc\IeC {\'\i }}{34}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}DimplomaChain - kouknout a udelat srovnani}{35}{subsubsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.6}Terminologie}{35}{subsection.4.6}%
 \contentsline {subsubsection}{\numberline {4.6.1}Entita}{35}{subsubsection.4.6.1}%
 \contentsline {subsubsection}{\numberline {4.6.2}P\IeC {\v r}\IeC {\'\i }jemce}{36}{subsubsection.4.6.2}%
