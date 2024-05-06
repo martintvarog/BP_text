@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  19 APR 2024 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  6 MAY 2024 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,7 +761,7 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-<graphics/logo/fai_logo_cz.png, id=437, 325.68428pt x 76.49358pt>
+<graphics/logo/fai_logo_cz.png, id=341, 325.68428pt x 76.49358pt>
 File: graphics/logo/fai_logo_cz.png Graphic file (type png)
 <use graphics/logo/fai_logo_cz.png>
 Package pdftex.def Info: graphics/logo/fai_logo_cz.png  used on input line 75.
@@ -770,7 +770,7 @@ Package pdftex.def Info: graphics/logo/fai_logo_cz.png  used on input line 75.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./graphics/logo/fai_logo_c
 z.png>]
-<graphics/zadani_A21295_66903.pdf, id=445, 597.432pt x 844.83629pt>
+<graphics/zadani_A21295_66903.pdf, id=349, 597.432pt x 844.83629pt>
 File: graphics/zadani_A21295_66903.pdf Graphic file (type pdf)
 <use graphics/zadani_A21295_66903.pdf>
 Package pdftex.def Info: graphics/zadani_A21295_66903.pdf  used on input line 7
@@ -781,7 +781,7 @@ File: graphics/zadani_A21295_66903.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/zadani_A21295_66903.pdf  used on input line 7
 7.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
-<graphics/zadani_A21295_66903.pdf, id=448, page=1, 597.432pt x 844.83629pt>
+<graphics/zadani_A21295_66903.pdf, id=352, page=1, 597.432pt x 844.83629pt>
 File: graphics/zadani_A21295_66903.pdf Graphic file (type pdf)
 <use graphics/zadani_A21295_66903.pdf, page 1>
 Package pdftex.def Info: graphics/zadani_A21295_66903.pdf , page1 used on input
@@ -811,7 +811,7 @@ Package pdftex.def Info: graphics/zadani_A21295_66903.pdf , page1 used on input
 
 
  <./graphics/zadani_A21295_66903.pdf, page is rotated 270 degrees>]
-<graphics/zadani_A21295_66903.pdf, id=455, page=2, 597.432pt x 844.83629pt>
+<graphics/zadani_A21295_66903.pdf, id=359, page=2, 597.432pt x 844.83629pt>
 File: graphics/zadani_A21295_66903.pdf Graphic file (type pdf)
 <use graphics/zadani_A21295_66903.pdf, page 2>
 Package pdftex.def Info: graphics/zadani_A21295_66903.pdf , page2 used on input
@@ -840,11 +840,11 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 
 ] (./prace.toc [8
 
-] [9] [10])
+] [9])
 \tf@toc=\write6
 \openout6 = `prace.toc'.
 
- [11] (./tex/text.tex
+ [10] (./tex/text.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 20.
@@ -858,76 +858,76 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 20.
 
-[12
+[11
 
 
-] [13
+] [12
 
 ]
-<graphics/What-Is-Blockchain-Infographic.jpg, id=622, 2890.8pt x 1556.81625pt>
+<graphics/What-Is-Blockchain-Infographic.jpg, id=497, 2890.8pt x 1556.81625pt>
 File: graphics/What-Is-Blockchain-Infographic.jpg Graphic file (type jpg)
 <use graphics/What-Is-Blockchain-Infographic.jpg>
 Package pdftex.def Info: graphics/What-Is-Blockchain-Infographic.jpg  used on i
 nput line 25.
 (pdftex.def)             Requested size: 441.01772pt x 237.50322pt.
- [14
+ [13
 
- <./graphics/What-Is-Blockchain-Infographic.jpg>] [15]
-<graphics/Structureofblocksinblockchain.png, id=646, 1004.75375pt x 502.87875pt
+ <./graphics/What-Is-Blockchain-Infographic.jpg>] [14]
+<graphics/Structureofblocksinblockchain.png, id=522, 1004.75375pt x 502.87875pt
 >
 File: graphics/Structureofblocksinblockchain.png Graphic file (type png)
 <use graphics/Structureofblocksinblockchain.png>
 Package pdftex.def Info: graphics/Structureofblocksinblockchain.png  used on in
 put line 61.
 (pdftex.def)             Requested size: 441.01772pt x 220.72252pt.
- [16 <./graphics/Structureofblocksinblockchain.png (PNG copy)>]
+ [15 <./graphics/Structureofblocksinblockchain.png (PNG copy)>]
 Overfull \hbox (80.81874pt too wide) in paragraph at lines 80--81
 []\T1/cmr/m/n/12 ???? Mozna zde po-u-ka-zat na po-platky v ramci trans-akci, ht
 tps://cointelegraph.com/news/ethereum-
  []
 
-[17]
-<graphics/SymmetricEncrypt.jpg, id=669, 502.37688pt x 277.53688pt>
+[16]
+<graphics/SymmetricEncrypt.jpg, id=545, 502.37688pt x 277.53688pt>
 File: graphics/SymmetricEncrypt.jpg Graphic file (type jpg)
 <use graphics/SymmetricEncrypt.jpg>
 Package pdftex.def Info: graphics/SymmetricEncrypt.jpg  used on input line 104.
 
 (pdftex.def)             Requested size: 441.01772pt x 243.63608pt.
-<graphics/AsymmetricEncrypt.jpg, id=674, 489.83pt x 272.01625pt>
+<graphics/AsymmetricEncrypt.jpg, id=550, 489.83pt x 272.01625pt>
 File: graphics/AsymmetricEncrypt.jpg Graphic file (type jpg)
 <use graphics/AsymmetricEncrypt.jpg>
 Package pdftex.def Info: graphics/AsymmetricEncrypt.jpg  used on input line 112
 .
 (pdftex.def)             Requested size: 441.01772pt x 244.91612pt.
- [18 <./graphics/SymmetricEncrypt.jpg>]
+ [17 <./graphics/SymmetricEncrypt.jpg>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 128.
 
-[19 <./graphics/AsymmetricEncrypt.jpg>]
-<graphics/blockchain-merkle-tree.png, id=695, 338.76563pt x 232.61906pt>
+[18 <./graphics/AsymmetricEncrypt.jpg>]
+<graphics/blockchain-merkle-tree.png, id=570, 338.76563pt x 232.61906pt>
 File: graphics/blockchain-merkle-tree.png Graphic file (type png)
 <use graphics/blockchain-merkle-tree.png>
 Package pdftex.def Info: graphics/blockchain-merkle-tree.png  used on input lin
 e 158.
 (pdftex.def)             Requested size: 264.61331pt x 181.70834pt.
- [20 <./graphics/blockchain-merkle-tree.png>]
+ [19 <./graphics/blockchain-merkle-tree.png>]
 Overfull \hbox (15.13841pt too wide) in paragraph at lines 183--184
 []\T1/cmr/m/n/12 ’kálovatelnost: Jedna z nej-v¥t-²ích ne-vý-hod tech-no-lo-gie 
 mnoha tech-no-lo-gií blockchain
  []
 
-[21] [22] [23]
+[20] [21] [22]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 253.
 
-[24
+[23
 
-] [25]
-<graphics/growthPyramid.png, id=751, 1094.0875pt x 637.38126pt>
+] [24]
+<graphics/growthPyramid.png, id=626, 1094.0875pt x 637.38126pt>
 File: graphics/growthPyramid.png Graphic file (type png)
 <use graphics/growthPyramid.png>
 Package pdftex.def Info: graphics/growthPyramid.png  used on input line 315.
@@ -936,14 +936,12 @@ Package pdftex.def Info: graphics/growthPyramid.png  used on input line 315.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26
+[25
 
-] [27 <./graphics/growthPyramid.png>] [28
-
-]
+] [26 <./graphics/growthPyramid.png>]
 File: graphics/logo/fai_logo_cz.png Graphic file (type png)
 <use graphics/logo/fai_logo_cz.png>
-Package pdftex.def Info: graphics/logo/fai_logo_cz.png  used on input line 421.
+Package pdftex.def Info: graphics/logo/fai_logo_cz.png  used on input line 423.
 
 (pdftex.def)             Requested size: 220.50885pt x 51.79199pt.
 
@@ -954,168 +952,169 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `chmel' on page 29 undefined on input line 436.
+LaTeX Warning: Citation `chmel' on page 27 undefined on input line 438.
 
-[29]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 450.
-
+[27]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hfill' on input line 450.
+(hyperref)                removing `\@ifnextchar' on input line 452.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\hfill' on input line 452.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 450.
+(hyperref)                removing `\textasciicaron' on input line 452.
 
-[30] [31
+[28] [29
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+E'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 452.
+(hyperref)                removing `\textasciicaron' on input line 454.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+R'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 452.
+(hyperref)                removing `\textasciicaron' on input line 454.
 
 
 Package hyperref Warning: Composite letter `\textring+U'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 452.
+(hyperref)                removing `\textring' on input line 454.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+R'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 461.
+(hyperref)                removing `\textasciicaron' on input line 463.
 
-[32
+[30
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 474.
+(hyperref)                removing `\textasciicaron' on input line 476.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 495.
+(hyperref)                removing `\textasciicaron' on input line 497.
+
+[31]
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 506.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 506.
+
+
+LaTeX Warning: Reference `subsubsec:OpenSource' on page 32 undefined on input l
+ine 510.
+
+[32]
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 543.
 
 [33]
 
+Package hyperref Warning: Composite letter `\textasciicaron+e'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 550.
+
+
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 504.
+(hyperref)                removing `\textasciicaron' on input line 550.
 
 
-LaTeX Warning: Reference `subsubsec:OpenSource' on page 34 undefined on input l
-ine 508.
+LaTeX Warning: Reference `subsubsec:ZK' on page 34 undefined on input line 556.
+
+
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 581.
 
 [34]
 
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 542.
-
-[35]
-
-Package hyperref Warning: Composite letter `\textasciicaron+e'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 549.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 549.
-
-
-Package hyperref Warning: Composite letter `\textring+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 580.
-
-[36]
-
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 587.
+(hyperref)                removing `\textasciicaron' on input line 588.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 615.
+(hyperref)                removing `\textasciicaron' on input line 616.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 640.
+(hyperref)                removing `\textasciicaron' on input line 641.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 640.
+(hyperref)                removing `\textring' on input line 641.
 
-<graphics/DiagramPouzitiEntita.png, id=825, 673.51625pt x 382.42876pt>
+<graphics/DiagramPouzitiEntita.png, id=696, 673.51625pt x 382.42876pt>
 File: graphics/DiagramPouzitiEntita.png Graphic file (type png)
 <use graphics/DiagramPouzitiEntita.png>
 Package pdftex.def Info: graphics/DiagramPouzitiEntita.png  used on input line 
-644.
+645.
 (pdftex.def)             Requested size: 396.91324pt x 225.37424pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/DiagramPouzitiPrijemce.png, id=826, 673.51625pt x 382.42876pt>
+<graphics/DiagramPouzitiPrijemce.png, id=697, 673.51625pt x 382.42876pt>
 File: graphics/DiagramPouzitiPrijemce.png Graphic file (type png)
 <use graphics/DiagramPouzitiPrijemce.png>
 Package pdftex.def Info: graphics/DiagramPouzitiPrijemce.png  used on input lin
-e 647.
+e 648.
 (pdftex.def)             Requested size: 396.91324pt x 225.37424pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/DiagramPouzitiOveritel.png, id=827, 673.51625pt x 382.42876pt>
+<graphics/DiagramPouzitiOveritel.png, id=698, 673.51625pt x 382.42876pt>
 File: graphics/DiagramPouzitiOveritel.png Graphic file (type png)
 <use graphics/DiagramPouzitiOveritel.png>
 Package pdftex.def Info: graphics/DiagramPouzitiOveritel.png  used on input lin
-e 649.
+e 650.
 (pdftex.def)             Requested size: 396.91324pt x 225.37424pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37] [38 <./graphics/DiagramPouzitiEntita.png> <./graphics/DiagramPouzitiPrijem
-ce.png>] [39 <./graphics/DiagramPouzitiOveritel.png>]
+[35] [36 <./graphics/DiagramPouzitiEntita.png> <./graphics/DiagramPouzitiPrijem
+ce.png>] [37 <./graphics/DiagramPouzitiOveritel.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 655.
+(hyperref)                removing `\textasciicaron' on input line 656.
 
-[40
+[38
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 680.
+(hyperref)                removing `\textasciicaron' on input line 681.
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 696--696
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 697--697
 []\T1/cmr/bx/n/12 Krok| 
  []
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 722--722
-[]\T1/cmr/bx/n/12 Krok| 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 757--757
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 723--723
 []\T1/cmr/bx/n/12 Krok| 
  []
 
@@ -1123,7 +1122,7 @@ Overfull \hbox (1.49826pt too wide) in paragraph at lines 757--757
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 786--786
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 758--758
 []\T1/cmr/bx/n/12 Krok| 
  []
 
@@ -1131,7 +1130,7 @@ Overfull \hbox (1.49826pt too wide) in paragraph at lines 786--786
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 816--816
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 787--787
 []\T1/cmr/bx/n/12 Krok| 
  []
 
@@ -1139,7 +1138,7 @@ Overfull \hbox (1.49826pt too wide) in paragraph at lines 816--816
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 846--846
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 817--817
 []\T1/cmr/bx/n/12 Krok| 
  []
 
@@ -1147,7 +1146,7 @@ Overfull \hbox (1.49826pt too wide) in paragraph at lines 846--846
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 878--878
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 847--847
 []\T1/cmr/bx/n/12 Krok| 
  []
 
@@ -1155,220 +1154,300 @@ Overfull \hbox (1.49826pt too wide) in paragraph at lines 878--878
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (1.49826pt too wide) in paragraph at lines 912--912
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 879--879
 []\T1/cmr/bx/n/12 Krok| 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41
 
-] [42] [43] [44] [45] [46
+Overfull \hbox (1.49826pt too wide) in paragraph at lines 913--913
+[]\T1/cmr/bx/n/12 Krok| 
+ []
 
-]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39
+
+] [40] [41] [42] [43]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 988.
+(hyperref)                removing `\textasciicaron' on input line 956.
 
-[47] [48] [49]
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1037.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1043.
-
-[50
+[44
 
 ]
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1024.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1032.
+
+[45
+
+] [46]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1072.
+(hyperref)                removing `\textasciicaron' on input line 1064.
 
-) [51
+) [47
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-95.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+00.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]\T1/cmr/m/it/12 blockchain his-tory \T1/cmr/m/n/12 [on-line]. [cit. 2004-10-1
-5]. Do-stupný z WWW:
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 SARMAH, Si-manta Shekhar. Un-der-stan-ding Blockchain Tech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/it/12 no-logy. Busi-ness In-tel-li-gence Ar-chi-tect, Al-pha Cli-ni-c
+al Sys-tems,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/it/12 USA. [on-line]. 2018-08-02 \T1/cmr/m/n/12 [cit. 2024-01-15]. Do
+-stupný z WWW:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []$\T1/cmtt/m/n/12 https : / / d1wqtxts1xzle7 . cloudfront . net / 60715489 / U
 nderstanding _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 \T1/cmtt/m/n/12 Blockchain _ Technology20190926-[]26770-[]147v9qi-[]libre . pdf
  ? 1569545201 =
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 195--195
-[]\T1/cmr/m/it/12 Imutabilita blockchain \T1/cmr/m/n/12 [on-line]. [cit.2024-03
--19]. Do-stupný z WWW:[]$\T1/cmtt/m/n/12 https :
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmtt/m/n/12 &response-[]content-[]disposition = inline / %3B + filename % 3
+DUnderstanding _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmtt/m/n/12 Blockchain _ Technology . pdf & Expires = 1710887337 & Signatur
+e =
+ []
+
+
+Overfull \hbox (1704.13841pt too wide) in paragraph at lines 200--200
+\T1/cmtt/m/n/12 CC7eg5Ia-[]e1qIVZ~mC79PtM9TYCLOoKQ-[]RvV9OlmggMZjw1pPbKxsZl-[]b
+KBDt1OPnHBe64BqPu4En-[]1XKfQ8lr-[]r-[]yUjA7AKwmpxHN6vt3X6pP7pNlGA62LkoRnddD0~eT
+SwAfwIXs0cqymOI6yLR6r8R9983teaXYZjnGz1BupFndGPzY6Ff2HxLXb91KKM1RqSCMm3GRpIyFTwO
+iA13aFNxfxxd6v8H14ZSE0X3wkLZ0zkzoZMWdeinrWD1xsg~DZ9XT3mZ4O8SvwrNO3JxmPINMEiTppB
+fVjc3V1CLLz6wC50SlVk6vaY97pEgtMdsmeWMWT1gKErFuuz7STy-[]g _
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 RODRIGUEZ, Gab-riel. What Is Blockchain?. Mo-ney. [on-line]. 
+2022-06-02
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 HOFMANN, Frank a dal²í. THE IM-MU-TA-BI-LITY CON-CEPT OF
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 200--200
+\T1/cmr/m/it/12 sear-ch-Gate. [on-line]. 2017-11 \T1/cmr/m/n/12 [cit.2024-02-19
+]. Do-stupný z WWW:[]$\T1/cmtt/m/n/12 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 \T1/cmtt/m/n/12 / / www . researchgate . net / profile / Moritz-[]Boehmecke-[]S
 chwafert /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 \T1/cmtt/m/n/12 publication / 322322101 _ The _ immutability _ concept _ of _ b
 lockchains _ and _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 \T1/cmtt/m/n/12 benefits _ of _ early _ standardization / links / 6420b404315df
 b4cceaee61f /
  []
 
 
-Overfull \hbox (69.16292pt too wide) in paragraph at lines 195--195
+Overfull \hbox (69.16292pt too wide) in paragraph at lines 200--200
 \T1/cmtt/m/n/12 The-[]immutability-[]concept-[]of-[]blockchains-[]and-[]benefit
 s-[]of-[]early-[]standardization .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]\T1/cmr/m/it/12 Decentralizace blockcha-inu \T1/cmr/m/n/12 [on-line]. [cit.20
-24-03-19]. Do-stupný
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 Bhalla, An-shika. What is De-cen-t-ra-li-zation in Blockchain
+?.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-\T1/cmr/m/n/12 z WWW:[]$\T1/cmtt/m/n/12 https : / / www . blockchain-[]council 
-. org / blockchain /
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/it/12 blockchain-council. [on-line]. 2022-12-13  \T1/cmr/m/n/12 [cit.
+2024-03-19]. Do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]\T1/cmr/m/it/12 Transakce \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stup
-ný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/n/12 stupný z WWW:[]$\T1/cmtt/m/n/12 https : / / www . blockchain-[]c
+ouncil . org / blockchain /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]\T1/cmr/m/it/12 Sifrovani \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stup
-ný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
+Underfull \hbox (badness 1424) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 CFTE. What is an im-mu-table led-ger in blockchain and what a
+re its be-
  []
 
 
-Overfull \hbox (23.44847pt too wide) in paragraph at lines 195--195
-\T1/cmtt/m/n/12 analyticsvidhya . com / blog / 2022 / 09 / concept-[]of-[]crypt
-ography-[]in-[]blockchain/$[] 
+Underfull \hbox (badness 1648) in paragraph at lines 200--200
+\T1/cmr/m/it/12 ne-fits?. blog.cfte.education. [on-line]. 2023-04-04  \T1/cmr/m
+/n/12 [cit.2024-03-19]. Do-stupný
  []
 
-[52
+
+Underfull \hbox (badness 3826) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 M0HITKIRANGE. Blockchain Structure. Ge-eks-for-Ge-eks [on-lin
+e]. 16 Nov,
+ []
+
+[48
 
 ]
-Underfull \hbox (badness 5696) in paragraph at lines 195--195
+Underfull \hbox (badness 4036) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 GUPTAVIVE. Cryp-to-gra-phy in Blockchain. Ge-eks-for-Ge-eks [
+on-line]. 2022-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 CHOUDHARY, ANU-RAG SINGH. Con-cept of Cryp-to-gra-phy in
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 200--200
+\T1/cmr/m/it/12 Blockchain. Ana-ly-tics Vid-hya. [on-line]. 2023-05-30 \T1/cmr/
+m/n/12 [cit.2024-03-19]. Do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/n/12 stupný z WWW:[]$\T1/cmtt/m/n/12 https : / / www . analyticsvidhy
+a . com / blog / 2022 / 09 /
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 Hash funkce \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-st
 upný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 6047) in paragraph at lines 195--195
+Underfull \hbox (badness 6047) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 Merkle Tree \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-st
 upný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 195--195
+Underfull \hbox (badness 2165) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 Konsensus \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stup
 ný z WWW:[]$\T1/cmtt/m/n/12 https : / / academy .
  []
 
 
-Overfull \hbox (87.6834pt too wide) in paragraph at lines 195--195
+Overfull \hbox (87.6834pt too wide) in paragraph at lines 200--200
 \T1/cmtt/m/n/12 geekculture / web2-[]vs-[]web3-[]understanding-[]the-[]evolutio
 n-[]of-[]the-[]internet-[]8162548ec94d$[] 
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 195--195
+Underfull \hbox (badness 2865) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 Smart-contract \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do
 -stupný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 Ethereum Iden-tity \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]
 . Do-stupný
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 \T1/cmr/m/n/12 z WWW:[]$\T1/cmtt/m/n/12 https : / / ethereum . org / en / decen
 tralized-[]identity /
  []
 
-
-Underfull \hbox (badness 1460) in paragraph at lines 195--195
+[49]
+Underfull \hbox (badness 1460) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 Intro to EAS \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-s
 tupný z WWW:[]$\T1/cmtt/m/n/12 https : / / docs .
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 195--195
+Underfull \hbox (badness 3088) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 EAS:Atestace \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-s
 tupný z WWW:[]$\T1/cmtt/m/n/12 https : / / docs .
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 195--195
+Underfull \hbox (badness 4316) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 EAS:Schema \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stu
 pný z WWW:[]$\T1/cmtt/m/n/12 https : / / docs .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []\T1/cmr/m/it/12 CeskaPosta \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stu
 pný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
  []
 
-[53] (./tex/zkratky.tex [54]
+(./tex/zkratky.tex [50]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 5.
 
-) [55
+) [51
 
 ]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 210.
+(hyperref)                removing `\textring' on input line 215.
 
 (./prace.lof)
 \tf@lof=\write7
 \openout7 = `prace.lof'.
 
- [56
+ [52
 
 ] (./prace.lot)
 \tf@lot=\write8
 \openout8 = `prace.lot'.
 
- [57
+ [53
 
 
 ] (./tex/prilohy.tex
@@ -1386,7 +1465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--6
 
  []
 
-[58
+[54
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{section.1}) 
 has been already used, duplicate ignored
@@ -1394,16 +1473,16 @@ has been already used, duplicate ignored
                    \relax 
 l.7 \priloha{NÃ¡zev pÅ™Ã­lohy}
                               )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
- [59
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+ [55
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (./prace.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `prace.out' has not changed.
-(rerunfilecheck)             Checksum: D008C61BEF1446D14843EA4F804FF4F4;7782.
+(rerunfilecheck)             Checksum: AC227C6C43E229DD4A86434344743BCC;6021.
 
 
 LaTeX Warning: There were undefined references.
@@ -1411,13 +1490,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 12993 strings out of 481239
- 195293 string characters out of 5920377
- 525422 words of memory out of 5000000
- 27733 multiletter control sequences out of 15000+600000
+ 12940 strings out of 481239
+ 194295 string characters out of 5920377
+ 525620 words of memory out of 5000000
+ 27708 multiletter control sequences out of 15000+600000
  551985 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,49p,1430b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1438,9 +1517,9 @@ hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 ftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on prace.pdf (59 pages, 1612814 bytes).
+Output written on prace.pdf (55 pages, 1605505 bytes).
 PDF statistics:
- 1123 PDF objects out of 1200 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
- 960 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 977 PDF objects out of 1000 (max. 8388607)
+ 191 named destinations out of 1000 (max. 500000)
+ 768 words of extra memory for PDF output out of 10000 (max. 10000000)
 

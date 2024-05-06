@@ -15,95 +15,71 @@
 \BOOKMARK [3][-]{subsubsection.1.3.4}{Digit\341ln\355 pene\236enka}{subsection.1.3}% 15
 \BOOKMARK [3][-]{subsubsection.1.3.5}{Hashovac\355 funkce}{subsection.1.3}% 16
 \BOOKMARK [3][-]{subsubsection.1.3.6}{Merke root hash}{subsection.1.3}% 17
-\BOOKMARK [3][-]{subsubsection.1.3.7}{Zero-knowledge}{subsection.1.3}% 18
-\BOOKMARK [3][-]{subsubsection.1.3.8}{V\375hody a limitace}{subsection.1.3}% 19
-\BOOKMARK [2][-]{subsection.1.4}{Konsensus}{section.1}% 20
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Proof of Work}{subsection.1.4}% 21
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Proof of Stake}{subsection.1.4}% 22
-\BOOKMARK [3][-]{subsubsection.1.4.3}{Ostatn\355 algoritmy konsensu}{subsection.1.4}% 23
-\BOOKMARK [1][-]{section.2}{DECENTRALIZOVAN\311 APLIKACE}{}% 24
-\BOOKMARK [2][-]{subsection.2.1}{Web2 vs Web3}{section.2}% 25
-\BOOKMARK [2][-]{subsection.2.2}{S\355te typu peer-to-peer}{section.2}% 26
-\BOOKMARK [2][-]{subsection.2.3}{Smart contracts}{section.2}% 27
-\BOOKMARK [2][-]{subsection.2.4}{Decentralizovan\341 identita}{section.2}% 28
-\BOOKMARK [1][-]{section.3}{ETHEREUM ATTESTATION SERVICE}{}% 29
-\BOOKMARK [2][-]{subsection.3.1}{Atestace}{section.3}% 30
-\BOOKMARK [2][-]{subsection.3.2}{Sch\351ma}{section.3}% 31
-\BOOKMARK [2][-]{subsection.3.3}{On-Chain vs Off-Chain}{section.3}% 32
-\BOOKMARK [2][-]{subsection.3.4}{Privacy}{section.3}% 33
-\BOOKMARK [2][-]{subsection.3.5}{Podnadpis}{section.3}% 34
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Podpodnadpis}{subsection.3.5}% 35
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Podpodnadpis}{subsection.3.5}% 36
-\BOOKMARK [1][-]{part.2}{[0.85cm]II Projektov\341 c\341st}{}% 37
-\BOOKMARK [1][-]{section.4}{VERIFIED: APLIKACE PRO OVEROV\301N\315 DOKUMENTU}{}% 38
-\BOOKMARK [2][-]{subsection.4.1}{Re\235en\375 probl\351m}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.2}{Navrhovan\351 re\235en\355}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.3}{Regul\351rnost v r\341mci GDPR}{section.4}% 41
-\BOOKMARK [2][-]{subsection.4.4}{Omezen\355 navrhovan\351ho re\235en\355}{section.4}% 42
-\BOOKMARK [2][-]{subsection.4.5}{Srovn\341n\355 navrhovan\351ho re\235en\355 s konkurenc\355}{section.4}% 43
-\BOOKMARK [3][-]{subsubsection.4.5.1}{DimplomaChain - kouknout a udelat srovnani}{subsection.4.5}% 44
-\BOOKMARK [2][-]{subsection.4.6}{Terminologie}{section.4}% 45
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Entita}{subsection.4.6}% 46
-\BOOKMARK [3][-]{subsubsection.4.6.2}{Pr\355jemce}{subsection.4.6}% 47
-\BOOKMARK [3][-]{subsubsection.4.6.3}{Overovatel}{subsection.4.6}% 48
-\BOOKMARK [3][-]{subsubsection.4.6.4}{Atestace}{subsection.4.6}% 49
-\BOOKMARK [3][-]{subsubsection.4.6.5}{Dokument}{subsection.4.6}% 50
-\BOOKMARK [2][-]{subsection.4.7}{Anal\375za po\236adavku na syst\351m}{section.4}% 51
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Funkcn\355 po\236adavky}{subsection.4.7}% 52
-\BOOKMARK [3][-]{subsubsection.4.7.2}{Nefunkcn\355 po\236adavky}{subsection.4.7}% 53
-\BOOKMARK [2][-]{subsection.4.8}{Diagram pr\355padu u\236it\355}{section.4}% 54
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Pr\355pady u\236it\355}{subsection.4.8}% 55
-\BOOKMARK [3][-]{subsubsection.4.8.2}{Sc\351n\341re}{subsection.4.8}% 56
-\BOOKMARK [1][-]{section.5}{N\301STROJE A TECHNOLOGIE PRO V\335VOJ}{}% 57
-\BOOKMARK [2][-]{subsection.5.1}{Programovac\355 jazyky}{section.5}% 58
-\BOOKMARK [2][-]{subsection.5.2}{N\341stroje pro spr\341vu verz\355}{section.5}% 59
-\BOOKMARK [2][-]{subsection.5.3}{Blockchain platformy}{section.5}% 60
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Atestace v r\341mci EAS}{subsection.5.3}% 61
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Sch\351ma}{subsection.5.3}% 62
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Onchain vs Offchain}{subsection.5.3}% 63
-\BOOKMARK [3][-]{subsubsection.5.3.4}{Privacy}{subsection.5.3}% 64
-\BOOKMARK [3][-]{subsubsection.5.3.5}{Developer Tools}{subsection.5.3}% 65
-\BOOKMARK [3][-]{subsubsection.5.3.6}{EAS SDK}{subsection.5.3}% 66
-\BOOKMARK [2][-]{subsection.5.4}{MetaMask \(nebo jin\341 digit\341ln\355 pene\236enka\)}{section.5}% 67
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Integrace do aplikace}{subsection.5.4}% 68
-\BOOKMARK [3][-]{subsubsection.5.4.2}{API}{subsection.5.4}% 69
-\BOOKMARK [2][-]{subsection.5.5}{Inter Planetary File System}{section.5}% 70
-\BOOKMARK [3][-]{subsubsection.5.5.1}{IPFS vs HTTP}{subsection.5.5}% 71
-\BOOKMARK [3][-]{subsubsection.5.5.2}{\231ivotn\355 cyklus dat}{subsection.5.5}% 72
-\BOOKMARK [3][-]{subsubsection.5.5.3}{Hashovani}{subsection.5.5}% 73
-\BOOKMARK [3][-]{subsubsection.5.5.4}{Imutabilita}{subsection.5.5}% 74
-\BOOKMARK [3][-]{subsubsection.5.5.5}{Persistence}{subsection.5.5}% 75
-\BOOKMARK [3][-]{subsubsection.5.5.6}{Privacy a sifrovani}{subsection.5.5}% 76
-\BOOKMARK [3][-]{subsubsection.5.5.7}{Uzly}{subsection.5.5}% 77
-\BOOKMARK [3][-]{subsubsection.5.5.8}{Pinata}{subsection.5.5}% 78
-\BOOKMARK [3][-]{subsubsection.5.5.9}{Filecoin}{subsection.5.5}% 79
-\BOOKMARK [3][-]{subsubsection.5.5.10}{Web3.storage}{subsection.5.5}% 80
-\BOOKMARK [3][-]{subsubsection.5.5.11}{Fleek storage}{subsection.5.5}% 81
-\BOOKMARK [2][-]{subsection.5.6}{Front-end}{section.5}% 82
-\BOOKMARK [3][-]{subsubsection.5.6.1}{Zduvodneni volby}{subsection.5.6}% 83
-\BOOKMARK [2][-]{subsection.5.7}{Back-end}{section.5}% 84
-\BOOKMARK [3][-]{subsubsection.5.7.1}{Zduvodneni volby}{subsection.5.7}% 85
-\BOOKMARK [1][-]{section.6}{IMPLEMENTACE A POSTUP V\335VOJE}{}% 86
-\BOOKMARK [2][-]{subsection.6.1}{Vytvoren\355 sch\351matu}{section.6}% 87
-\BOOKMARK [2][-]{subsection.6.2}{Datov\375 model}{section.6}% 88
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Jake data sbirat}{subsection.6.2}% 89
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Kam ukladat}{subsection.6.2}% 90
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Jak ukladat}{subsection.6.2}% 91
-\BOOKMARK [2][-]{subsection.6.3}{Aktori}{section.6}% 92
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Odesilatel atestace}{subsection.6.3}% 93
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Prijmce atestace}{subsection.6.3}% 94
-\BOOKMARK [3][-]{subsubsection.6.3.3}{Verifier}{subsection.6.3}% 95
-\BOOKMARK [2][-]{subsection.6.4}{Use cases}{section.6}% 96
-\BOOKMARK [2][-]{subsection.6.5}{Konfigurace aplikace}{section.6}% 97
-\BOOKMARK [3][-]{subsubsection.6.5.1}{SDK EAS}{subsection.6.5}% 98
-\BOOKMARK [3][-]{subsubsection.6.5.2}{SDK MetaMask/neco jineho nevim zatim}{subsection.6.5}% 99
-\BOOKMARK [3][-]{subsubsection.6.5.3}{SDK IPFS}{subsection.6.5}% 100
-\BOOKMARK [2][-]{subsection.6.6}{Webov\341 prezentace}{section.6}% 101
-\BOOKMARK [2][-]{subsection.6.7}{Video prezentace}{section.6}% 102
-\BOOKMARK [1][-]{section.7}{Mozne rozsireni}{}% 103
-\BOOKMARK [1][-]{section*.23}{Z\341ver}{}% 104
-\BOOKMARK [1][-]{section*.23}{Seznam pou\236it\351 literatury}{}% 105
-\BOOKMARK [1][-]{section*.25}{Seznam pou\236it\375ch symbolu a zkratek}{}% 106
-\BOOKMARK [1][-]{section*.25}{Seznam obr\341zku}{}% 107
-\BOOKMARK [1][-]{section*.25}{Seznam tabulek}{}% 108
-\BOOKMARK [1][-]{section*.25}{SEZNAM PR\315LOH}{}% 109
+\BOOKMARK [3][-]{subsubsection.1.3.7}{V\375hody a limitace}{subsection.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.4}{Konsensus}{section.1}% 19
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Proof of Work}{subsection.1.4}% 20
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Proof of Stake}{subsection.1.4}% 21
+\BOOKMARK [3][-]{subsubsection.1.4.3}{Ostatn\355 algoritmy konsensu}{subsection.1.4}% 22
+\BOOKMARK [1][-]{section.2}{DECENTRALIZOVAN\311 APLIKACE}{}% 23
+\BOOKMARK [2][-]{subsection.2.1}{Web2 vs Web3}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.2}{S\355te typu peer-to-peer}{section.2}% 25
+\BOOKMARK [2][-]{subsection.2.3}{Smart contracts}{section.2}% 26
+\BOOKMARK [2][-]{subsection.2.4}{Decentralizovan\341 identita}{section.2}% 27
+\BOOKMARK [1][-]{section.3}{ETHEREUM ATTESTATION SERVICE}{}% 28
+\BOOKMARK [2][-]{subsection.3.1}{Atestace}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.2}{Sch\351ma}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.3}{On-Chain vs Off-Chain}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.4}{Podnadpis}{section.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Podpodnadpis}{subsection.3.4}% 33
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Podpodnadpis}{subsection.3.4}% 34
+\BOOKMARK [1][-]{part.2}{[0.85cm]II Projektov\341 c\341st}{}% 35
+\BOOKMARK [1][-]{section.4}{VERIFIED: APLIKACE PRO OVEROV\301N\315 DOKUMENTU}{}% 36
+\BOOKMARK [2][-]{subsection.4.1}{Re\235en\375 probl\351m}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.2}{Navrhovan\351 re\235en\355}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.3}{Regul\351rnost v r\341mci GDPR}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.4}{Omezen\355 navrhovan\351ho re\235en\355}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.5}{Srovn\341n\355 navrhovan\351ho re\235en\355 s existuj\355c\355mi re\235en\355mi}{section.4}% 41
+\BOOKMARK [2][-]{subsection.4.6}{Terminologie}{section.4}% 42
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Entita}{subsection.4.6}% 43
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Pr\355jemce}{subsection.4.6}% 44
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Overovatel}{subsection.4.6}% 45
+\BOOKMARK [3][-]{subsubsection.4.6.4}{Atestace}{subsection.4.6}% 46
+\BOOKMARK [3][-]{subsubsection.4.6.5}{Dokument}{subsection.4.6}% 47
+\BOOKMARK [2][-]{subsection.4.7}{Anal\375za po\236adavku na syst\351m}{section.4}% 48
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Funkcn\355 po\236adavky}{subsection.4.7}% 49
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Nefunkcn\355 po\236adavky}{subsection.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.8}{Diagram pr\355padu u\236it\355}{section.4}% 51
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Pr\355pady u\236it\355}{subsection.4.8}% 52
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Sc\351n\341re}{subsection.4.8}% 53
+\BOOKMARK [1][-]{section.5}{N\301STROJE A TECHNOLOGIE PRO V\335VOJ}{}% 54
+\BOOKMARK [2][-]{subsection.5.1}{Programovac\355 jazyky}{section.5}% 55
+\BOOKMARK [2][-]{subsection.5.2}{N\341stroje pro spr\341vu verz\355}{section.5}% 56
+\BOOKMARK [2][-]{subsection.5.3}{Blockchain platformy}{section.5}% 57
+\BOOKMARK [2][-]{subsection.5.4}{N\341stroje pro pr\341ci s digit\341ln\355mi pene\236enkami}{section.5}% 58
+\BOOKMARK [1][-]{section.6}{IMPLEMENTACE A POSTUP V\335VOJE}{}% 59
+\BOOKMARK [2][-]{subsection.6.1}{Vytvoren\355 sch\351matu}{section.6}% 60
+\BOOKMARK [2][-]{subsection.6.2}{Testovani}{section.6}% 61
+\BOOKMARK [2][-]{subsection.6.3}{Datov\375 model}{section.6}% 62
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Jake data sbirat}{subsection.6.3}% 63
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Kam ukladat}{subsection.6.3}% 64
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Jak ukladat}{subsection.6.3}% 65
+\BOOKMARK [2][-]{subsection.6.4}{Aktori}{section.6}% 66
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Odesilatel atestace}{subsection.6.4}% 67
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Prijmce atestace}{subsection.6.4}% 68
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Verifier}{subsection.6.4}% 69
+\BOOKMARK [2][-]{subsection.6.5}{Use cases}{section.6}% 70
+\BOOKMARK [2][-]{subsection.6.6}{Konfigurace aplikace}{section.6}% 71
+\BOOKMARK [3][-]{subsubsection.6.6.1}{SDK EAS}{subsection.6.6}% 72
+\BOOKMARK [3][-]{subsubsection.6.6.2}{SDK MetaMask/neco jineho nevim zatim}{subsection.6.6}% 73
+\BOOKMARK [3][-]{subsubsection.6.6.3}{SDK IPFS}{subsection.6.6}% 74
+\BOOKMARK [2][-]{subsection.6.7}{Webov\341 prezentace}{section.6}% 75
+\BOOKMARK [2][-]{subsection.6.8}{Video prezentace}{section.6}% 76
+\BOOKMARK [2][-]{subsection.6.9}{Bezpecnost}{section.6}% 77
+\BOOKMARK [1][-]{section.7}{Mozne rozsireni}{}% 78
+\BOOKMARK [2][-]{subsection.7.1}{Poplatky?}{section.7}% 79
+\BOOKMARK [1][-]{section*.23}{Z\341ver}{}% 80
+\BOOKMARK [1][-]{section*.23}{Seznam pou\236it\351 literatury}{}% 81
+\BOOKMARK [1][-]{section*.25}{Seznam pou\236it\375ch symbolu a zkratek}{}% 82
+\BOOKMARK [1][-]{section*.25}{Seznam obr\341zku}{}% 83
+\BOOKMARK [1][-]{section*.25}{Seznam tabulek}{}% 84
+\BOOKMARK [1][-]{section*.25}{SEZNAM PR\315LOH}{}% 85

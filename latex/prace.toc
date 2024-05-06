@@ -1,110 +1,86 @@
 \babel@toc {czech}{}
-\contentsline {section}{\IeC {\'U}vod}{12}{section*.3}%
-\contentsline {section}{\makebox [0.85cm]{I\hfill } Teoretick\IeC {\'a} \IeC {\v c}\IeC {\'a}st}{12}{part.1}%
-\contentsline {section}{\numberline {1}BLOCKCHAIN}{14}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Historie}{14}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Principy}{15}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Decentralizace}{15}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Immutability}{15}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}Bloky}{16}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Transakce}{17}{subsubsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.5}Mining}{17}{subsubsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.3}Kryptografie}{17}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Symetrick\IeC {\'a} kryptografie}{18}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Asymetrick\IeC {\'a} kryptografie}{18}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Digit\IeC {\'a}ln\IeC {\'\i } podpis}{19}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}Digit\IeC {\'a}ln\IeC {\'\i } pen\IeC {\v e}\IeC {\v z}enka}{19}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}Hashovac\IeC {\'\i } funkce}{20}{subsubsection.1.3.5}%
-\contentsline {subsubsection}{\numberline {1.3.6}Merke root hash}{20}{subsubsection.1.3.6}%
-\contentsline {subsubsection}{\numberline {1.3.7}Zero-knowledge}{21}{subsubsection.1.3.7}%
-\contentsline {subsubsection}{\numberline {1.3.8}V\IeC {\'y}hody a limitace}{21}{subsubsection.1.3.8}%
-\contentsline {subsection}{\numberline {1.4}Konsensus}{21}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Proof of Work}{22}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Proof of Stake}{22}{subsubsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.3}Ostatn\IeC {\'\i } algoritmy konsensu}{22}{subsubsection.1.4.3}%
-\contentsline {section}{\numberline {2}DECENTRALIZOVAN\IeC {\'E} APLIKACE}{24}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Web2 vs Web3}{24}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}S\IeC {\'\i }t\IeC {\v e} typu peer-to-peer}{24}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Smart contracts}{25}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Decentralizovan\IeC {\'a} identita}{25}{subsection.2.4}%
-\contentsline {section}{\numberline {3}ETHEREUM ATTESTATION SERVICE}{26}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Atestace}{28}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Sch\IeC {\'e}ma}{29}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}On-Chain vs Off-Chain}{29}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Privacy}{29}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Podnadpis}{29}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Podpodnadpis}{30}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Podpodnadpis}{30}{subsubsection.3.5.2}%
-\contentsline {section}{\makebox [0.85cm]{II\hfill } Projektov\IeC {\'a} \IeC {\v c}\IeC {\'a}st}{30}{part.2}%
-\contentsline {section}{\numberline {4}VERIFIED: APLIKACE PRO OV\IeC {\v E}\IeC {\v R}OV\IeC {\'A}N\IeC {\'I} DOKUMENT\IeC {\r U}}{32}{section.4}%
-\contentsline {subsection}{\numberline {4.1}\IeC {\v R}e\IeC {\v s}en\IeC {\'y} probl\IeC {\'e}m}{32}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Navrhovan\IeC {\'e} \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{33}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Regul\IeC {\'e}rnost v r\IeC {\'a}mci GDPR}{33}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Omezen\IeC {\'\i } navrhovan\IeC {\'e}ho \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{33}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Srovn\IeC {\'a}n\IeC {\'\i } navrhovan\IeC {\'e}ho \IeC {\v r}e\IeC {\v s}en\IeC {\'\i } s konkurenc\IeC {\'\i }}{34}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}DimplomaChain - kouknout a udelat srovnani}{35}{subsubsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.6}Terminologie}{35}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Entita}{35}{subsubsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.2}P\IeC {\v r}\IeC {\'\i }jemce}{36}{subsubsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.3}Ov\IeC {\v e}\IeC {\v r}ovatel}{36}{subsubsection.4.6.3}%
-\contentsline {subsubsection}{\numberline {4.6.4}Atestace}{36}{subsubsection.4.6.4}%
-\contentsline {subsubsection}{\numberline {4.6.5}Dokument}{36}{subsubsection.4.6.5}%
-\contentsline {subsection}{\numberline {4.7}Anal\IeC {\'y}za po\IeC {\v z}adavk\IeC {\r u} na syst\IeC {\'e}m}{37}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Funk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{37}{subsubsection.4.7.1}%
-\contentsline {subsubsection}{\numberline {4.7.2}Nefunk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{37}{subsubsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.8}Diagram p\IeC {\v r}\IeC {\'\i }pad\IeC {\r u} u\IeC {\v z}it\IeC {\'\i }}{37}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}P\IeC {\v r}\IeC {\'\i }pady u\IeC {\v z}it\IeC {\'\i }}{40}{subsubsection.4.8.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}Sc\IeC {\'e}n\IeC {\'a}\IeC {\v r}e}{41}{subsubsection.4.8.2}%
-\contentsline {section}{\numberline {5}N\IeC {\'A}STROJE A TECHNOLOGIE PRO V\IeC {\'Y}VOJ}{46}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Programovac\IeC {\'\i } jazyky}{46}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}N\IeC {\'a}stroje pro spr\IeC {\'a}vu verz\IeC {\'\i }}{46}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Blockchain platformy}{46}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Atestace v r\IeC {\'a}mci EAS}{46}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Sch\IeC {\'e}ma}{47}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Onchain vs Offchain}{47}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Privacy}{47}{subsubsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.5}Developer Tools}{47}{subsubsection.5.3.5}%
-\contentsline {subsubsection}{\numberline {5.3.6}EAS SDK}{47}{subsubsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.4}MetaMask (nebo jin\IeC {\'a} digit\IeC {\'a}ln\IeC {\'\i } pen\IeC {\v e}\IeC {\v z}enka)}{47}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Integrace do aplikace}{47}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}API}{47}{subsubsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.5}Inter Planetary File System}{47}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}IPFS vs HTTP}{48}{subsubsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.2}\IeC {\v Z}ivotn\IeC {\'\i } cyklus dat}{48}{subsubsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.3}Hashovani}{48}{subsubsection.5.5.3}%
-\contentsline {subsubsection}{\numberline {5.5.4}Imutabilita}{48}{subsubsection.5.5.4}%
-\contentsline {subsubsection}{\numberline {5.5.5}Persistence}{48}{subsubsection.5.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.6}Privacy a sifrovani}{48}{subsubsection.5.5.6}%
-\contentsline {subsubsection}{\numberline {5.5.7}Uzly}{48}{subsubsection.5.5.7}%
-\contentsline {subsubsection}{\numberline {5.5.8}Pinata}{48}{subsubsection.5.5.8}%
-\contentsline {subsubsection}{\numberline {5.5.9}Filecoin}{48}{subsubsection.5.5.9}%
-\contentsline {subsubsection}{\numberline {5.5.10}Web3.storage}{48}{subsubsection.5.5.10}%
-\contentsline {subsubsection}{\numberline {5.5.11}Fleek storage}{48}{subsubsection.5.5.11}%
-\contentsline {subsection}{\numberline {5.6}Front-end}{48}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}Zduvodneni volby}{49}{subsubsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.7}Back-end}{49}{subsection.5.7}%
-\contentsline {subsubsection}{\numberline {5.7.1}Zduvodneni volby}{49}{subsubsection.5.7.1}%
-\contentsline {section}{\numberline {6}IMPLEMENTACE A POSTUP V\IeC {\'Y}VOJE}{50}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Vytvo\IeC {\v r}en\IeC {\'\i } sch\IeC {\'e}matu}{50}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Datov\IeC {\'y} model}{50}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Jake data sbirat}{50}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Kam ukladat}{50}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Jak ukladat}{50}{subsubsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.3}Akto\IeC {\v r}i}{50}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Odesilatel atestace}{50}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Prijmce atestace}{50}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}Verifier}{50}{subsubsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.4}Use cases}{50}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Konfigurace aplikace}{50}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}SDK EAS}{50}{subsubsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.2}SDK MetaMask/neco jineho nevim zatim}{50}{subsubsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.3}SDK IPFS}{50}{subsubsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.6}Webov\IeC {\'a} prezentace}{50}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Video prezentace}{50}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Mozne rozsireni}{50}{section.7}%
-\contentsline {section}{Z\IeC {\'a}v\IeC {\v e}r}{51}{section*.23}%
-\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'e} literatury}{52}{section*.23}%
-\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch symbol\IeC {\r u} a zkratek}{55}{section*.25}%
-\contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{56}{section*.25}%
-\contentsline {section}{Seznam tabulek}{57}{section*.25}%
-\contentsline {section}{SEZNAM P\IeC {\v R}\IeC {\'I}LOH}{58}{section*.25}%
+\contentsline {section}{\IeC {\'U}vod}{11}{section*.3}%
+\contentsline {section}{\makebox [0.85cm]{I\hfill } Teoretick\IeC {\'a} \IeC {\v c}\IeC {\'a}st}{11}{part.1}%
+\contentsline {section}{\numberline {1}BLOCKCHAIN}{13}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Historie}{13}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Principy}{14}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Decentralizace}{14}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Immutability}{14}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Bloky}{15}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Transakce}{16}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Mining}{16}{subsubsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.3}Kryptografie}{16}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Symetrick\IeC {\'a} kryptografie}{17}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Asymetrick\IeC {\'a} kryptografie}{17}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Digit\IeC {\'a}ln\IeC {\'\i } podpis}{18}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Digit\IeC {\'a}ln\IeC {\'\i } pen\IeC {\v e}\IeC {\v z}enka}{18}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Hashovac\IeC {\'\i } funkce}{19}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}Merke root hash}{19}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}V\IeC {\'y}hody a limitace}{20}{subsubsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.4}Konsensus}{20}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Proof of Work}{21}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Proof of Stake}{21}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Ostatn\IeC {\'\i } algoritmy konsensu}{21}{subsubsection.1.4.3}%
+\contentsline {section}{\numberline {2}DECENTRALIZOVAN\IeC {\'E} APLIKACE}{23}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Web2 vs Web3}{23}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}S\IeC {\'\i }t\IeC {\v e} typu peer-to-peer}{23}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Smart contracts}{24}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Decentralizovan\IeC {\'a} identita}{24}{subsection.2.4}%
+\contentsline {section}{\numberline {3}ETHEREUM ATTESTATION SERVICE}{25}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Atestace}{25}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Sch\IeC {\'e}ma}{27}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}On-Chain vs Off-Chain}{27}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Podnadpis}{27}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Podpodnadpis}{28}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Podpodnadpis}{28}{subsubsection.3.4.2}%
+\contentsline {section}{\makebox [0.85cm]{II\hfill } Projektov\IeC {\'a} \IeC {\v c}\IeC {\'a}st}{28}{part.2}%
+\contentsline {section}{\numberline {4}VERIFIED: APLIKACE PRO OV\IeC {\v E}\IeC {\v R}OV\IeC {\'A}N\IeC {\'I} DOKUMENT\IeC {\r U}}{30}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\IeC {\v R}e\IeC {\v s}en\IeC {\'y} probl\IeC {\'e}m}{30}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Navrhovan\IeC {\'e} \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{31}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Regul\IeC {\'e}rnost v r\IeC {\'a}mci GDPR}{31}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Omezen\IeC {\'\i } navrhovan\IeC {\'e}ho \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{31}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Srovn\IeC {\'a}n\IeC {\'\i } navrhovan\IeC {\'e}ho \IeC {\v r}e\IeC {\v s}en\IeC {\'\i } s existuj\IeC {\'\i }c\IeC {\'\i }mi \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }mi}{32}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Terminologie}{33}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Entita}{33}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}P\IeC {\v r}\IeC {\'\i }jemce}{34}{subsubsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.3}Ov\IeC {\v e}\IeC {\v r}ovatel}{34}{subsubsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.4}Atestace}{34}{subsubsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.5}Dokument}{34}{subsubsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.7}Anal\IeC {\'y}za po\IeC {\v z}adavk\IeC {\r u} na syst\IeC {\'e}m}{35}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Funk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{35}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Nefunk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{35}{subsubsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.8}Diagram p\IeC {\v r}\IeC {\'\i }pad\IeC {\r u} u\IeC {\v z}it\IeC {\'\i }}{35}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}P\IeC {\v r}\IeC {\'\i }pady u\IeC {\v z}it\IeC {\'\i }}{38}{subsubsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.2}Sc\IeC {\'e}n\IeC {\'a}\IeC {\v r}e}{39}{subsubsection.4.8.2}%
+\contentsline {section}{\numberline {5}N\IeC {\'A}STROJE A TECHNOLOGIE PRO V\IeC {\'Y}VOJ}{44}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Programovac\IeC {\'\i } jazyky}{44}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}N\IeC {\'a}stroje pro spr\IeC {\'a}vu verz\IeC {\'\i }}{44}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Blockchain platformy}{44}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}N\IeC {\'a}stroje pro pr\IeC {\'a}ci s digit\IeC {\'a}ln\IeC {\'\i }mi pen\IeC {\v e}\IeC {\v z}enkami}{44}{subsection.5.4}%
+\contentsline {section}{\numberline {6}IMPLEMENTACE A POSTUP V\IeC {\'Y}VOJE}{45}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Vytvo\IeC {\v r}en\IeC {\'\i } sch\IeC {\'e}matu}{45}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Testovani}{45}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Datov\IeC {\'y} model}{45}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Jake data sbirat}{45}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Kam ukladat}{45}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Jak ukladat}{45}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}Akto\IeC {\v r}i}{45}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Odesilatel atestace}{45}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Prijmce atestace}{45}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Verifier}{45}{subsubsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.5}Use cases}{45}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Konfigurace aplikace}{45}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}SDK EAS}{45}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}SDK MetaMask/neco jineho nevim zatim}{45}{subsubsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.3}SDK IPFS}{45}{subsubsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.7}Webov\IeC {\'a} prezentace}{45}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Video prezentace}{46}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Bezpecnost}{46}{subsection.6.9}%
+\contentsline {section}{\numberline {7}Mozne rozsireni}{46}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Poplatky?}{46}{subsection.7.1}%
+\contentsline {section}{Z\IeC {\'a}v\IeC {\v e}r}{47}{section*.23}%
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'e} literatury}{48}{section*.23}%
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch symbol\IeC {\r u} a zkratek}{51}{section*.25}%
+\contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{52}{section*.25}%
+\contentsline {section}{Seznam tabulek}{53}{section*.25}%
+\contentsline {section}{SEZNAM P\IeC {\v R}\IeC {\'I}LOH}{54}{section*.25}%

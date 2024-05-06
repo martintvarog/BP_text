@@ -159,7 +159,7 @@ Koncept Stromu Merkle je pojmenován po Ralphu Merkleovi, který tento nápad pa
 
 
 
-\subsubsection{Zero-knowledge}\label{subsubsec:ZK}
+%\subsubsection{Zero-knowledge}\label{subsubsec:ZK}
 
 
 \subsubsection{Výhody a limitace}
@@ -316,7 +316,7 @@ EAS představuje normu a základní vrstvu, kde kterákoli entita může vytvá�
 
 
 
-\clearpage
+
 \subsection{Atestace}\label{subsec:Attestation}
 
 
@@ -379,7 +379,9 @@ Atestace On-Chain: Tyto atestace jsou přímo ukládány na Ethereum blockchain.
 Atestace Off-Chain: Tyto atestace nejsou ukládány přímo na blockchain Ethereum, ale typicky v databázi nebo jiném úložišti. Jsou propojeny s blockchainem prostřednictvím kryptografických podpisů, ale nejsou na něm uloženy. Atestace mimo řetězec jsou výhodné, když chceme držet atestaci v soukromí a sdílet ji jen na základě potřeby. \cite{EAS:OnChainVsOffChain}
 
 
-\subsection{Privacy}\label{subsec:Privacy}
+%\subsection{Privacy}\label{subsec:Privacy}
+
+
 
 
 
@@ -501,7 +503,7 @@ Dále je třeba počítat s faktem, že jakékoli zápisy do blockchainu jsou sp
 
 
 
-\subsection{Srovnání navrhovaného řešení s konkurencí}\label{subsec: Competition}
+\subsection{Srovnání navrhovaného řešení s existujícími řešeními}\label{subsec: Competition}
 
 V rámci konkurenčního prostředí není na platformě Ethereum Attestation Service, kterou využíváme v této práci, znám žádný jiný projekt adresující totožné nebo podobné téma. Tento fakt pravděpodobně pramení z relativní novosti této infrastrukturní služby, jež byla oficiálně spuštěna do produkčního prostředí přibližně před rokem v kontextu této studie.
 
@@ -517,7 +519,6 @@ Na rozdíl od Verified nedovoluje Certoo uživatelům spravovat vlastní privát
 
 Pokud jde o náklady spojené s používáním aplikací, podle informací na svých webových stránkách stanovuje Certoo poplatek přibližně 100 Kč za každý dokument. Na druhé straně, aplikace Verified, vzhledem ke své decentralizované povaze, nenastavuje poplatky za oveřovací služby staticky. Místo toho jsou spojeny s aktuálními transakčními poplatky potřebnými pro zápis dat do blockchainu, čímž se tyto poplatky stávají proměnlivými. Finanční model aplikace Verified a jeho strategie jsou detailněji rozpracovány v následující části \ref{sec:NextSteps}. U jiných tradičních centralizovaných autorit vydávajících elektronické certifikáty jsou ceny ve stovkách až jednotkách tisíc korun dle způsobu použití a délky platnosti. \cite{CeskaPosta} \cite{Certoo}
 
-\subsubsection{DimplomaChain - kouknout a udelat srovnani}
 
 \subsection{Terminologie}
 
@@ -936,7 +937,7 @@ Tato sekce popisuje a odůvodňuje výběr specifických nástrojů a technologi
 
 \textbf{TypeScript:} Silně typovaný nadstavbový jazyk JavaScriptu, který přináší lepší kontrolu nad kódem a zvyšuje jeho čitelnost a udržitelnost. Jeho rozšířenost a široká podpora knihoven, zejména pro práci s Web3 a blockchainovými technologiemi, činí z TypeScriptu ideální volbu pro vývoj moderních webových aplikací zaměřených na interakci s decentralizovanými aplikacemi.
 
-\textbf{React:} Populární JavaScriptová knihovna pro vytváření uživatelských rozhraní, zejména jednostránkových aplikací. React byl vybrán pro svou modularitu, výkon a rozsáhlé ekosystém komponent, což umožňuje rychlý vývoj dynamických a interaktivních webových aplikací.
+\textbf{React:} Populární JavaScriptová knihovna pro vytváření uživatelských rozhraní, zejména jednostránkových aplikací. React byl vybrán pro svou modularitu, výkon a rozsáhlý ekosystém komponent, což umožňuje rychlý vývoj dynamických a interaktivních webových aplikací.
 
 
 
@@ -950,91 +951,79 @@ Tato sekce popisuje a odůvodňuje výběr specifických nástrojů a technologi
 
 \subsection{Blockchain platformy}
 
-\textbf{EAS (zkráceně Ethereum attestation service):} byl vybrán jako vhodná abstrakce nad block chainem, který nijak nesvazuje programátora a implementuje jednoduchou architekturu s dvěmi chytrými kontrakty: Vytvoření Schéma a Atestace k danému schématu. Více o EAS v sekci \ref{sec:eas}
+\textbf{EAS (zkráceně Ethereum attestation service):} byl vybrán jako vhodná abstrakce nad blockchainem, který nijak nesvazuje programátora a implementuje jednoduchou architekturu s dvěma chytrými kontrakty: Vytvoření Schéma a Atestace k danému schématu. Více o EAS v sekci \ref{sec:eas}
 
-\subsubsection{Atestace v rámci EAS}
-Atestace poskytují kryptograficky podepsané potvrzení o autentičnosti určité informace, což usnadňuje ostatním důvěřovat této informaci a spoléhat se na ni.[18] Více o Atestaci v kontextu této práce v sekci \ref{subsubsec:terminology-attestation}
+\subsection{Nástroje pro práci s digitálními peněženkami}
 
-\subsubsection{Schéma}
-Schémata definují strukturu a typ dat, která mohou být zahrnuta v atestaci. Fungují jako plán informací, které mají být atestovány, zajišťují konzistenci a jasnost.[19] Více o tvorbě schématu pro účel této práce v \ref{subsec:schema-creation}
+\textbf{MetaMask :} tato integrace byla vybrána, protože je to jedna z nejrozšířenějších softwarových peněženek umožňující interakci s Ethereum blockchain a je dostupná pomocí rozšíření do populárních prohlížečů jako je Chrome, Firefox, Brave a další.
 
 
-
-\subsubsection{Onchain vs Offchain}
-
-Atestace na blockchainu: Přímo na Ethereum blockchainu uložené atestace s neměnností a vysokou bezpečností. Ideální pro interakci s chytrými kontrakty nebo když je požadována stoprocentní dostupnost.
-
-Atestace mimo blockchain: Ukládány mimo Ethereum, typicky v databázích, s odkazem na blockchain kryptografickými podpisy. Vhodné pro soukromé držení a selektivní sdílení.[20]
-
-Pro tuto práci byl zvolen Onchain způsob a to kvůli dostupnosti, bezpečnosti a nemměnnosti blockchainu. Také kvůli tomu, že data uložená na blockchainu jsou buď veřejné nebo šifrované.
-
-
-\subsubsection{Privacy}
-
-dulezita cast zadani
-text
 
 % zamyslet se jestli je to neco co uvadet v praci, kdyz to nejspis nepouziji.
 %\subsubsection{Resolver Contracts}
 %text
 
 
-\n{3}{Developer Tools}
-text
-\n{3}{EAS SDK}
-text
+%\n{3}{Developer Tools}
+%text
+%\n{3}{EAS SDK}
+%text
 
 
-\n{2}{MetaMask (nebo jiná digitální peněženka)}
-text
-\n{3}{Integrace do aplikace}
-text
-\n{3}{API}
+%\n{2}{MetaMask (nebo jiná digitální peněženka)}
+%text
+%\n{3}{Integrace do aplikace}
+%text
+%\n{3}{API}
 
 
 
-\n{2}{Inter Planetary File System}
-text
-\n{3}{IPFS vs HTTP}
-text
-\n{3}{Životní cyklus dat}
-text
-\n{3}{Hashovani}
-text
-\n{3}{Imutabilita}
-text
-\n{3}{Persistence}
-text
-\n{3}{Privacy a sifrovani}
-text
-\n{3}{Uzly}
-text
-\n{3}{Pinata}
-text
-\n{3}{Filecoin}
-text
-\n{3}{Web3.storage}
-text
-\n{3}{Fleek storage}
-text
+%\n{2}{Inter Planetary File System}
+%text
+%\n{3}{IPFS vs HTTP}
+%text
+%\n{3}{Životní cyklus dat}
+%text
+%\n{3}{Hashovani}
+%text
+%\n{3}{Imutabilita}
+%text
+%\n{3}{Persistence}
+%text
+%\n{3}{Privacy a sifrovani}
+%text
+%\n{3}{Uzly}
+%text
+%\n{3}{Pinata}
+%text
+%\n{3}{Filecoin}
+%text
+%\n{3}{Web3.storage}
+%text
+%\n{3}{Fleek storage}
+%text
 
-\n{2}{Front-end}
-text
-\n{3}{Zduvodneni volby}
-text
+%\n{2}{Front-end}
+%text
+%\n{3}{Zduvodneni volby}
+%text
 
-\n{2}{Back-end}
-text
-\n{3}{Zduvodneni volby}
+%\n{2}{Back-end}
+%text
+%\n{3}{Zduvodneni volby}
 
 
 
 \clearpage
 \section{IMPLEMENTACE A POSTUP VÝVOJE}\label{sec:implementace}
 
-text
+
+
+
 
 \subsection{Vytvoření schématu}\label{subsec:schema-creation}
+\subsection{Testovani}
+
 \n{2}{Datový model}
 \n{3}{Jake data sbirat}
 \n{3}{Kam ukladat}
@@ -1066,7 +1055,10 @@ text
 text
 \n{2}{Video prezentace}
 
+\subsection{Bezpecnost}
+
 \section{Mozne rozsireni}\label{sec:NextSteps}
+\subsection{Poplatky?}
 
 % ============================================================================ %
 \nn{Závěr}
