@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  6 MAY 2024 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  7 MAY 2024 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,69 +1358,92 @@ a . com / blog / 2022 / 09 /
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 JAVATPOINT. Blockchain Merkle Tree. Ja-vat-point. [on-line]. 
+(ne-da-to-
+ []
+
+
 Underfull \hbox (badness 5696) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 Hash funkce \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-st
-upný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
- []
-
-
-Underfull \hbox (badness 6047) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 Merkle Tree \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-st
-upný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 Konsensus \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stup
-ný z WWW:[]$\T1/cmtt/m/n/12 https : / / academy .
- []
-
-
-Overfull \hbox (87.6834pt too wide) in paragraph at lines 200--200
-\T1/cmtt/m/n/12 geekculture / web2-[]vs-[]web3-[]understanding-[]the-[]evolutio
-n-[]of-[]the-[]internet-[]8162548ec94d$[] 
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 Smart-contract \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do
--stupný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
+\T1/cmr/m/it/12 váno) \T1/cmr/m/n/12 [cit.2024-03-19]. Do-stupný z WWW:[]$\T1/c
+mtt/m/n/12 https : / / www . javatpoint . com /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 Ethereum Iden-tity \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]
-. Do-stupný
+[]\T1/cmr/m/it/12 CHONG, Nic. Web2 vs. Web3: Un-der-stan-ding the Evo-lu-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--200
-\T1/cmr/m/n/12 z WWW:[]$\T1/cmtt/m/n/12 https : / / ethereum . org / en / decen
-tralized-[]identity /
+\T1/cmr/m/it/12 tion of the In-ter-net. Me-dium. [on-line]. 2022-12-30 \T1/cmr/
+m/n/12 [cit.2024-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/n/12 04-20]. Do-stupný z WWW:[]$\T1/cmtt/m/n/12 https : / / medium . 
+com / geekculture /
+ []
+
+
+Overfull \hbox (13.60149pt too wide) in paragraph at lines 200--200
+\T1/cmtt/m/n/12 web2-[]vs-[]web3-[]understanding-[]the-[]evolution-[]of-[]the-[
+]internet-[]8162548ec94d$[] 
  []
 
 [49]
-Underfull \hbox (badness 1460) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 Intro to EAS \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-s
-tupný z WWW:[]$\T1/cmtt/m/n/12 https : / / docs .
+Underfull \hbox (badness 5217) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 BASUMALLICK, Chi-ra-deep. What Are Smart Con-tracts? Ty-pes, 
+Be-ne-
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 EAS:Atestace \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-s
-tupný z WWW:[]$\T1/cmtt/m/n/12 https : / / docs .
- []
-
-
-Underfull \hbox (badness 4316) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 EAS:Schema \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stu
-pný z WWW:[]$\T1/cmtt/m/n/12 https : / / docs .
+Underfull \hbox (badness 1320) in paragraph at lines 200--200
+\T1/cmr/m/it/12 fits, and Tools. Spi-ceworks. [on-line]. 2023-11-20 \T1/cmr/m/n
+/12 [cit.2024-04-20]. Do-stupný
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]\T1/cmr/m/it/12 CeskaPosta \T1/cmr/m/n/12 [on-line]. [cit.2024-03-19]. Do-stu
-pný z WWW:[]$\T1/cmtt/m/n/12 https : / / www .
+\T1/cmr/m/n/12 z WWW:[]$\T1/cmtt/m/n/12 https : / / www . spiceworks . com / te
+ch / innovation / articles /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 ETHEREUM. De-cen-t-ra-li-zed iden-tity. Ethe-reum [on-line]. 
+(ne-da-to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\T1/cmr/m/it/12 váno)\T1/cmr/m/n/12 [cit.2024-03-19]. Do-stupný z WWW:[]$\T1/cm
+tt/m/n/12 https : / / ethereum . org / en /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 ETHEREUM AT-TES-TATION SER-VICE. At-tes-tation Eco-sys-tem. E
+the-
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 200--200
+\T1/cmr/m/it/12 reum at-tes-tation ser-vice. [on-line]. (ne-da-to-váno) \T1/cmr
+/m/n/12 [cit.2024-04-21]. Do-stupný
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 POSTSIGNUM. Ceny za vy-dá-vané cer-ti-fi-káty. Po-st-Sig-num.
+ [on-line]. (ne-
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 200--200
+[]\T1/cmr/m/it/12 CERTOO. FAQ. Cer-too. [on-line]. (ne-da-to-váno)  \T1/cmr/m/n
+/12 [cit.2024-04-20]. Do-stupný
  []
 
 (./tex/zkratky.tex [50]
@@ -1495,7 +1518,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
 Here is how much of TeX's memory you used:
  12940 strings out of 481239
  194295 string characters out of 5920377
- 525620 words of memory out of 5000000
+ 525655 words of memory out of 5000000
  27708 multiletter control sequences out of 15000+600000
  551985 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1517,9 +1540,9 @@ hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 ftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on prace.pdf (55 pages, 1605505 bytes).
+Output written on prace.pdf (55 pages, 1606975 bytes).
 PDF statistics:
- 977 PDF objects out of 1000 (max. 8388607)
+ 976 PDF objects out of 1000 (max. 8388607)
  191 named destinations out of 1000 (max. 500000)
  768 words of extra memory for PDF output out of 10000 (max. 10000000)
 
